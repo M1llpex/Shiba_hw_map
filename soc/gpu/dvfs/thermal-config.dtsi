@@ -1,0 +1,13 @@
+// =====================================
+// File: gpu/dvfs/thermal-config.dtsi
+// =====================================
+// Mali GPU Thermal Configuration
+
+/ {
+	mali {
+		/* Thermal Configuration */
+		#cooling-cells = <2>;
+		gpu_power_coeff = <625>;
+		ect-coeff-index = <3>;
+	};
+};

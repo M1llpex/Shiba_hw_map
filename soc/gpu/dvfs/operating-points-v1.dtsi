@@ -1,0 +1,32 @@
+// =====================================
+// File: gpu/dvfs/operating-points-v1.dtsi
+// =====================================
+// Mali GPU DVFS Table Version 1
+
+/ {
+	mali {
+		/* DVFS Configuration */
+		gpu_dvfs_governor = "quickstep_use_mcu";
+		gpu_dvfs_clockdown_hysteresis = <50>;
+		gpu_dvfs_step_up_val = <3>;
+		gpu_dvfs_max_freq = <890000>;
+		
+		/* DVFS v1 Table - 12 Operating Points */
+		gpu_dvfs_table_size_v1 = <12 12>;
+		gpu_dvfs_table_v1 = <
+			/* GPU0   GPU1    Down  Up   Hys  INT    MIF     Little Mid  Big  MCU_Down MCU_Up */
+			900000  890000   85   100   1    0      3172000  0      0    0    40       100
+			900000  807000   81    97   1    0      1716000  0      0    0    40        60
+			900000  723000   76    94   1    0      1352000  0      0    0    30        60
+			749000  649000   85    96   2    0      1352000  0      0    0    30        40
+			749000  580000   83    97   3    0      1352000  0      0    0    25        40
+			659000  521000   78    95   3    0       845000  0      0    0    25        30
+			659000  467000   80    96   3    0       845000  0      0    0    20        30
+			531000  419000   76    95   3    0            0  0      0    0    20        25
+			531000  376000   72    94   3    0            0  0      0    0    15        25
+			430000  337000   67    94   2    0            0  0      0    0    15        20
+			386000  302000   50    92   1    0            0  0      0    0     8        20
+			160000  150000    0    90   1    0            0  0      0    0     0        20
+		>;
+	};
+};

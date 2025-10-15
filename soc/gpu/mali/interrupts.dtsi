@@ -1,0 +1,14 @@
+// =====================================
+// File: gpu/mali/interrupts.dtsi
+// =====================================
+// Mali GPU Interrupt Configuration
+
+/ {
+	mali {
+		interrupts =
+			<GIC_SPI IRQ_G3D_IRQJOB_G3D IRQ_TYPE_LEVEL_HIGH 0>,
+			<GIC_SPI IRQ_G3D_IRQMMU_G3D IRQ_TYPE_LEVEL_HIGH 0>,
+			<GIC_SPI IRQ_G3D_IRQGPU_G3D IRQ_TYPE_LEVEL_HIGH 0>;
+		interrupt-names = "JOB", "MMU", "GPU";
+	};
+};

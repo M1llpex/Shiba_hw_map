@@ -1,0 +1,23 @@
+// =====================================
+// File: gpu/mali/core-config.dtsi
+// =====================================
+// Mali GPU Core Configuration (Valhall Architecture)
+
+/ {
+	mali: mali@1F000000 {
+		compatible = "arm,malit6xx";
+		reg = <0x0 0x1F000000 0x480000>;
+		
+		/* L2 Cache Hash Configuration */
+		l2-hash-values = <0x0036DB6D 0x005B6DB6 0x0>;
+		
+		/* GPU Features Mask */
+		gpu_features_mask = <0 4>;
+		
+		/* Firmware Configuration */
+		firmware_idle_hysteresis_time_ms = <60>;
+		firmware_idle_hysteresis_gpu_sleep_scaler = <60>;
+		cores_suspend_hysteresis_time_ms = <60>;
+		top_suspend_hysteresis_time_ms = <0>;
+	};
+};

@@ -1,0 +1,16 @@
+// =====================================
+// File: gpu/qos/bts-config.dtsi
+// =====================================
+// Mali GPU QOS and BTS Configuration
+
+/ {
+	mali {
+		/* QOS Configuration */
+		gpu_dvfs_qos_bts_scenario = "g3d_performance";
+		gpu_dvfs_qos_bts_threshold = <400000>;
+		
+		/* MCU Protection Mode Scaling */
+		mcu_protm_scale = <3 10>;
+		mcu_down_util_scale = <5 4>;
+	};
+};

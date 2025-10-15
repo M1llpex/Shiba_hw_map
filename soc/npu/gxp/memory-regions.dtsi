@@ -1,0 +1,22 @@
+// =====================================
+// File: npu/gxp/memory-regions.dtsi
+// =====================================
+// GXP Memory Region Configuration
+
+/ {
+	gxp {
+		/* IOMMU Configuration */
+		iommus = <&sysmmu_aur>;
+		samsung,iommu-group = <&iommu_group_aur>;
+		
+		/* Reserved Memory Regions */
+		gxp-fw-region = <&gxp_fw_reserved>;
+		gxp-scratchpad-region = <&gxp_scratchpad_reserved>;
+		gxp-secure-data-region = <&gxp_secure_data_reserved>;
+		gxp-mcu-fw-region = <&gxp_mcu_fw_reserved>;
+		
+		/* IIF Fence Tables */
+		iif-fence-wait-table-region = <&iif_wait_table_reserved>;
+		iif-fence-signal-table-region = <&iif_signal_table_reserved>;
+	};
+};

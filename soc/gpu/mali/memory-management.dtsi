@@ -1,0 +1,25 @@
+// =====================================
+// File: gpu/mali/memory-management.dtsi
+// =====================================
+// Mali GPU Memory Management
+
+/ {
+	mali_mgm: physical-memory-group-manager {
+		compatible = "arm,physical-memory-group-manager";
+		/* SLC partitions */
+		pt_id = "gpu_write_alloc";
+	};
+
+	mali_pma: protected-memory-allocator {
+		compatible = "arm,protected-memory-allocator";
+	};
+
+	mali {
+		/* Memory Management */
+		physical-memory-group-manager = <&mali_mgm>;
+		protected-memory-allocator = <&mali_pma>;
+		
+		/* S2MPU Security */
+		s2mpus = <&s2mpu_s0_g3d>;
+	};
+};

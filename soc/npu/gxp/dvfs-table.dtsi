@@ -1,0 +1,25 @@
+// =====================================
+// File: npu/gxp/dvfs-table.dtsi
+// =====================================
+// GXP DVFS Operating Points
+
+/ {
+	gxp {
+		/* GCIP DVFS Table - 7 Operating Points */
+		gcip-dvfs-table-size = <7 2>;
+		gcip-dvfs-table = <
+			/* Freq(KHz)  Power(mW) */
+			1065000       78
+			 861000       58
+			 713000       40
+			 560000       27
+			 355000       20
+			 256000       16
+			 178000       13
+		>;
+	};
+
+	gxp_cooling: gxp-cooling {
+		#cooling-cells = <2>;
+	};
+};

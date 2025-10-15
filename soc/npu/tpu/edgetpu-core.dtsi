@@ -1,0 +1,31 @@
+// =====================================
+// File: npu/tpu/edgetpu-core.dtsi
+// =====================================
+// Google EdgeTPU Core Configuration (Rio)
+
+/ {
+	edgetpu: rio@1A000000 {
+		compatible = "google,edgetpu-zuma";
+		status = "okay";
+		
+		/* Register Base Addresses */
+		reg = <0x0 0x1A000000 0x300000   /* TPU Core */
+		       0x0 0x1A300000 0x10000     /* CMU */
+		       0x0 0x1A3E0000 0x10000     /* SSMT Data0 */
+		       0x0 0x1A3F0000 0x10000>;   /* SSMT Data1 */
+		reg-names = "tpu", "cmu", "ssmt_d0", "ssmt_d1";
+		
+		/* DMA Configuration */
+		#dma-address-cells = <1>;
+		#dma-size-cells = <2>;
+		pasid-num-bits = <3>;
+		dma-window = <0x18000000 0xF 0xE7FFF000>;
+		gcip-dma-window = <0x18000000 0xF 0xE7FFF000>;
+		
+		/* System Integration */
+		edgetpu,shareability = <0x1A320000>; /* SYSREG_TPU */
+		pmu-status-base = <0x15462504>; /* PMU TPU_STATUS */
+		gsa-device = <&gsa>;
+		use-kernel-vii;
+	};
+};
