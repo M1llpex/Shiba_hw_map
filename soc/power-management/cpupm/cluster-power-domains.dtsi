@@ -1,0 +1,45 @@
+// =====================================
+// File: power/cpupm/cluster-power-domains.dtsi
+// =====================================
+// Cluster Power Domain Configuration
+
+/ {
+	cpupm {
+		#define POWERMODE_TYPE_CLUSTER  0
+		#define POWERMODE_TYPE_SYSTEM   1
+		#define CPU_CL0 "0-3"
+		#define CPU_CL1 "4-7"
+		#define CPU_CL2 "8"
+		#define CPU_ALL "0-8"
+
+		compatible = "samsung,exynos-cpupm";
+		status = "okay";
+
+		cpd_cl0 {
+			device_type = "cpupm";
+			target-residency = <10000>;
+			type = <POWERMODE_TYPE_CLUSTER>;
+			cal-id = <0>;
+			siblings = CPU_CL0;
+		};
+
+		cpd_cl1 {
+			device_type = "cpupm";
+			target-residency = <10000>;
+			type = <POWERMODE_TYPE_CLUSTER>;
+			cal-id = <1>;
+			siblings = CPU_CL1;
+			entry-allowed = CPU_CL1;
+		};
+
+		cpd_cl2 {
+			device_type = "cpupm";
+			target-residency = <10000>;
+			type = <POWERMODE_TYPE_CLUSTER>;
+			cal-id = <2>;
+			siblings = CPU_CL2;
+			entry-allowed = CPU_CL2;
+		};
+	};
+};
+

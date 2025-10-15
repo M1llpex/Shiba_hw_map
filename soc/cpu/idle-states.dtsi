@@ -1,0 +1,46 @@
+// =====================================
+// File: cpu/idle-states.dtsi
+// =====================================
+// CPU Idle State Definitions
+
+/ {
+	cpus {
+		idle-states {
+			entry-method = "arm,psci";
+			
+			KLEIN_CPU_SLEEP: klein-cpu-sleep {
+				idle-state-name = "c2";
+				compatible = "arm,idle-state";
+				arm,psci-suspend-param = <0x0010000>;
+				local-timer-stop;
+				entry-latency-us = <70>;
+				exit-latency-us = <160>;
+				min-residency-us = <2000>;
+				status = "okay";
+			};
+			
+			MAKALU_CPU_SLEEP: makalu-cpu-sleep {
+				idle-state-name = "c2";
+				compatible = "arm,idle-state";
+				arm,psci-suspend-param = <0x0010000>;
+				local-timer-stop;
+				entry-latency-us = <150>;
+				exit-latency-us = <190>;
+				min-residency-us = <2500>;
+				status = "okay";
+			};
+			
+			MAKALUELP_CPU_SLEEP: makaluelp-cpu-sleep {
+				idle-state-name = "c2";
+				compatible = "arm,idle-state";
+				arm,psci-suspend-param = <0x0010000>;
+				local-timer-stop;
+				entry-latency-us = <235>;
+				exit-latency-us = <220>;
+				min-residency-us = <3500>;
+				status = "okay";
+			};
+		};
+	};
+};
+

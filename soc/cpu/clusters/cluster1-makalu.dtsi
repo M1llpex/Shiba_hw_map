@@ -1,0 +1,58 @@
+// =====================================
+// File: cpu/clusters/cluster1-makalu.dtsi
+// =====================================
+// Makalu CPU Cluster (Mid cores - 4x Cortex-A710 equivalent)
+// Balanced performance cores
+
+/ {
+	cpus {
+		cpu4: cpu@400 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0400>;
+			enable-method = "psci";
+			cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+			capacity-dmips-mhz = <927>;
+			dynamic-power-coefficient = <513>;
+			cluster-id = <1>;
+			core-type = "makalu";
+		};
+
+		cpu5: cpu@500 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0500>;
+			enable-method = "psci";
+			cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+			capacity-dmips-mhz = <927>;
+			dynamic-power-coefficient = <513>;
+			cluster-id = <1>;
+			core-type = "makalu";
+		};
+
+		cpu6: cpu@600 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0600>;
+			enable-method = "psci";
+			cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+			capacity-dmips-mhz = <927>;
+			dynamic-power-coefficient = <513>;
+			cluster-id = <1>;
+			core-type = "makalu";
+		};
+
+		cpu7: cpu@700 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0700>;
+			enable-method = "psci";
+			cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+			capacity-dmips-mhz = <927>;
+			dynamic-power-coefficient = <513>;
+			cluster-id = <1>;
+			core-type = "makalu";
+		};
+	};
+};
+

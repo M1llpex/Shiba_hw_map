@@ -1,0 +1,24 @@
+// =====================================
+// File: performance/cpufreq/domain1-mid.dtsi
+// =====================================
+// MID Cluster Frequency Scaling
+
+/ {
+	exynos-acme {
+		cpufreq_domain1: domain@1 {
+			sibling-cpus = "4-7";
+			cal-id = <ACPM_DVFS_CPUCL1>;
+			dm-type = <DM_CPU_CL1>;
+
+			min-freq = <402000>;
+			max-freq = <2367000>;
+			
+			#cooling-cells = <2>;
+			ect-coeff-index = <1>;
+			tz-cooling-name = "MID";
+			skip-boot-pmqos;
+			use-em-coeff;
+			need-awake;
+		};
+	};
+};

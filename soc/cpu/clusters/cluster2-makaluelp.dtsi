@@ -1,0 +1,22 @@
+// =====================================
+// File: cpu/clusters/cluster2-makaluelp.dtsi
+// =====================================
+// MakaluELP CPU Cluster (Big core - 1x Cortex-X2 equivalent)
+// High-performance prime core
+
+/ {
+	cpus {
+		cpu8: cpu@800 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0800>;
+			enable-method = "psci";
+			cpu-idle-states = <&MAKALUELP_CPU_SLEEP>;
+			capacity-dmips-mhz = <1024>;
+			dynamic-power-coefficient = <757>;
+			cluster-id = <2>;
+			core-type = "makaluelp";
+		};
+	};
+};
+

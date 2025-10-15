@@ -1,0 +1,57 @@
+// =====================================
+// File: cpu/clusters/cluster0-klein.dtsi
+// =====================================
+// Klein CPU Cluster (Little cores - 4x Cortex-A510 equivalent)
+// Low-power efficiency cores
+
+/ {
+	cpus {
+		cpu0: cpu@0 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0000>;
+			enable-method = "psci";
+			cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+			capacity-dmips-mhz = <193>;
+			dynamic-power-coefficient = <70>;
+			cluster-id = <0>;
+			core-type = "klein";
+		};
+
+		cpu1: cpu@100 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0100>;
+			enable-method = "psci";
+			cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+			capacity-dmips-mhz = <193>;
+			dynamic-power-coefficient = <70>;
+			cluster-id = <0>;
+			core-type = "klein";
+		};
+
+		cpu2: cpu@200 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0200>;
+			enable-method = "psci";
+			cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+			capacity-dmips-mhz = <193>;
+			dynamic-power-coefficient = <70>;
+			cluster-id = <0>;
+			core-type = "klein";
+		};
+
+		cpu3: cpu@300 {
+			device_type = "cpu";
+			compatible = "arm,armv9";
+			reg = <0x0 0x0300>;
+			enable-method = "psci";
+			cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+			capacity-dmips-mhz = <193>;
+			dynamic-power-coefficient = <70>;
+			cluster-id = <0>;
+			core-type = "klein";
+		};
+	};
+};

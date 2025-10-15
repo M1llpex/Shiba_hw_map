@@ -1,0 +1,35 @@
+// =====================================
+// File: power/cpupm/wakeup-masks.dtsi
+// =====================================
+// Wakeup Mask Configuration
+
+/ {
+	cpupm {
+		wakeup-mask {
+			wakeup-masks {
+				wakeup-mask {
+					mask-reg-offset = <0x3944>;
+					stat-reg-offset = <0x3950>;
+					mask = <0x0ff00000>;
+				};
+				wakeup-mask2 {
+					mask-reg-offset = <0x3964>;
+					stat-reg-offset = <0x3970>;
+					mask = <0x00>;
+				};
+			};
+
+			eint-wakeup-masks {
+				eint-wakeup-mask {
+					mask-reg-offset = <0x3a80>;
+				};
+				eint-wakeup-mask2 {
+					mask-reg-offset = <0x3a84>;
+				};
+				eint-wakeup-mask3 {
+					mask-reg-offset = <0x3a88>;
+				};
+			};
+		};
+	};
+};

@@ -1,0 +1,26 @@
+// =====================================
+// File: cpu/topology.dtsi
+// =====================================
+// CPU Topology and Cluster Mapping
+
+/ {
+	cpus {
+		#address-cells = <2>;
+		#size-cells = <0>;
+
+		cpu-map {
+			cluster0 {
+				core0 { cpu = <&cpu0>; };
+				core1 { cpu = <&cpu1>; };
+				core2 { cpu = <&cpu2>; };
+				core3 { cpu = <&cpu3>; };
+				core4 { cpu = <&cpu4>; };
+				core5 { cpu = <&cpu5>; };
+				core6 { cpu = <&cpu6>; };
+				core7 { cpu = <&cpu7>; };
+				core8 { cpu = <&cpu8>; };
+			};
+		};
+	};
+};
+

@@ -1,0 +1,24 @@
+// =====================================
+// File: performance/cpufreq/domain0-little.dtsi
+// =====================================
+// LITTLE Cluster Frequency Scaling
+
+/ {
+	exynos-acme {
+		cpufreq_domain0: domain@0 {
+			sibling-cpus = "0-3";
+			cal-id = <ACPM_DVFS_CPUCL0>;
+			dm-type = <DM_CPU_CL0>;
+
+			min-freq = <324000>;
+			max-freq = <1704000>;
+			
+			#cooling-cells = <2>;
+			ect-coeff-index = <2>;
+			tz-cooling-name = "LITTLE";
+			skip-boot-pmqos;
+			use-em-coeff;
+		};
+	};
+};
+
