@@ -1,0 +1,84 @@
+FILE: ./cooling/enable
+1
+END_FILE
+FILE: ./fw_tracing/request
+256
+END_FILE
+FILE: ./fw_tracing/active
+256
+END_FILE
+FILE: ./power/uart_rate
+0
+END_FILE
+FILE: ./power/apb_rate
+0
+END_FILE
+FILE: ./power/axi_rate
+0
+END_FILE
+FILE: ./power/ctl_rate
+0
+END_FILE
+FILE: ./power/core_rate
+0
+END_FILE
+FILE: ./power/vdd_int_m
+0
+END_FILE
+FILE: ./power/vdd_tpu_m
+0
+END_FILE
+FILE: ./power/vdd_tpu
+0
+END_FILE
+FILE: ./power/max_freq
+0
+END_FILE
+FILE: ./power/min_freq
+0
+END_FILE
+FILE: ./power/policy
+1119000
+END_FILE
+FILE: ./power/state
+0
+END_FILE
+FILE: ./rio/fault_injection
+unknown
+none
+END_FILE
+FILE: ./rio/get_debug_dump
+END_FILE
+FILE: ./rio/wakelock
+END_FILE
+FILE: ./rio/syncfences
+END_FILE
+FILE: ./rio/mappings
+group 0 pasid detached:
+dma-buf buffer mappings (3):
+  0x00000000ffeff000 1 rw system 0x0000000fffeff000
+  0x00000000fff00000 128 rw system 0x0000000ffff00000
+  0x00000000fff80000 128 rw system 0x0000000ffff80000
+group 1 pasid detached:
+host buffer mappings (3):
+  0x00000000ff800000 825 r 0x7a08e8b000 0x0000000889296000
+  0x0000000ffff00000 95 rw 0xb400007cf616e000 0x00000000c5591000
+  0x0000000ffff80000 95 rw 0xb400007cf2e76000 0x00000000cb324000
+dma-buf buffer mappings (8):
+  0x00000000ff3fd000 1 rw system 0x0000000fff7fd000
+  0x00000000ff3fe000 1 rw system 0x0000000fff7fe000
+  0x00000000ff3ff000 1 rw system 0x0000000fff7ff000
+  0x00000000ff400000 873 rw system 0x0000000fff800000
+  0x00000000ff7ff000 1 rw system 0x0000000fffd7e000
+  0x00000000ffeff000 1 rw system 0x0000000fffd7f000
+  0x00000000fff00000 128 rw system 0x0000000fffd80000
+  0x00000000fff80000 128 rw system 0x0000000fffe00000
+kci pasid 0:
+  0x00000000101c0000 8 cmdq
+  0x00000000101c8000 4 rspq
+  0x0000000010120000 16 telemetry_log 0x7b67b28000
+  0x0000000010130000 64 telemetry_trace 0x0
+  0x0000000010170000 16 telemetry_log 0x7b67a4f000
+  0x0000000010180000 64 telemetry_trace 0x0
+  0x0000000010000000 288 fw
+END_FILE

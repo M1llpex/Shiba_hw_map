@@ -1,0 +1,1334 @@
+FILE: ./google,aoc-snd-card/dp_dma nohost playback/state
+[dp_dma nohost playback - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_immersive/state
+[audio_immersive - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_ultrasonic/state
+[audio_ultrasonic - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/haptic nohost playback/state
+[haptic nohost playback - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_raw/state
+[audio_raw - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_voip_tx/state
+[audio_voip_tx - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_voip_rx/state
+[audio_voip_rx - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/nohost1 capture/state
+[nohost1 capture - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/nohost1 playback/state
+[nohost1 playback - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_capture5/state
+[audio_capture5 - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/ultrasonic_capture/state
+[ultrasonic_capture - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_capture3/state
+[audio_capture3 - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_capture2/state
+[audio_capture2 - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_capture1/state
+[audio_capture1 - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_capture0/state
+[audio_capture0 - Capture]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_haptics/state
+[audio_haptics - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_playback6/state
+[audio_playback6 - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_playback5/state
+[audio_playback5 - Playback]
+State: close
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_playback4/state
+[audio_playback4 - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_playback3/state
+[audio_playback3 - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_playback2/state
+[audio_playback2 - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_playback1/state
+[audio_playback1 - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/audio_playback0/state
+[audio_playback0 - Playback]
+State: new
+Backends:
+ No active DSP links
+END_FILE
+FILE: ./google,aoc-snd-card/drmdp-adma-pb/dapm/Playback
+Playback: Off  in 0 out 0
+ stream Playback inactive
+ in  "static" "DP_DMA_RX Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/drmdp-adma-pb/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_dp_nohost/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/ASP Playback
+ASP Playback: Off  in 0 out 2
+ stream ASP Playback inactive
+ out  "static" "ASPRX2"
+ out  "static" "ASPRX1"
+ in  "static" "HAPTIC_RX Playback"
+ in  "static" "ASP PLL"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/OUT
+OUT: Off  in 0 out 1
+ in  "static" "Haptics Source"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/Haptics Source
+Haptics Source: Off  in 0 out 1
+ out  "static" "OUT"
+ in  "PCM" "PCM"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/A2H
+A2H: Off  in 0 out 0
+ in  "static" "PCM"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/PCM
+PCM: Off  in 0 out 1
+ out  "PCM" "Haptics Source"
+ out  "static" "A2H"
+ in  "static" "ASPRX2"
+ in  "static" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/ASPRX2
+ASPRX2: Off  in 0 out 1
+ out  "static" "PCM"
+ in  "static" "ASP Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/ASPRX1
+ASPRX1: Off  in 0 out 1
+ out  "static" "PCM"
+ in  "static" "ASP Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/ASP PLL
+ASP PLL: Off  in 0 out 0
+ out  "static" "ASP Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/cs40l26-codec.4.auto/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/DSP1/bin_file_name
+R-cs35l41-dsp1-spk-prot.bin
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/DSP1/wmfw_file_name
+cs35l41-dsp1-spk-prot.wmfw
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/DSP1/fw_version
+0x00003b00
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/DSP1/fw_id
+0x000400a4
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/DSP1/running
+Y
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/DSP1/booted
+Y
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R AMP Capture
+R AMP Capture: Off  in 0 out 0
+ stream AMP Capture inactive
+ out  "static" "TDM_0_TX Capture"
+ in  "static" "R ASPTX4"
+ in  "static" "R ASPTX3"
+ in  "static" "R ASPTX2"
+ in  "static" "R ASPTX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R AMP Playback
+R AMP Playback: Off  in 0 out 0
+ stream AMP Playback inactive
+ out  "static" "R ASPRX2"
+ out  "static" "R ASPRX1"
+ in  "static" "TDM_0_RX Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R Main AMP Enable
+R Main AMP Enable: Off  in 0 out 1
+ out  "static" "R SPK"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R DRE
+R DRE: Off  in 0 out 0
+ out  "static" "R Main AMP"
+ in  "DRE Switch" "R CLASS H"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R PCM Source
+R PCM Source: Off  in 0 out 0
+ out  "static" "R CLASS H"
+ in  "DSP" "R DSP1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R DSP RX2 Source
+R DSP RX2 Source: Off  in 0 out 0
+ out  "static" "R DSP1"
+ in  "ASPRX1" "R ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R DSP RX1 Source
+R DSP RX1 Source: Off  in 0 out 0
+ out  "static" "R DSP1"
+ in  "ASPRX1" "R ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASP TX4 Source
+R ASP TX4 Source: Off  in 0 out 0
+ out  "static" "R ASPTX4"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASP TX3 Source
+R ASP TX3 Source: Off  in 0 out 0
+ out  "static" "R ASPTX3"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASP TX2 Source
+R ASP TX2 Source: Off  in 0 out 0
+ out  "static" "R ASPTX2"
+ in  "IMON" "R IMON ADC"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASP TX1 Source
+R ASP TX1 Source: Off  in 0 out 0
+ out  "static" "R ASPTX1"
+ in  "VMON" "R VMON ADC"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R TEMP
+R TEMP: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R VSENSE
+R VSENSE: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ISENSE
+R ISENSE: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R VBST
+R VBST: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R VP
+R VP: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R Hibernate
+R Hibernate: Off  in 0 out 0
+ out  "static" "R SPK"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R Main AMP
+R Main AMP: Off  in 0 out 0 - R8216(0x2018) mask 0x1
+ in  "static" "R DRE"
+ in  "static" "R CLASS H"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R CLASS H
+R CLASS H: Off  in 0 out 0 - R8220(0x201c) mask 0x10
+ out  "static" "R Main AMP"
+ out  "DRE Switch" "R DRE"
+ in  "static" "R PCM Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R TEMPMON ADC
+R TEMPMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x400
+ out  "static" "R DSP1"
+ in  "static" "R ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R VBSTMON ADC
+R VBSTMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x200
+ out  "static" "R DSP1"
+ in  "static" "R ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R VPMON ADC
+R VPMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x100
+ out  "static" "R DSP1"
+ in  "static" "R ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R IMON ADC
+R IMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x2000
+ out  "static" "R DSP1"
+ out  "IMON" "R ASP TX2 Source"
+ in  "static" "R ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R VMON ADC
+R VMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x1000
+ out  "static" "R DSP1"
+ out  "VMON" "R ASP TX1 Source"
+ in  "static" "R ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASPTX4
+R ASPTX4: Off  in 0 out 0 - R18432(0x4800) mask 0x8
+ out  "static" "R AMP Capture"
+ in  "static" "R ASP TX4 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASPTX3
+R ASPTX3: Off  in 0 out 0 - R18432(0x4800) mask 0x4
+ out  "static" "R AMP Capture"
+ in  "static" "R ASP TX3 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASPTX2
+R ASPTX2: Off  in 0 out 0 - R18432(0x4800) mask 0x2
+ out  "static" "R AMP Capture"
+ in  "static" "R ASP TX2 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASPTX1
+R ASPTX1: Off  in 0 out 0 - R18432(0x4800) mask 0x1
+ out  "static" "R AMP Capture"
+ in  "static" "R ASP TX1 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASPRX2
+R ASPRX2: Off  in 0 out 0 - R18432(0x4800) mask 0x20000
+ in  "static" "R AMP Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R ASPRX1
+R ASPRX1: Off  in 0 out 0 - R18432(0x4800) mask 0x10000
+ out  "static" "R VBSTMON ADC"
+ out  "static" "R TEMPMON ADC"
+ out  "static" "R VPMON ADC"
+ out  "static" "R IMON ADC"
+ out  "static" "R VMON ADC"
+ out  "ASPRX1" "R DSP RX2 Source"
+ out  "ASPRX1" "R DSP RX1 Source"
+ in  "static" "R AMP Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R SPK
+R SPK: Off  in 0 out 1
+ in  "static" "R Hibernate"
+ in  "static" "R Main AMP Enable"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R DSP1
+R DSP1: Off  in 0 out 0
+ out  "DSP" "R PCM Source"
+ in  "static" "R TEMPMON ADC"
+ in  "static" "R VPMON ADC"
+ in  "static" "R VBSTMON ADC"
+ in  "static" "R VMON ADC"
+ in  "static" "R IMON ADC"
+ in  "static" "R DSP RX2 Source"
+ in  "static" "R DSP RX1 Source"
+ in  "static" "R DSP1 Preloader"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R DSP1 Preloader
+R DSP1 Preloader: On  in 0 out 0
+ out  "static" "R DSP1 Preload"
+ out  "static" "R DSP1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/R DSP1 Preload
+R DSP1 Preload: On (forced)  in 0 out 1
+ in  "static" "R DSP1 Preloader"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.1/dapm/bias_level
+On
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/DSP1/bin_file_name
+cs35l41-dsp1-spk-prot.bin
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/DSP1/wmfw_file_name
+cs35l41-dsp1-spk-prot.wmfw
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/DSP1/fw_version
+0x00003b00
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/DSP1/fw_id
+0x000400a4
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/DSP1/running
+Y
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/DSP1/booted
+Y
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/AMP Capture
+AMP Capture: Off  in 0 out 0
+ stream AMP Capture inactive
+ out  "static" "TDM_0_TX Capture"
+ in  "static" "ASPTX4"
+ in  "static" "ASPTX3"
+ in  "static" "ASPTX2"
+ in  "static" "ASPTX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/AMP Playback
+AMP Playback: Off  in 0 out 0
+ stream AMP Playback inactive
+ out  "static" "ASPRX2"
+ out  "static" "ASPRX1"
+ in  "static" "TDM_0_RX Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/Main AMP Enable
+Main AMP Enable: Off  in 0 out 1
+ out  "static" "SPK"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/DRE
+DRE: Off  in 0 out 0
+ out  "static" "Main AMP"
+ in  "DRE Switch" "CLASS H"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/PCM Source
+PCM Source: Off  in 0 out 0
+ out  "static" "CLASS H"
+ in  "DSP" "DSP1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/DSP RX2 Source
+DSP RX2 Source: Off  in 0 out 0
+ out  "static" "DSP1"
+ in  "ASPRX1" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/DSP RX1 Source
+DSP RX1 Source: Off  in 0 out 0
+ out  "static" "DSP1"
+ in  "ASPRX1" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASP TX4 Source
+ASP TX4 Source: Off  in 0 out 0
+ out  "static" "ASPTX4"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASP TX3 Source
+ASP TX3 Source: Off  in 0 out 0
+ out  "static" "ASPTX3"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASP TX2 Source
+ASP TX2 Source: Off  in 0 out 0
+ out  "static" "ASPTX2"
+ in  "IMON" "IMON ADC"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASP TX1 Source
+ASP TX1 Source: Off  in 0 out 0
+ out  "static" "ASPTX1"
+ in  "VMON" "VMON ADC"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/TEMP
+TEMP: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/VSENSE
+VSENSE: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ISENSE
+ISENSE: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/VBST
+VBST: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/VP
+VP: Off  in 1 out 0
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/Hibernate
+Hibernate: Off  in 0 out 0
+ out  "static" "SPK"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/Main AMP
+Main AMP: Off  in 0 out 0 - R8216(0x2018) mask 0x1
+ in  "static" "DRE"
+ in  "static" "CLASS H"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/CLASS H
+CLASS H: Off  in 0 out 0 - R8220(0x201c) mask 0x10
+ out  "static" "Main AMP"
+ out  "DRE Switch" "DRE"
+ in  "static" "PCM Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/TEMPMON ADC
+TEMPMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x400
+ out  "static" "DSP1"
+ in  "static" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/VBSTMON ADC
+VBSTMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x200
+ out  "static" "DSP1"
+ in  "static" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/VPMON ADC
+VPMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x100
+ out  "static" "DSP1"
+ in  "static" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/IMON ADC
+IMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x2000
+ out  "static" "DSP1"
+ out  "IMON" "ASP TX2 Source"
+ in  "static" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/VMON ADC
+VMON ADC: Off  in 0 out 0 - R8216(0x2018) mask 0x1000
+ out  "static" "DSP1"
+ out  "VMON" "ASP TX1 Source"
+ in  "static" "ASPRX1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASPTX4
+ASPTX4: Off  in 0 out 0 - R18432(0x4800) mask 0x8
+ out  "static" "AMP Capture"
+ in  "static" "ASP TX4 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASPTX3
+ASPTX3: Off  in 0 out 0 - R18432(0x4800) mask 0x4
+ out  "static" "AMP Capture"
+ in  "static" "ASP TX3 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASPTX2
+ASPTX2: Off  in 0 out 0 - R18432(0x4800) mask 0x2
+ out  "static" "AMP Capture"
+ in  "static" "ASP TX2 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASPTX1
+ASPTX1: Off  in 0 out 0 - R18432(0x4800) mask 0x1
+ out  "static" "AMP Capture"
+ in  "static" "ASP TX1 Source"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASPRX2
+ASPRX2: Off  in 0 out 0 - R18432(0x4800) mask 0x20000
+ in  "static" "AMP Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/ASPRX1
+ASPRX1: Off  in 0 out 0 - R18432(0x4800) mask 0x10000
+ out  "static" "VBSTMON ADC"
+ out  "static" "TEMPMON ADC"
+ out  "static" "VPMON ADC"
+ out  "static" "IMON ADC"
+ out  "static" "VMON ADC"
+ out  "ASPRX1" "DSP RX2 Source"
+ out  "ASPRX1" "DSP RX1 Source"
+ in  "static" "AMP Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/SPK
+SPK: Off  in 0 out 1
+ in  "static" "Hibernate"
+ in  "static" "Main AMP Enable"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/DSP1
+DSP1: Off  in 0 out 0
+ out  "DSP" "PCM Source"
+ in  "static" "TEMPMON ADC"
+ in  "static" "VPMON ADC"
+ in  "static" "VBSTMON ADC"
+ in  "static" "VMON ADC"
+ in  "static" "IMON ADC"
+ in  "static" "DSP RX2 Source"
+ in  "static" "DSP RX1 Source"
+ in  "static" "DSP1 Preloader"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/DSP1 Preloader
+DSP1 Preloader: On  in 0 out 0
+ out  "static" "DSP1 Preload"
+ out  "static" "DSP1"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/DSP1 Preload
+DSP1 Preload: On (forced)  in 0 out 1
+ in  "static" "DSP1 Preloader"
+END_FILE
+FILE: ./google,aoc-snd-card/spi19.0/dapm/bias_level
+On
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_incall_drv/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_voip_drv/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_nohost/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_compr_drv/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_voice_drv/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_pcm_drv/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/NoHost1 TX Mixer
+NoHost1 TX Mixer: Off  in 0 out 0
+ out  "static" "NoHost1_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/VOIP TX Mixer
+VOIP TX Mixer: Off  in 0 out 0
+ out  "static" "VOIP_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP6 TX Mixer
+EP6 TX Mixer: Off  in 0 out 0
+ out  "static" "EP6_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP5 TX Mixer
+EP5 TX Mixer: Off  in 0 out 0
+ out  "static" "EP5_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP4 TX Mixer
+EP4 TX Mixer: Off  in 0 out 0
+ out  "static" "EP4_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP3 TX Mixer
+EP3 TX Mixer: Off  in 0 out 0
+ out  "static" "EP3_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP2 TX Mixer
+EP2 TX Mixer: Off  in 0 out 0
+ out  "static" "EP2_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP1 TX Mixer
+EP1 TX Mixer: Off  in 0 out 0
+ out  "static" "EP1_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HAPTIC_RX Mixer
+HAPTIC_RX Mixer: Off  in 0 out 3
+ out  "static" "HAPTIC_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INCALL_RX Mixer
+INCALL_RX Mixer: Off  in 0 out 1
+ out  "static" "INCALL_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/USB_RX Mixer
+USB_RX Mixer: Off  in 0 out 1
+ out  "static" "USB_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/BT_RX Mixer
+BT_RX Mixer: Off  in 0 out 1
+ out  "static" "BT_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_1_RX Mixer
+TDM_1_RX Mixer: Off  in 0 out 1
+ out  "static" "TDM_1_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_0_RX Mixer
+TDM_0_RX Mixer: Off  in 0 out 1
+ out  "static" "TDM_0_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_2_RX Mixer
+I2S_2_RX Mixer: Off  in 0 out 1
+ out  "static" "I2S_2_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_1_RX Mixer
+I2S_1_RX Mixer: Off  in 0 out 1
+ out  "static" "I2S_1_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_0_RX Mixer
+I2S_0_RX Mixer: Off  in 0 out 1
+ out  "static" "I2S_0_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HW_SOURCE
+HW_SOURCE: Off  in 1 out 0
+ out  "static" "INCALL_TX"
+ out  "static" "USB_TX"
+ out  "static" "BT_TX"
+ out  "static" "ERASER_TX"
+ out  "static" "INTERNAL_MIC_US_TX"
+ out  "static" "INTERNAL_MIC_TX"
+ out  "static" "I2S_2_TX"
+ out  "static" "I2S_1_TX"
+ out  "static" "I2S_0_TX"
+ out  "static" "TDM_1_TX"
+ out  "static" "TDM_0_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HW_SINK
+HW_SINK: Off  in 0 out 1
+ in  "static" "DP_DMA_RX"
+ in  "static" "HAPTIC_RX"
+ in  "static" "INCALL_RX"
+ in  "static" "USB_RX"
+ in  "static" "BT_RX"
+ in  "static" "TDM_1_RX"
+ in  "static" "TDM_0_RX"
+ in  "static" "I2S_2_RX"
+ in  "static" "I2S_1_RX"
+ in  "static" "I2S_0_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INCALL_TX
+INCALL_TX: Off  in 1 out 0
+ stream INCALL_TX inactive
+ in  "static" "INCALL_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/USB_TX
+USB_TX: Off  in 1 out 0
+ stream USB_TX inactive
+ in  "static" "USB_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/BT_TX
+BT_TX: Off  in 1 out 0
+ stream BT_TX inactive
+ in  "static" "BT_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/ERASER_TX
+ERASER_TX: Off  in 1 out 0
+ stream ERASER_TX inactive
+ in  "static" "ERASER_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INTERNAL_MIC_US_TX
+INTERNAL_MIC_US_TX: Off  in 1 out 0
+ stream INTERNAL_MIC_US_TX inactive
+ in  "static" "INTERNAL_MIC_US_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INTERNAL_MIC_TX
+INTERNAL_MIC_TX: Off  in 1 out 0
+ stream INTERNAL_MIC_TX inactive
+ in  "static" "INTERNAL_MIC_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_1_TX
+TDM_1_TX: Off  in 1 out 0
+ stream TDM_1_TX inactive
+ in  "static" "TDM_1_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_0_TX
+TDM_0_TX: Off  in 1 out 0
+ stream TDM_0_TX inactive
+ in  "static" "TDM_0_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_2_TX
+I2S_2_TX: Off  in 1 out 0
+ stream I2S_2_TX inactive
+ in  "static" "I2S_2_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_1_TX
+I2S_1_TX: Off  in 1 out 0
+ stream I2S_1_TX inactive
+ in  "static" "I2S_1_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_0_TX
+I2S_0_TX: Off  in 1 out 0
+ stream I2S_0_TX inactive
+ in  "static" "I2S_0_TX Capture"
+ in  "static" "HW_SOURCE"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/DP_DMA_RX
+DP_DMA_RX: Off  in 0 out 1
+ stream DP_DMA_RX inactive
+ out  "static" "DP_DMA_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "DP_DMA_NoHost_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HAPTIC_RX
+HAPTIC_RX: Off  in 0 out 3
+ stream HAPTIC_RX inactive
+ out  "static" "HAPTIC_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "HAPTIC_NoHost_RX"
+ in  "static" "HAPTIC_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INCALL_RX
+INCALL_RX: Off  in 0 out 1
+ stream INCALL_RX inactive
+ out  "static" "INCALL_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "INCALL_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/USB_RX
+USB_RX: Off  in 0 out 1
+ stream USB_RX inactive
+ out  "static" "USB_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "USB_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/BT_RX
+BT_RX: Off  in 0 out 1
+ stream BT_RX inactive
+ out  "static" "BT_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "BT_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_1_RX
+TDM_1_RX: Off  in 0 out 1
+ stream TDM_1_RX inactive
+ out  "static" "TDM_1_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "TDM_1_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_0_RX
+TDM_0_RX: Off  in 0 out 1
+ stream TDM_0_RX inactive
+ out  "static" "TDM_0_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "TDM_0_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_2_RX
+I2S_2_RX: Off  in 0 out 1
+ stream I2S_1_RX inactive
+ out  "static" "I2S_2_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "I2S_2_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_1_RX
+I2S_1_RX: Off  in 0 out 1
+ stream I2S_1_RX inactive
+ out  "static" "I2S_1_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "I2S_1_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_0_RX
+I2S_0_RX: Off  in 0 out 1
+ stream I2S_0_RX inactive
+ out  "static" "I2S_0_RX Playback"
+ out  "static" "HW_SINK"
+ in  "static" "I2S_0_RX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/NoHost1_TX
+NoHost1_TX: Off  in 0 out 0
+ stream NoHost1 Capture inactive
+ out  "static" "NoHost1 Capture"
+ in  "static" "NoHost1 TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/DP_DMA_NoHost_RX
+DP_DMA_NoHost_RX: Off  in 0 out 1
+ stream DP_DMA NoHost Playback inactive
+ out  "static" "DP_DMA_RX"
+ in  "static" "DP_DMA NoHost Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HAPTIC_NoHost_RX
+HAPTIC_NoHost_RX: Off  in 0 out 3
+ stream HAPTIC NoHost Playback inactive
+ out  "static" "HAPTIC_RX"
+ in  "static" "HAPTIC NoHost Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/NoHost1_RX
+NoHost1_RX: Off  in 0 out 0
+ stream NoHost1 Playback inactive
+ in  "static" "NoHost1 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/VOIP_TX
+VOIP_TX: Off  in 0 out 0
+ stream audio_voip_tx inactive
+ out  "static" "audio_voip_tx"
+ in  "static" "VOIP TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP6_TX
+EP6_TX: Off  in 0 out 0
+ stream EP6 Capture inactive
+ out  "static" "EP6 Capture"
+ in  "static" "EP6 TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP5_TX
+EP5_TX: Off  in 0 out 0
+ stream EP5 Capture inactive
+ out  "static" "EP5 Capture"
+ in  "static" "EP5 TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP4_TX
+EP4_TX: Off  in 0 out 0
+ stream EP4 Capture inactive
+ out  "static" "EP4 Capture"
+ in  "static" "EP4 TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP3_TX
+EP3_TX: Off  in 0 out 0
+ stream EP3 Capture inactive
+ out  "static" "EP3 Capture"
+ in  "static" "EP3 TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP2_TX
+EP2_TX: Off  in 0 out 0
+ stream EP2 Capture inactive
+ out  "static" "EP2 Capture"
+ in  "static" "EP2 TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP1_TX
+EP1_TX: Off  in 0 out 0
+ stream EP1 Capture inactive
+ out  "static" "EP1 Capture"
+ in  "static" "EP1 TX Mixer"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/IMSV_RX
+IMSV_RX: Off  in 0 out 0
+ stream audio_immersive inactive
+ in  "static" "audio_immersive"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/US_RX
+US_RX: Off  in 0 out 0
+ stream audio_ultrasonic inactive
+ in  "static" "audio_ultrasonic"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/RAW_RX
+RAW_RX: Off  in 0 out 0
+ stream audio_raw inactive
+ in  "static" "audio_raw"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HIFI_RX
+HIFI_RX: Off  in 0 out 0
+ stream audio_hifiout inactive
+ in  "static" "audio_hifiout"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/VOIP_RX
+VOIP_RX: Off  in 0 out 0
+ stream audio_voip_rx inactive
+ in  "static" "audio_voip_rx"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP8_RX
+EP8_RX: Off  in 0 out 0
+ stream EP8 Playback inactive
+ in  "static" "EP8 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP7_RX
+EP7_RX: Off  in 0 out 0
+ stream EP7 Playback inactive
+ in  "static" "EP7 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP6_RX
+EP6_RX: Off  in 0 out 0
+ stream EP6 Playback inactive
+ in  "static" "EP6 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP5_RX
+EP5_RX: Off  in 0 out 0
+ stream EP5 Playback inactive
+ in  "static" "EP5 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP4_RX
+EP4_RX: Off  in 0 out 0
+ stream EP4 Playback inactive
+ in  "static" "EP4 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP3_RX
+EP3_RX: Off  in 0 out 0
+ stream EP3 Playback inactive
+ in  "static" "EP3 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP2_RX
+EP2_RX: Off  in 0 out 0
+ stream EP2 Playback inactive
+ in  "static" "EP2 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP1_RX
+EP1_RX: Off  in 0 out 0
+ stream EP1 Playback inactive
+ in  "static" "EP1 Playback"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/DP_DMA_RX Playback
+DP_DMA_RX Playback: Off  in 0 out 0
+ stream DP_DMA_RX Playback inactive
+ out  "static" "Playback"
+ in  "static" "DP_DMA_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/DP_DMA NoHost Playback
+DP_DMA NoHost Playback: Off  in 0 out 1
+ stream DP_DMA NoHost Playback inactive
+ out  "static" "DP_DMA_NoHost_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HAPTIC_RX Playback
+HAPTIC_RX Playback: Off  in 0 out 2
+ stream HAPTIC_RX Playback inactive
+ out  "static" "ASP Playback"
+ in  "static" "HAPTIC_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INCALL_TX Capture
+INCALL_TX Capture: Off  in 0 out 0
+ stream INCALL_TX Capture inactive
+ out  "static" "INCALL_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INCALL_RX Playback
+INCALL_RX Playback: Off  in 0 out 0
+ stream INCALL_RX Playback inactive
+ in  "static" "INCALL_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/USB_TX Capture
+USB_TX Capture: Off  in 0 out 0
+ stream USB_TX Capture inactive
+ out  "static" "USB_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/USB_RX Playback
+USB_RX Playback: Off  in 0 out 0
+ stream USB_RX Playback inactive
+ in  "static" "USB_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/BT_TX Capture
+BT_TX Capture: Off  in 0 out 0
+ stream BT_TX Capture inactive
+ out  "static" "BT_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/BT_RX Playback
+BT_RX Playback: Off  in 0 out 0
+ stream BT_RX Playback inactive
+ in  "static" "BT_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/ERASER_TX Capture
+ERASER_TX Capture: Off  in 0 out 0
+ stream ERASER_TX Capture inactive
+ out  "static" "ERASER_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INTERNAL_MIC_US_TX Capture
+INTERNAL_MIC_US_TX Capture: Off  in 0 out 0
+ stream INTERNAL_MIC_US_TX Capture inactive
+ out  "static" "INTERNAL_MIC_US_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/INTERNAL_MIC_TX Capture
+INTERNAL_MIC_TX Capture: Off  in 0 out 0
+ stream INTERNAL_MIC_TX Capture inactive
+ out  "static" "INTERNAL_MIC_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_1_TX Capture
+TDM_1_TX Capture: Off  in 0 out 0
+ stream TDM_1_TX Capture inactive
+ out  "static" "TDM_1_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_1_RX Playback
+TDM_1_RX Playback: Off  in 0 out 0
+ stream TDM_1_RX Playback inactive
+ in  "static" "TDM_1_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_0_TX Capture
+TDM_0_TX Capture: Off  in 0 out 0
+ stream TDM_0_TX Capture inactive
+ out  "static" "TDM_0_TX"
+ in  "static" "R AMP Capture"
+ in  "static" "AMP Capture"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/TDM_0_RX Playback
+TDM_0_RX Playback: Off  in 0 out 0
+ stream TDM_0_RX Playback inactive
+ out  "static" "R AMP Playback"
+ out  "static" "AMP Playback"
+ in  "static" "TDM_0_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_2_TX Capture
+I2S_2_TX Capture: Off  in 0 out 0
+ stream I2S_2_TX Capture inactive
+ out  "static" "I2S_2_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_2_RX Playback
+I2S_2_RX Playback: Off  in 0 out 0
+ stream I2S_2_RX Playback inactive
+ in  "static" "I2S_2_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_1_TX Capture
+I2S_1_TX Capture: Off  in 0 out 0
+ stream I2S_1_TX Capture inactive
+ out  "static" "I2S_1_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_1_RX Playback
+I2S_1_RX Playback: Off  in 0 out 0
+ stream I2S_1_RX Playback inactive
+ in  "static" "I2S_1_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_0_TX Capture
+I2S_0_TX Capture: Off  in 0 out 0
+ stream I2S_0_TX Capture inactive
+ out  "static" "I2S_0_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/I2S_0_RX Playback
+I2S_0_RX Playback: Off  in 0 out 0
+ stream I2S_0_RX Playback inactive
+ in  "static" "I2S_0_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_hotword_tap
+audio_hotword_tap: Off  in 0 out 0
+ stream audio_hotword_tap inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_android_aec
+audio_android_aec: Off  in 0 out 0
+ stream audio_android_aec inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_hifiin
+audio_hifiin: Off  in 0 out 0
+ stream audio_hifiin inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_incall_cap_3
+audio_incall_cap_3: Off  in 0 out 0
+ stream audio_incall_cap_3 inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_incall_cap_2
+audio_incall_cap_2: Off  in 0 out 0
+ stream audio_incall_cap_2 inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_incall_cap_1
+audio_incall_cap_1: Off  in 0 out 0
+ stream audio_incall_cap_1 inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_incall_cap_0
+audio_incall_cap_0: Off  in 0 out 0
+ stream audio_incall_cap_0 inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_voip_tx
+audio_voip_tx: Off  in 0 out 0
+ stream audio_voip_tx inactive
+ in  "static" "VOIP_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/NoHost1 Capture
+NoHost1 Capture: Off  in 0 out 0
+ stream NoHost1 Capture inactive
+ in  "static" "NoHost1_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP6 Capture
+EP6 Capture: Off  in 0 out 0
+ stream EP6 Capture inactive
+ in  "static" "EP6_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP5 Capture
+EP5 Capture: Off  in 0 out 0
+ stream EP5 Capture inactive
+ in  "static" "EP5_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP4 Capture
+EP4 Capture: Off  in 0 out 0
+ stream EP4 Capture inactive
+ in  "static" "EP4_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP3 Capture
+EP3 Capture: Off  in 0 out 0
+ stream EP3 Capture inactive
+ in  "static" "EP3_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP2 Capture
+EP2 Capture: Off  in 0 out 0
+ stream EP2 Capture inactive
+ in  "static" "EP2_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP1 Capture
+EP1 Capture: Off  in 0 out 0
+ stream EP1 Capture inactive
+ in  "static" "EP1_TX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_capture_inject
+audio_capture_inject: Off  in 0 out 0
+ stream audio_capture_inject inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_immersive
+audio_immersive: Off  in 0 out 0
+ stream audio_immersive inactive
+ out  "static" "IMSV_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_ultrasonic
+audio_ultrasonic: Off  in 0 out 0
+ stream audio_ultrasonic inactive
+ out  "static" "US_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_hifiout
+audio_hifiout: Off  in 0 out 0
+ stream audio_hifiout inactive
+ out  "static" "HIFI_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/HAPTIC NoHost Playback
+HAPTIC NoHost Playback: Off  in 0 out 3
+ stream HAPTIC NoHost Playback inactive
+ out  "static" "HAPTIC_NoHost_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_raw
+audio_raw: Off  in 0 out 0
+ stream audio_raw inactive
+ out  "static" "RAW_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_incall_pb_2
+audio_incall_pb_2: Off  in 0 out 0
+ stream audio_incall_pb_2 inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_incall_pb_1
+audio_incall_pb_1: Off  in 0 out 0
+ stream audio_incall_pb_1 inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_incall_pb_0
+audio_incall_pb_0: Off  in 0 out 0
+ stream audio_incall_pb_0 inactive
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/audio_voip_rx
+audio_voip_rx: Off  in 0 out 0
+ stream audio_voip_rx inactive
+ out  "static" "VOIP_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/NoHost1 Playback
+NoHost1 Playback: Off  in 0 out 0
+ stream NoHost1 Playback inactive
+ out  "static" "NoHost1_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP8 Playback
+EP8 Playback: Off  in 0 out 0
+ stream EP8 Playback inactive
+ out  "static" "EP8_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP7 Playback
+EP7 Playback: Off  in 0 out 0
+ stream EP7 Playback inactive
+ out  "static" "EP7_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP6 Playback
+EP6 Playback: Off  in 0 out 0
+ stream EP6 Playback inactive
+ out  "static" "EP6_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP5 Playback
+EP5 Playback: Off  in 0 out 0
+ stream EP5 Playback inactive
+ out  "static" "EP5_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP4 Playback
+EP4 Playback: Off  in 0 out 0
+ stream EP4 Playback inactive
+ out  "static" "EP4_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP3 Playback
+EP3 Playback: Off  in 0 out 0
+ stream EP3 Playback inactive
+ out  "static" "EP3_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP2 Playback
+EP2 Playback: Off  in 0 out 0
+ stream EP2 Playback inactive
+ out  "static" "EP2_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/EP1 Playback
+EP1 Playback: Off  in 0 out 0
+ stream EP1 Playback inactive
+ out  "static" "EP1_RX"
+END_FILE
+FILE: ./google,aoc-snd-card/aoc_path/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/dapm/bias_level
+Off
+END_FILE
+FILE: ./google,aoc-snd-card/dapm_pop_time
+0
+END_FILE
+FILE: ./components
+cs40l26-codec.4.auto
+spi19.1
+spi19.0
+aoc_dp_nohost
+aoc_voip_drv
+aoc_incall_drv
+aoc_nohost
+aoc_path
+aoc_compr_drv
+aoc_voice_drv
+aoc_pcm_drv
+drmdp-adma-pb
+drmdp-adma
+snd-soc-dummy
+snd-soc-dummy
+END_FILE
+FILE: ./dais
+cs40l26-pcm
+cs35l41-pcm
+cs35l41-pcm
+EP1 PB
+EP2 PB
+EP3 PB
+EP4 PB
+EP5 PB
+EP6 PB
+EP7 PB
+EP8 PB
+NoHost1 PB
+audio_voip_rx
+audio_incall_pb_0
+audio_incall_pb_1
+audio_incall_pb_2
+audio_raw
+HAPTIC NoHost PB
+audio_hifiout
+audio_ultrasonic
+audio_immersive
+audio_capture_inject
+EP1 CAP
+EP2 CAP
+EP3 CAP
+EP4 CAP
+EP5 CAP
+EP6 CAP
+NoHost1 CAP
+audio_voip_tx
+audio_incall_cap_0
+audio_incall_cap_1
+audio_incall_cap_2
+audio_incall_cap_3
+audio_hifiin
+audio_android_aec
+audio_hotword_tap
+I2S_0_RX
+I2S_0_TX
+I2S_1_RX
+I2S_1_TX
+I2S_2_RX
+I2S_2_TX
+TDM_0_RX
+TDM_0_TX
+TDM_1_RX
+TDM_1_TX
+INTERNAL_MIC_TX
+INTERNAL_MIC_US_TX
+ERASER_TX
+BT_RX
+BT_TX
+USB_RX
+USB_TX
+INCALL_RX
+INCALL_TX
+HAPTIC_RX
+DP_DMA NoHost PB
+DP_DMA_RX
+dp0-dma
+dp0-ado
+dp1-ado
+snd-soc-dummy-dai
+END_FILE

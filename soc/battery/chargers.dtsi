@@ -1,0 +1,848 @@
+FILE: charger-pca9468/ftm_mode
+0
+END_FILE
+FILE: charger-pca9468/pps_index
+0
+END_FILE
+FILE: charger-pca9468/adc_chan
+4315000
+END_FILE
+FILE: charger-pca9468/ta_vol_max
+10500000
+END_FILE
+FILE: charger-pca9468/apply_offsets
+(unreadable)
+END_FILE
+FILE: charger-pca9468/iin_cc_comp_offset
+25000
+END_FILE
+FILE: charger-pca9468/iin_max_offset
+0
+END_FILE
+FILE: charger-pca9468/address
+0x00000000
+END_FILE
+FILE: charger-pca9468/data
+0x18
+END_FILE
+FILE: charger-pca9468/no_logbuffer
+0
+END_FILE
+FILE: charger-pca9468/debug_level
+6
+END_FILE
+FILE: charger-pca9468/wlc_rampout_vout_target
+0
+END_FILE
+FILE: charger-pca9468/wlc_rampout_delay
+250
+END_FILE
+FILE: charger-pca9468/wlc_rampout_iin
+Y
+END_FILE
+FILE: p9221_charger/enable_i2c_debug
+0
+END_FILE
+FILE: p9221_charger/de_ocp_ua
+1600000
+END_FILE
+FILE: p9221_charger/de_rtx_plim_ma
+0
+END_FILE
+FILE: p9221_charger/de_rtx_fod_thrsh_mw
+0
+END_FILE
+FILE: p9221_charger/de_rtx_hb_freq_low_khz
+0
+END_FILE
+FILE: p9221_charger/de_rtx_fb_freq_low_khz
+0
+END_FILE
+FILE: p9221_charger/de_rtx_api_limit_ma
+1350
+END_FILE
+FILE: p9221_charger/de_rtx_ocp_ma
+0
+END_FILE
+FILE: p9221_charger/de_wait_prop_irq_ms
+0
+END_FILE
+FILE: p9221_charger/de_epp_neg_pwr
+0
+END_FILE
+FILE: p9221_charger/de_hpp_neg_pwr
+0
+END_FILE
+FILE: p9221_charger/det_off_debounce
+0
+END_FILE
+FILE: p9221_charger/det_on_debounce
+0
+END_FILE
+FILE: p9221_charger/irq_det
+1
+END_FILE
+FILE: p9221_charger/needs_align_check
+Y
+END_FILE
+FILE: p9221_charger/de_rtx_delay_ms
+0
+END_FILE
+FILE: p9221_charger/de_chk_ocp_ms
+0
+END_FILE
+FILE: p9221_charger/de_q_value
+0
+END_FILE
+FILE: p9221_charger/de_rtx_hw_ocp
+Y
+END_FILE
+FILE: p9221_charger/no_fod
+N
+END_FILE
+FILE: p9221_charger/trigger_dd
+400
+END_FILE
+FILE: max77729_pmic/data
+3b
+END_FILE
+FILE: max77729_pmic/address
+0
+END_FILE
+FILE: max77729_pmic/batt_thm_conn
+(unreadable)
+END_FILE
+FILE: max77729_pmic/batt_id
+(unreadable)
+END_FILE
+FILE: max77729_pmic/sysovlo_cnt
+0
+END_FILE
+FILE: max77729_pmic/sysuvlo_cnt
+0
+END_FILE
+FILE: max77759_chg/inlim_step
+50000
+END_FILE
+FILE: max77759_chg/inlim_headroom
+40000
+END_FILE
+FILE: max77759_chg/inlim_period
+5000
+END_FILE
+FILE: max77759_chg/data
+(unreadable)
+END_FILE
+FILE: max77759_chg/address
+0
+END_FILE
+FILE: max77759_chg/chg_restart
+(unreadable)
+END_FILE
+FILE: max77759_chg/input_mask_clear
+(unreadable)
+END_FILE
+FILE: max77759_chg/early_topoff_cnt
+0
+END_FILE
+FILE: max77759_chg/insel_clear
+N
+END_FILE
+FILE: max77759_chg/insel_cnt
+2
+END_FILE
+FILE: tcpci_max77759/force_device_mode_on
+0
+END_FILE
+FILE: google_cpm/dc_cc_lim
+1000000
+END_FILE
+FILE: google_cpm/wlc_cc_lim
+2750000
+END_FILE
+FILE: google_cpm/mdis_size
+26
+END_FILE
+FILE: google_cpm/mdis_out_table
+(unreadable)
+END_FILE
+FILE: google_cpm/state2power_table
+(unreadable)
+END_FILE
+FILE: google_cpm/pps_op_ua
+0
+END_FILE
+FILE: google_cpm/pps_out_ua
+0
+END_FILE
+FILE: google_cpm/pps_out_uv
+0
+END_FILE
+FILE: google_cpm/taper_step_interval
+120
+END_FILE
+FILE: google_cpm/taper_step_current
+0
+END_FILE
+FILE: google_cpm/taper_step_voltage
+0
+END_FILE
+FILE: google_cpm/taper_step_grace
+1
+END_FILE
+FILE: google_cpm/taper_step_count
+0
+END_FILE
+FILE: google_cpm/taper_step_cc_step
+0
+END_FILE
+FILE: google_cpm/taper_step_fv_margin
+0
+END_FILE
+FILE: google_cpm/taper_ctl
+0
+END_FILE
+FILE: google_cpm/pps_stage
+0
+END_FILE
+FILE: google_cpm/dc_limit_soc_high
+100
+END_FILE
+FILE: google_cpm/dc_limit_demand
+560000
+END_FILE
+FILE: google_cpm/active
+-1
+END_FILE
+FILE: google_cpm/dc_state
+18446744073709551615
+END_FILE
+FILE: gvotables/CHG_MDIS/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_MDIS/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_MDIS/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_MDIS/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_MDIS/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_MDIS/status
+CHG_MDIS: current=Default v=0 d=0
+END_FILE
+FILE: gvotables/USBDP_PHY_TCA/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USBDP_PHY_TCA/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USBDP_PHY_TCA/status
+USBDP_PHY_TCA: current=Default v=0
+END_FILE
+FILE: gvotables/SSPHY_RESTART/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/SSPHY_RESTART/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/SSPHY_RESTART/status
+SSPHY_RESTART: current=Default v=0
+END_FILE
+FILE: gvotables/BCL_USB/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/BCL_USB/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/BCL_USB/status
+BCL_USB: BCL_USB_VOTER en=0 val=0 #votes=1
+BCL_USB: current=Default v=0
+END_FILE
+FILE: gvotables/BCL_WLC/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/BCL_WLC/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/BCL_WLC/status
+BCL_WLC: current=Default v=0
+END_FILE
+FILE: gvotables/FAN_LEVEL/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/FAN_LEVEL/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/FAN_LEVEL/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/FAN_LEVEL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/FAN_LEVEL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/FAN_LEVEL/status
+FAN_LEVEL: MSC_BATT en=1 val=3 #votes=13
+FAN_LEVEL: THERMAL_MDIS en=1 val=0 #votes=3
+FAN_LEVEL: MSC_BD en=1 val=0 #votes=8
+FAN_LEVEL: DEFAULT en=1 val=-1 #votes=1
+FAN_LEVEL: current=MSC_BATT v=3
+END_FILE
+FILE: gvotables/WLC_DEFENDER/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/WLC_DEFENDER/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/WLC_DEFENDER/status
+WLC_DEFENDER: DEFENDER_ENABLED_VOTER en=0 val=0 #votes=13
+WLC_DEFENDER: current=Default v=0
+END_FILE
+FILE: gvotables/TX_ICL/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/TX_ICL/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/TX_ICL/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/TX_ICL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/TX_ICL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/TX_ICL/status
+TX_ICL: RTX_VOTER en=1 val=1350000 #votes=1
+TX_ICL: MDIS en=0 val=0 #votes=3
+TX_ICL: current=RTX_VOTER v=1350000
+END_FILE
+FILE: gvotables/WLC_DISABLE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/WLC_DISABLE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/WLC_DISABLE/status
+WLC_DISABLE: CPOUT_EN_VOTER en=1 val=1 #votes=13
+WLC_DISABLE: DEFENDER_ENABLED_VOTER en=0 val=0 #votes=13
+WLC_DISABLE: WLC_VOTER en=0 val=0 #votes=3
+WLC_DISABLE: current=CPOUT_EN_VOTER v=1
+END_FILE
+FILE: gvotables/DC_AVAIL/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/DC_AVAIL/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/DC_AVAIL/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_AVAIL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_AVAIL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_AVAIL/status
+DC_AVAIL: WLC_TX en=0 val=1 #votes=18
+DC_AVAIL: DC_DRV en=1 val=1 #votes=2
+DC_AVAIL: MDIS en=1 val=1 #votes=3
+DC_AVAIL: current=DC_DRV v=1 d=1
+END_FILE
+FILE: gvotables/DC_FCC/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/DC_FCC/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/DC_FCC/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_FCC/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_FCC/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_FCC/status
+DC_FCC: <-11> <-11> d=-1
+END_FILE
+FILE: gvotables/GCPM_FCC/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/GCPM_FCC/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/GCPM_FCC/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/GCPM_FCC/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/GCPM_FCC/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/GCPM_FCC/status
+GCPM_FCC: CC_MAX en=0 val=5380000 #votes=6
+GCPM_FCC: WLC_FCC en=0 val=0 #votes=1
+GCPM_FCC: current=Default v=-1 d=-1
+END_FILE
+FILE: gvotables/FORCE_5V/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/FORCE_5V/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/FORCE_5V/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/FORCE_5V/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/FORCE_5V/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/FORCE_5V/status
+FORCE_5V: current=Default v=1 d=1
+END_FILE
+FILE: gvotables/CHG_THERM_LVL/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_THERM_LVL/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_THERM_LVL/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_THERM_LVL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_THERM_LVL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHG_THERM_LVL/status
+CHG_THERM_LVL: <-11> <-11> d=0
+END_FILE
+FILE: gvotables/CHARGING_POLICY/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_POLICY/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_POLICY/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_POLICY/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_POLICY/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_POLICY/status
+CHARGING_POLICY: DEFAULT en=1 val=1 #votes=1
+CHARGING_POLICY: MSC_AC en=0 val=3 #votes=1
+CHARGING_POLICY: current=DEFAULT v=1
+END_FILE
+FILE: gvotables/MSC_LAST/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_LAST/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_LAST/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_LAST/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_LAST/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_LAST/status
+MSC_LAST: BATT en=1 val=0 #votes=8
+MSC_LAST: current=BATT v=0 d=0
+END_FILE
+FILE: gvotables/MSC_TEMP_DRYRUN/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_TEMP_DRYRUN/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_TEMP_DRYRUN/status
+MSC_TEMP_DRYRUN: current=Default v=0
+END_FILE
+FILE: gvotables/MSC_PWR_DISABLE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_PWR_DISABLE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_PWR_DISABLE/status
+MSC_PWR_DISABLE: msc_user_chg_level en=0 val=0 #votes=1
+MSC_PWR_DISABLE: current=Default v=0
+END_FILE
+FILE: gvotables/MSC_CHG_DISABLE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_CHG_DISABLE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_CHG_DISABLE/status
+MSC_CHG_DISABLE: msc_chg en=0 val=0 #votes=2
+MSC_CHG_DISABLE: msc_pwr_disable en=0 val=0 #votes=1
+MSC_CHG_DISABLE: current=Default v=0
+END_FILE
+FILE: gvotables/MSC_INTERVAL/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_INTERVAL/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_INTERVAL/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_INTERVAL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_INTERVAL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_INTERVAL/status
+MSC_INTERVAL: pps_chg en=0 val=0 #votes=1
+MSC_INTERVAL: msc_logic en=1 val=30000 #votes=8
+MSC_INTERVAL: msc_chg en=1 val=30000 #votes=14
+MSC_INTERVAL: current=msc_logic v=30000
+END_FILE
+FILE: gvotables/MSC_FCC/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_FCC/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_FCC/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_FCC/status
+MSC_FCC: MAX_VOTER en=0 val=-22 #votes=1
+MSC_FCC: rl_state en=0 val=0 #votes=8
+MSC_FCC: sw_jeita en=0 val=0 #votes=8
+MSC_FCC: chg_health en=0 val=-1 #votes=8
+MSC_FCC: THERMAL_DAEMON_VOTER en=0 val=-1 #votes=1
+MSC_FCC: msc_user_chg_level en=0 val=0 #votes=1
+MSC_FCC: DC_FCC en=0 val=-1 #votes=1
+MSC_FCC: msc_logic en=1 val=5380000 #votes=8
+MSC_FCC: msc_chg en=1 val=5380000 #votes=9
+MSC_FCC: current=msc_logic v=5380000
+END_FILE
+FILE: gvotables/MSC_FV/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_FV/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_FV/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/MSC_FV/status
+MSC_FV: msc_logic en=1 val=4350000 #votes=8
+MSC_FV: msc_chg en=1 val=4350000 #votes=9
+MSC_FV: MAX_VOTER en=1 val=4480000 #votes=1
+MSC_FV: chg_health en=0 val=-1 #votes=8
+MSC_FV: current=msc_logic v=4350000
+END_FILE
+FILE: gvotables/AICL_ACTIVE_EL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/AICL_ACTIVE_EL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/AICL_ACTIVE_EL/status
+AICL_ACTIVE_EL: current=Default v=0
+END_FILE
+FILE: gvotables/DEAD_BATTERY/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/DEAD_BATTERY/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/DEAD_BATTERY/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DEAD_BATTERY/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DEAD_BATTERY/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DEAD_BATTERY/status
+DEAD_BATTERY: MSC_BATT en=1 val=0 #votes=1
+DEAD_BATTERY: current=MSC_BATT v=0 d=1
+END_FILE
+FILE: gvotables/USB_ICL_PROTO/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL_PROTO/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL_PROTO/status
+USB_ICL_PROTO: BC12_CDP_DCP en=1 val=val:1500000 priority:5 #votes=2
+USB_ICL_PROTO: DEAD_BATTERY en=0 val=val:0 priority:2 #votes=2
+USB_ICL_PROTO: USB_ICL_PD en=0 val=val:0 priority:7 #votes=7
+USB_ICL_PROTO: BC12_SDP en=0 val=val:0 priority:0 #votes=1
+USB_ICL_PROTO: USB_SUSPEND_UNCFG en=0 val=val:0 priority:1 #votes=1
+USB_ICL_PROTO: USB_CONFIGURED en=0 val=val:0 priority:3 #votes=1
+USB_ICL_PROTO: USB_SUSPEND en=0 val=val:0 priority:4 #votes=1
+USB_ICL_PROTO: current=BC12_CDP_DCP v=val:1500000 priority:5
+END_FILE
+FILE: gvotables/USB_ICL_COMBINE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL_COMBINE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL_COMBINE/status
+USB_ICL_COMBINE: PROTO_VOTER en=1 val=val:1500000 priority:0 #votes=3
+USB_ICL_COMBINE: current=PROTO_VOTER v=val:1500000 priority:0
+END_FILE
+FILE: gvotables/USB_ICL/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_ICL/status
+USB_ICL: msc_pwr_disable en=0 val=0 #votes=1
+USB_ICL: USB_ICL_COMB en=1 val=1500000 #votes=3
+USB_ICL: current=USB_ICL_COMB v=1500000
+END_FILE
+FILE: gvotables/USB_THROTTLE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_THROTTLE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/USB_THROTTLE/status
+USB_THROTTLE: current=Default v=0
+END_FILE
+FILE: gvotables/TOGGLE_DISABLE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/TOGGLE_DISABLE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/TOGGLE_DISABLE/status
+TOGGLE_DISABLE: current=Default v=0
+END_FILE
+FILE: gvotables/DC_ICL/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/DC_ICL/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/DC_ICL/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_ICL/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_ICL/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_ICL/status
+DC_ICL: WCIN_INLIM en=0 val=0 #votes=1
+DC_ICL: WLC_VOTER en=1 val=700000 #votes=1
+DC_ICL: OCP_VOTER en=1 val=1100000 #votes=1
+DC_ICL: RTX_VOTER en=0 val=0 #votes=1
+DC_ICL: DCIN_AICL_VOTER en=0 val=0 #votes=1
+DC_ICL: HPP_VOTER en=0 val=0 #votes=4
+DC_ICL: DD_VOTER en=0 val=0 #votes=1
+DC_ICL: AUTH_VOTER en=0 val=0 #votes=1
+DC_ICL: WLC_RAMP_VOTER en=0 val=0 #votes=2
+DC_ICL: EPP_HPP_VOTER en=0 val=0 #votes=4
+DC_ICL: current=WLC_VOTER v=700000 d=700000
+END_FILE
+FILE: gvotables/DC_SUSPEND/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_SUSPEND/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/DC_SUSPEND/status
+DC_SUSPEND: msc_pwr_disable en=0 val=0 #votes=1
+DC_SUSPEND: current=Default v=0
+END_FILE
+FILE: gvotables/CHARGER_MODE/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGER_MODE/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGER_MODE/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGER_MODE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGER_MODE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGER_MODE/status
+CHARGER_MODE: PSP_ENABLED en=1 val=21 #votes=4
+CHARGER_MODE: CC_MAX en=1 val=21 #votes=1
+CHARGER_MODE: PSP_DISABLE en=0 val=16 #votes=3
+CHARGER_MODE: CHGIN_SUSP en=0 val=17 #votes=4
+CHARGER_MODE: TCPCI en=1 val=48 #votes=3
+CHARGER_MODE: DC_ICL en=0 val=18 #votes=2
+CHARGER_MODE: GCPM en=0 val=32 #votes=3
+CHARGER_MODE: DC_SUSPEND en=0 val=18 #votes=1
+CHARGER_MODE: OFFLINE en=0 val=16 #votes=1
+CHARGER_MODE: current=TCPCI v=5 d=16
+END_FILE
+FILE: gvotables/HDA_TZ/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/HDA_TZ/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/HDA_TZ/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/HDA_TZ/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/HDA_TZ/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/HDA_TZ/status
+HDA_TZ: msc_hda en=1 val=53 #votes=8
+HDA_TZ: current=msc_hda v=53 d=0
+END_FILE
+FILE: gvotables/CHARGING_UISOC/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_UISOC/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_UISOC/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_UISOC/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_UISOC/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CHARGING_UISOC/status
+CHARGING_UISOC: <-11> <-11> d=-1
+END_FILE
+FILE: gvotables/CSI_TYPE/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_TYPE/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_TYPE/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_TYPE/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_TYPE/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_TYPE/status
+CSI_TYPE: CSI_TYPE_JEITA en=0 val=2 #votes=8
+CSI_TYPE: CSI_TYPE_TRICKLE en=0 val=3 #votes=8
+CSI_TYPE: CSI_TYPE_AC en=0 val=4 #votes=8
+CSI_TYPE: CSI_TYPE_SINGLE_CELL en=0 val=1 #votes=8
+CSI_TYPE: CSI_TYPE_DEFEND en=0 val=3 #votes=8
+CSI_TYPE: CSI_TYPE_CONNECTED en=1 val=5 #votes=8
+CSI_TYPE: current=CSI_TYPE_CONNECTED v=5 d=-1
+END_FILE
+FILE: gvotables/CSI_STATUS/force_int_active
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_STATUS/force_int_value
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_STATUS/cast_int_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_STATUS/disable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_STATUS/enable_vote
+(unreadable)
+END_FILE
+FILE: gvotables/CSI_STATUS/status
+CSI_STATUS: CSI_STATUS_ADA_AUTH en=0 val=30 #votes=1
+CSI_STATUS: CSI_STATUS_THERM_MDIS en=0 val=20 #votes=3
+CSI_STATUS: CSI_STATUS_COLD en=0 val=10 #votes=8
+CSI_STATUS: CSI_STATUS_HOT en=0 val=11 #votes=8
+CSI_STATUS: CSI_STATUS_ADA_POWR en=1 val=31 #votes=8
+CSI_STATUS: CSI_STATUS_ADA_QUAL en=0 val=32 #votes=8
+CSI_STATUS: CSI_STATUS_DEFEND_TRICKLE en=0 val=42 #votes=8
+CSI_STATUS: CSI_STATUS_DSG en=0 val=100 #votes=8
+CSI_STATUS: CSI_STATUS_100 en=0 val=200 #votes=8
+CSI_STATUS: CSI_STATUS_FULL en=0 val=-1 #votes=8
+CSI_STATUS: CSI_STATUS_DEFEND_DOCK en=0 val=43 #votes=8
+CSI_STATUS: CSI_STATUS_DEFEND_TEMP en=0 val=40 #votes=8
+CSI_STATUS: CSI_STATUS_DEFEND_DWELL en=0 val=41 #votes=8
+CSI_STATUS: CSI_STATUS_CHG en=1 val=200 #votes=8
+CSI_STATUS: current=CSI_STATUS_ADA_POWR v=31 d=-1
+END_FILE
+FILE: gvotables/elections
+CHG_MDIS: current=Default v=0 d=0
+USBDP_PHY_TCA: current=Default v=0
+SSPHY_RESTART: current=Default v=0
+BCL_USB: current=Default v=0
+BCL_WLC: current=Default v=0
+FAN_LEVEL: current=MSC_BATT v=3
+WLC_DEFENDER: current=Default v=0
+TX_ICL: current=RTX_VOTER v=1350000
+WLC_DISABLE: current=CPOUT_EN_VOTER v=1
+DC_AVAIL: current=DC_DRV v=1 d=1
+DC_FCC: <-11> <-11> d=-1
+GCPM_FCC: current=Default v=-1 d=-1
+FORCE_5V: current=Default v=1 d=1
+CHG_THERM_LVL: <-11> <-11> d=0
+CHARGING_POLICY: current=DEFAULT v=1
+MSC_LAST: current=BATT v=0 d=0
+MSC_TEMP_DRYRUN: current=Default v=0
+MSC_PWR_DISABLE: current=Default v=0
+MSC_CHG_DISABLE: current=Default v=0
+MSC_INTERVAL: current=msc_logic v=30000
+MSC_FCC: current=msc_logic v=5380000
+MSC_FV: current=msc_logic v=4350000
+AICL_ACTIVE_EL: current=Default v=0
+DEAD_BATTERY: current=MSC_BATT v=0 d=1
+USB_ICL_PROTO: current=BC12_CDP_DCP v=val:1500000 priority:5
+USB_ICL_COMBINE: current=PROTO_VOTER v=val:1500000 priority:0
+USB_ICL: current=USB_ICL_COMB v=1500000
+USB_THROTTLE: current=Default v=0
+TOGGLE_DISABLE: current=Default v=0
+DC_ICL: current=WLC_VOTER v=700000 d=700000
+DC_SUSPEND: current=Default v=0
+CHARGER_MODE: current=TCPCI v=5 d=16
+HDA_TZ: current=msc_hda v=53 d=0
+CHARGING_UISOC: <-11> <-11> d=-1
+CSI_TYPE: current=CSI_TYPE_CONNECTED v=5 d=-1
+CSI_STATUS: current=CSI_STATUS_ADA_POWR v=31 d=-1
+END_FILE

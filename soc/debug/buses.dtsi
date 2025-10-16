@@ -1,0 +1,362 @@
+FILE: dmaengine/summary
+dma0 (10110000.pdma0): number of channels: 32
+
+dma1 (10130000.pdma1): number of channels: 32
+END_FILE
+FILE: dma_pools/pool_size_kernel
+4194304
+END_FILE
+FILE: dma_pools/pool_size_dma32
+0
+END_FILE
+FILE: dma_pools/pool_size_dma
+0
+END_FILE
+FILE: bts/vc
+[0] cpu3, cpu2, cpu1, cpu0:   	0x00000000
+[1] g3dmmu, bw, aur1, aur0:   	0x33110000
+[2] g3d3, g3d2, g3d1, g3d0:   	0x00000000
+[3] na, na, tpu1, tpu0:   	0x00000000
+[4] gsa, cssys, aoc, alive:   	0x11111111
+[5] na, na, hsi1, hsi0:   	0x00000000
+[6] ispfe0, hsi2, dpuf1, dpuf0:   	0x31003333
+[7] mfc0, ispfe3, ispfe2, ispfe1:   	0x11313131
+[8] rgbp2, rgbp1, rgbp0, mfc1:   	0x11111111
+[9] rgbp6, rgbp5, rgbp4, rgbp3:   	0x11111111
+[10] gse, gdc2, gdc1, gdc0:   	0x12112121
+[11] mcsc0, g2d2, g2d1, g2d0:   	0x12111111
+[12] tnr1, tnr0, misc, mcsc1:   	0x11111112
+[13] tnr5, tnr4, tnr3, tnr2:   	0x11222212
+[14] na, na, na, yuvp:   	0x00000021
+END_FILE
+FILE: bts/bw_hist
+Total BW, Count:
+kB/s:	10000	17800	31600	56200	100000	178000	316000	562000	1000000	1780000	3160000	5620000	>5620000
+mfc:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+bo:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+jpeg:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+DECON0:	0	0	0	0	0	0	0	0	1	0	0	0	0	
+DECON1:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+Total BW, Total time in ms:
+kB/s:	10000	17800	31600	56200	100000	178000	316000	562000	1000000	1780000	3160000	5620000	>5620000
+mfc:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+bo:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+jpeg:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+DECON0:	0	0	0	0	0	0	0	0	5667	0	0	0	0	
+DECON1:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+Peak BW, Count:
+kB/s:	10000	17800	31600	56200	100000	178000	316000	562000	1000000	1780000	3160000	5620000	>5620000
+mfc:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+bo:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+jpeg:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+DECON0:	0	0	0	0	0	0	0	0	1	0	0	0	0	
+DECON1:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+
+Peak BW, Total time in ms:
+kB/s:	10000	17800	31600	56200	100000	178000	316000	562000	1000000	1780000	3160000	5620000	>5620000
+mfc:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+bo:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+jpeg:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+DECON0:	0	0	0	0	0	0	0	0	5667	0	0	0	0	
+DECON1:	0	0	0	0	0	0	0	0	0	0	0	0	0	
+END_FILE
+FILE: bts/bw
+mfc:	Read: 00000000 Write: 00000000 Peak 00000000 RT 00000000
+bo:	Read: 00000000 Write: 00000000 Peak 00000000 RT 00000000
+jpeg:	Read: 00000000 Write: 00000000 Peak 00000000 RT 00000000
+DECON0:	Read: 00000000 Write: 00000000 Peak 00000000 RT 00000000
+DECON1:	Read: 00000000 Write: 00000000 Peak 00000000 RT 00000000
+END_FILE
+FILE: bts/log
+BTSDBG_LOG STATUS: off
+END_FILE
+FILE: bts/blocking
+[32] bts_dpu0:   	BLK(0)
+[33] bts_dpu1:   	BLK(0)
+[34] bts_hsi2:   	BLK(0)
+[35] bts_ispfe0:   	BLK(0)
+[36] bts_ispfe1:   	BLK(0)
+[37] bts_ispfe2:   	BLK(0)
+[38] bts_ispfe3:   	BLK(0)
+[39] bts_mfc0:   	BLK(0)
+[40] bts_mfc1:   	BLK(0)
+[41] bts_rgbp0:   	BLK(0)
+[42] bts_rgbp1:   	BLK(0)
+[43] bts_rgbp2:   	BLK(0)
+[44] bts_rgbp3:   	BLK(0)
+[45] bts_rgbp4:   	BLK(0)
+[46] bts_rgbp5:   	BLK(0)
+[47] bts_rgbp6:   	BLK(0)
+[48] bts_gdc0:   	BLK(0)
+[49] bts_gdc1:   	BLK(0)
+[50] bts_gdc2:   	BLK(0)
+[51] bts_gse:   	BLK(0)
+[52] bts_g2d0:   	BLK(0)
+[53] bts_g2d1:   	BLK(0)
+[54] bts_g2d2:   	BLK(0)
+[55] bts_mcsc0:   	BLK(0)
+[56] bts_mcsc1:   	BLK(0)
+[57] bts_misc:   	BLK(0)
+[58] bts_tnr0:   	BLK(0)
+[59] bts_tnr1:   	BLK(0)
+[60] bts_tnr2:   	BLK(0)
+[61] bts_tnr3:   	BLK(0)
+[62] bts_tnr4:   	BLK(0)
+[63] bts_tnr5:   	BLK(0)
+[64] bts_yuvp:   	BLK(0)
+[65] bts_aur0:   	BLK(0)
+[66] bts_aur1:   	BLK(0)
+[67] bts_bw:   	BLK(0)
+[68] bts_g3dmmu:   	BLK(0)
+[69] bts_g3d0:   	BLK(0)
+[70] bts_g3d1:   	BLK(0)
+[71] bts_g3d2:   	BLK(0)
+[72] bts_g3d3:   	BLK(0)
+[73] bts_tpu0:   	BLK(0)
+[74] bts_tpu1:   	BLK(0)
+[75] bts_alive:   	BLK(0)
+[76] bts_aoc:   	BLK(0)
+[77] bts_cssys:   	BLK(0)
+[78] bts_gsa:   	BLK(0)
+[79] bts_hsi0:   	BLK(0)
+[80] bts_hsi1:   	BLK(0)
+[81] bts_cpu0:   	BLK(0)
+[82] bts_cpu1:   	BLK(0)
+[83] bts_cpu2:   	BLK(0)
+[84] bts_cpu3:   	BLK(0)
+END_FILE
+FILE: bts/urgent
+[32] bts_dpu0:   	QUR(1) TH_R 0x19 TH_W 0x20 EX_QUR(0)
+[33] bts_dpu1:   	QUR(1) TH_R 0x19 TH_W 0x20 EX_QUR(0)
+[34] bts_hsi2:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[35] bts_ispfe0:   	QUR(1) TH_R 0x20 TH_W 0x20 EX_QUR(0)
+[36] bts_ispfe1:   	QUR(1) TH_R 0x20 TH_W 0x20 EX_QUR(0)
+[37] bts_ispfe2:   	QUR(1) TH_R 0x20 TH_W 0x20 EX_QUR(0)
+[38] bts_ispfe3:   	QUR(1) TH_R 0x20 TH_W 0x20 EX_QUR(0)
+[39] bts_mfc0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[40] bts_mfc1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[41] bts_rgbp0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[42] bts_rgbp1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[43] bts_rgbp2:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[44] bts_rgbp3:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[45] bts_rgbp4:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[46] bts_rgbp5:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[47] bts_rgbp6:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[48] bts_gdc0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[49] bts_gdc1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[50] bts_gdc2:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[51] bts_gse:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[52] bts_g2d0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[53] bts_g2d1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[54] bts_g2d2:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[55] bts_mcsc0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[56] bts_mcsc1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[57] bts_misc:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[58] bts_tnr0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[59] bts_tnr1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[60] bts_tnr2:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[61] bts_tnr3:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[62] bts_tnr4:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[63] bts_tnr5:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[64] bts_yuvp:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[65] bts_aur0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[66] bts_aur1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[67] bts_bw:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[68] bts_g3dmmu:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[69] bts_g3d0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[70] bts_g3d1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[71] bts_g3d2:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[72] bts_g3d3:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[73] bts_tpu0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[74] bts_tpu1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[75] bts_alive:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[76] bts_aoc:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[77] bts_cssys:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[78] bts_gsa:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[79] bts_hsi0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[80] bts_hsi1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[81] bts_cpu0:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[82] bts_cpu1:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[83] bts_cpu2:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+[84] bts_cpu3:   	QUR(0) TH_R 0xFF TH_W 0xFF EX_QUR(0)
+END_FILE
+FILE: bts/mo
+[32] bts_dpu0:   	RMO 0x0060 WMO 0x0020
+[33] bts_dpu1:   	RMO 0x0060 WMO 0x0020
+[34] bts_hsi2:   	RMO 0xFFFF WMO 0xFFFF
+[35] bts_ispfe0:   	RMO 0x0026 WMO 0x0040
+[36] bts_ispfe1:   	RMO 0xFFFF WMO 0x0040
+[37] bts_ispfe2:   	RMO 0xFFFF WMO 0x0040
+[38] bts_ispfe3:   	RMO 0xFFFF WMO 0x0008
+[39] bts_mfc0:   	RMO 0x0010 WMO 0x0010
+[40] bts_mfc1:   	RMO 0x0010 WMO 0x0010
+[41] bts_rgbp0:   	RMO 0xFFFF WMO 0x0009
+[42] bts_rgbp1:   	RMO 0x002C WMO 0x0009
+[43] bts_rgbp2:   	RMO 0x0040 WMO 0xFFFF
+[44] bts_rgbp3:   	RMO 0x0020 WMO 0xFFFF
+[45] bts_rgbp4:   	RMO 0x0020 WMO 0xFFFF
+[46] bts_rgbp5:   	RMO 0x0020 WMO 0x000A
+[47] bts_rgbp6:   	RMO 0x0008 WMO 0x0009
+[48] bts_gdc0:   	RMO 0x000A WMO 0x0008
+[49] bts_gdc1:   	RMO 0x000A WMO 0x0008
+[50] bts_gdc2:   	RMO 0x000A WMO 0x0008
+[51] bts_gse:   	RMO 0x0009 WMO 0x0007
+[52] bts_g2d0:   	RMO 0x0018 WMO 0x0014
+[53] bts_g2d1:   	RMO 0x0018 WMO 0x0014
+[54] bts_g2d2:   	RMO 0x0018 WMO 0x0014
+[55] bts_mcsc0:   	RMO 0x000C WMO 0x0008
+[56] bts_mcsc1:   	RMO 0x000C WMO 0x0008
+[57] bts_misc:   	RMO 0x000F WMO 0x000F
+[58] bts_tnr0:   	RMO 0x0032 WMO 0x0009
+[59] bts_tnr1:   	RMO 0x0032 WMO 0x0009
+[60] bts_tnr2:   	RMO 0x0010 WMO 0x0001
+[61] bts_tnr3:   	RMO 0x0010 WMO 0x0002
+[62] bts_tnr4:   	RMO 0x0018 WMO 0x0007
+[63] bts_tnr5:   	RMO 0x0006 WMO 0x0006
+[64] bts_yuvp:   	RMO 0x0008 WMO 0x0005
+[65] bts_aur0:   	RMO 0xFFFF WMO 0xFFFF
+[66] bts_aur1:   	RMO 0xFFFF WMO 0xFFFF
+[67] bts_bw:   	RMO 0x0010 WMO 0x0010
+[68] bts_g3dmmu:   	RMO 0xFFFF WMO 0xFFFF
+[69] bts_g3d0:   	RMO 0x0014 WMO 0x0008
+[70] bts_g3d1:   	RMO 0x0014 WMO 0x0008
+[71] bts_g3d2:   	RMO 0x0014 WMO 0x0008
+[72] bts_g3d3:   	RMO 0x0014 WMO 0x0008
+[73] bts_tpu0:   	RMO 0x0020 WMO 0x0010
+[74] bts_tpu1:   	RMO 0x0020 WMO 0x0010
+[75] bts_alive:   	RMO 0xFFFF WMO 0xFFFF
+[76] bts_aoc:   	RMO 0xFFFF WMO 0xFFFF
+[77] bts_cssys:   	RMO 0xFFFF WMO 0xFFFF
+[78] bts_gsa:   	RMO 0xFFFF WMO 0xFFFF
+[79] bts_hsi0:   	RMO 0xFFFF WMO 0xFFFF
+[80] bts_hsi1:   	RMO 0xFFFF WMO 0xFFFF
+[81] bts_cpu0:   	RMO 0xFFFF WMO 0xFFFF
+[82] bts_cpu1:   	RMO 0xFFFF WMO 0xFFFF
+[83] bts_cpu2:   	RMO 0xFFFF WMO 0xFFFF
+[84] bts_cpu3:   	RMO 0xFFFF WMO 0xFFFF
+END_FILE
+FILE: bts/qos
+[32] bts_dpu0:   	AR 0x8 AW 0x8
+[33] bts_dpu1:   	AR 0x8 AW 0x8
+[34] bts_hsi2:   	AR 0x4 AW 0x4
+[35] bts_ispfe0:   	AR 0xC AW 0xC
+[36] bts_ispfe1:   	AR 0xC AW 0xC
+[37] bts_ispfe2:   	AR 0xC AW 0xC
+[38] bts_ispfe3:   	AR 0xC AW 0xC
+[39] bts_mfc0:   	AR 0x4 AW 0x4
+[40] bts_mfc1:   	AR 0x4 AW 0x4
+[41] bts_rgbp0:   	AR 0x4 AW 0x4
+[42] bts_rgbp1:   	AR 0x4 AW 0x4
+[43] bts_rgbp2:   	AR 0x4 AW 0x4
+[44] bts_rgbp3:   	AR 0x4 AW 0x4
+[45] bts_rgbp4:   	AR 0x4 AW 0x4
+[46] bts_rgbp5:   	AR 0x4 AW 0x4
+[47] bts_rgbp6:   	AR 0x4 AW 0x4
+[48] bts_gdc0:   	AR 0x4 AW 0x4
+[49] bts_gdc1:   	AR 0x4 AW 0x4
+[50] bts_gdc2:   	AR 0x4 AW 0x4
+[51] bts_gse:   	AR 0x4 AW 0x4
+[52] bts_g2d0:   	AR 0x4 AW 0x4
+[53] bts_g2d1:   	AR 0x4 AW 0x4
+[54] bts_g2d2:   	AR 0x4 AW 0x4
+[55] bts_mcsc0:   	AR 0x4 AW 0x4
+[56] bts_mcsc1:   	AR 0x4 AW 0x4
+[57] bts_misc:   	AR 0x4 AW 0x4
+[58] bts_tnr0:   	AR 0x4 AW 0x4
+[59] bts_tnr1:   	AR 0x4 AW 0x4
+[60] bts_tnr2:   	AR 0x4 AW 0x4
+[61] bts_tnr3:   	AR 0x4 AW 0x4
+[62] bts_tnr4:   	AR 0x4 AW 0x4
+[63] bts_tnr5:   	AR 0x4 AW 0x4
+[64] bts_yuvp:   	AR 0x4 AW 0x4
+[65] bts_aur0:   	AR 0x4 AW 0x4
+[66] bts_aur1:   	AR 0x4 AW 0x4
+[67] bts_bw:   	AR 0x4 AW 0x4
+[68] bts_g3dmmu:   	AR 0x4 AW 0x4
+[69] bts_g3d0:   	AR 0x4 AW 0x4
+[70] bts_g3d1:   	AR 0x4 AW 0x4
+[71] bts_g3d2:   	AR 0x4 AW 0x4
+[72] bts_g3d3:   	AR 0x4 AW 0x4
+[73] bts_tpu0:   	AR 0x4 AW 0x4
+[74] bts_tpu1:   	AR 0x4 AW 0x4
+[75] bts_alive:   	AR 0x4 AW 0x4
+[76] bts_aoc:   	AR 0x4 AW 0x4
+[77] bts_cssys:   	AR 0x4 AW 0x4
+[78] bts_gsa:   	AR 0x4 AW 0x4
+[79] bts_hsi0:   	AR 0x4 AW 0x4
+[80] bts_hsi1:   	AR 0x4 AW 0x4
+[81] bts_cpu0:   	AR 0x4 AW 0x4
+[82] bts_cpu1:   	AR 0x4 AW 0x4
+[83] bts_cpu2:   	AR 0x4 AW 0x4
+[84] bts_cpu3:   	AR 0x4 AW 0x4
+END_FILE
+FILE: bts/scenario
+Current Top scenario: [0]default
+  0 - 
+bts scen[0] default(1) - status: on
+bts scen[1] mfc_uhd(0) - status: off
+bts scen[2] mfc_uhd_10bit(0) - status: off
+bts scen[3] mfc_8k_dec30(0) - status: off
+bts scen[4] g3d_performance(0) - status: off
+bts scen[5] dp_default(0) - status: off
+bts scen[6] dpu_qurgent_default(0) - status: off
+bts scen[7] camera_default(0) - status: off
+bts scen[8] mfc_uhd_enc60(0) - status: off
+END_FILE
+FILE: bts/status
+bts_dpu0:	ARQOS 0x8, AWQOS 0x8, RMO 0x0060, WMO 0x0020, QUR(1) TH_R 0x19, TH_W 0x20, EX_QUR(0), BLK(0)
+bts_dpu1:	ARQOS 0x8, AWQOS 0x8, RMO 0x0060, WMO 0x0020, QUR(1) TH_R 0x19, TH_W 0x20, EX_QUR(0), BLK(0)
+bts_hsi2:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_ispfe0:	ARQOS 0xC, AWQOS 0xC, RMO 0x0026, WMO 0x0040, QUR(1) TH_R 0x20, TH_W 0x20, EX_QUR(0), BLK(0)
+bts_ispfe1:	ARQOS 0xC, AWQOS 0xC, RMO 0xFFFF, WMO 0x0040, QUR(1) TH_R 0x20, TH_W 0x20, EX_QUR(0), BLK(0)
+bts_ispfe2:	ARQOS 0xC, AWQOS 0xC, RMO 0xFFFF, WMO 0x0040, QUR(1) TH_R 0x20, TH_W 0x20, EX_QUR(0), BLK(0)
+bts_ispfe3:	ARQOS 0xC, AWQOS 0xC, RMO 0xFFFF, WMO 0x0008, QUR(1) TH_R 0x20, TH_W 0x20, EX_QUR(0), BLK(0)
+bts_mfc0:	ARQOS 0x4, AWQOS 0x4, RMO 0x0010, WMO 0x0010, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_mfc1:	ARQOS 0x4, AWQOS 0x4, RMO 0x0010, WMO 0x0010, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_rgbp0:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0x0009, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_rgbp1:	ARQOS 0x4, AWQOS 0x4, RMO 0x002C, WMO 0x0009, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_rgbp2:	ARQOS 0x4, AWQOS 0x4, RMO 0x0040, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_rgbp3:	ARQOS 0x4, AWQOS 0x4, RMO 0x0020, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_rgbp4:	ARQOS 0x4, AWQOS 0x4, RMO 0x0020, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_rgbp5:	ARQOS 0x4, AWQOS 0x4, RMO 0x0020, WMO 0x000A, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_rgbp6:	ARQOS 0x4, AWQOS 0x4, RMO 0x0008, WMO 0x0009, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_gdc0:	ARQOS 0x4, AWQOS 0x4, RMO 0x000A, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_gdc1:	ARQOS 0x4, AWQOS 0x4, RMO 0x000A, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_gdc2:	ARQOS 0x4, AWQOS 0x4, RMO 0x000A, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_gse:	ARQOS 0x4, AWQOS 0x4, RMO 0x0009, WMO 0x0007, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g2d0:	ARQOS 0x4, AWQOS 0x4, RMO 0x0018, WMO 0x0014, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g2d1:	ARQOS 0x4, AWQOS 0x4, RMO 0x0018, WMO 0x0014, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g2d2:	ARQOS 0x4, AWQOS 0x4, RMO 0x0018, WMO 0x0014, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_mcsc0:	ARQOS 0x4, AWQOS 0x4, RMO 0x000C, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_mcsc1:	ARQOS 0x4, AWQOS 0x4, RMO 0x000C, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_misc:	ARQOS 0x4, AWQOS 0x4, RMO 0x000F, WMO 0x000F, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tnr0:	ARQOS 0x4, AWQOS 0x4, RMO 0x0032, WMO 0x0009, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tnr1:	ARQOS 0x4, AWQOS 0x4, RMO 0x0032, WMO 0x0009, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tnr2:	ARQOS 0x4, AWQOS 0x4, RMO 0x0010, WMO 0x0001, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tnr3:	ARQOS 0x4, AWQOS 0x4, RMO 0x0010, WMO 0x0002, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tnr4:	ARQOS 0x4, AWQOS 0x4, RMO 0x0018, WMO 0x0007, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tnr5:	ARQOS 0x4, AWQOS 0x4, RMO 0x0006, WMO 0x0006, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_yuvp:	ARQOS 0x4, AWQOS 0x4, RMO 0x0008, WMO 0x0005, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_aur0:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_aur1:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_bw:	ARQOS 0x4, AWQOS 0x4, RMO 0x0010, WMO 0x0010, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g3dmmu:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g3d0:	ARQOS 0x4, AWQOS 0x4, RMO 0x0014, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g3d1:	ARQOS 0x4, AWQOS 0x4, RMO 0x0014, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g3d2:	ARQOS 0x4, AWQOS 0x4, RMO 0x0014, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_g3d3:	ARQOS 0x4, AWQOS 0x4, RMO 0x0014, WMO 0x0008, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tpu0:	ARQOS 0x4, AWQOS 0x4, RMO 0x0020, WMO 0x0010, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_tpu1:	ARQOS 0x4, AWQOS 0x4, RMO 0x0020, WMO 0x0010, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_alive:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_aoc:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_cssys:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_gsa:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_hsi0:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_hsi1:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_cpu0:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_cpu1:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_cpu2:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+bts_cpu3:	ARQOS 0x4, AWQOS 0x4, RMO 0xFFFF, WMO 0xFFFF, QUR(0) TH_R 0xFF, TH_W 0xFF, EX_QUR(0), BLK(0)
+END_FILE

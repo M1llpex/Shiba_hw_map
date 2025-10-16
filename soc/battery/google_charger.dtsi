@@ -1,0 +1,26 @@
+FILE: ./bd_enabled
+1
+END_FILE
+FILE: ./bd_triggered
+0
+END_FILE
+FILE: ./pps_cc_tolerance
+5
+END_FILE
+FILE: ./usb_skip_probe
+N
+END_FILE
+FILE: ./force_reschedule
+END_FILE
+FILE: ./update_interval
+0
+END_FILE
+FILE: ./chg_suspend
+0
+END_FILE
+FILE: ./input_suspend
+0
+END_FILE
+FILE: ./chg_mode
+0
+END_FILE

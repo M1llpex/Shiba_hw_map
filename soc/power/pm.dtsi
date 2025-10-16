@@ -1,0 +1,504 @@
+FILE: ./pd-g3d/devices
+/devices/platform/15461c80.pd-embedded_g3d
+/devices/platform/1ee70000.s2mpu_s0_g3d
+/devices/platform/dbgdev-pd-g3d
+/devices/genpd:0:1f000000.mali
+END_FILE
+FILE: ./pd-g3d/total_idle_time
+69072 ms
+END_FILE
+FILE: ./pd-g3d/active_time
+13316 ms
+END_FILE
+FILE: ./pd-g3d/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             69142          99             0
+END_FILE
+FILE: ./pd-g3d/sub_domains
+pd-embedded_g3d
+END_FILE
+FILE: ./pd-g3d/current_state
+off-0
+END_FILE
+FILE: ./pd-embedded_g3d/devices
+/devices/platform/dbgdev-pd-embedded_g3d
+/devices/genpd:1:1f000000.mali
+END_FILE
+FILE: ./pd-embedded_g3d/total_idle_time
+69413 ms
+END_FILE
+FILE: ./pd-embedded_g3d/active_time
+13193 ms
+END_FILE
+FILE: ./pd-embedded_g3d/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             69499          98             0
+END_FILE
+FILE: ./pd-embedded_g3d/sub_domains
+END_FILE
+FILE: ./pd-embedded_g3d/current_state
+off-0
+END_FILE
+FILE: ./pd-dpub/devices
+/devices/platform/15461d80.pd-dpuf0
+/devices/platform/15461e00.pd-dpuf1
+/devices/platform/dbgdev-pd-dpub
+END_FILE
+FILE: ./pd-dpub/total_idle_time
+71904 ms
+END_FILE
+FILE: ./pd-dpub/active_time
+10959 ms
+END_FILE
+FILE: ./pd-dpub/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             71976          119            0
+END_FILE
+FILE: ./pd-dpub/sub_domains
+pd-dpuf0
+pd-dpuf1
+END_FILE
+FILE: ./pd-dpub/current_state
+off-0
+END_FILE
+FILE: ./pd-dpuf0/devices
+/devices/platform/19870000.s2mpu_s0_dpuf0
+/devices/platform/dbgdev-pd-dpuf0
+/devices/platform/19840000.sysmmu
+END_FILE
+FILE: ./pd-dpuf0/total_idle_time
+72209 ms
+END_FILE
+FILE: ./pd-dpuf0/active_time
+10858 ms
+END_FILE
+FILE: ./pd-dpuf0/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             72266          116            0
+END_FILE
+FILE: ./pd-dpuf0/sub_domains
+END_FILE
+FILE: ./pd-dpuf0/current_state
+off-0
+END_FILE
+FILE: ./pd-dpuf1/devices
+/devices/platform/19c70000.s2mpu_s0_dpuf1
+/devices/platform/dbgdev-pd-dpuf1
+/devices/platform/19c40000.sysmmu
+END_FILE
+FILE: ./pd-dpuf1/total_idle_time
+72439 ms
+END_FILE
+FILE: ./pd-dpuf1/active_time
+10826 ms
+END_FILE
+FILE: ./pd-dpuf1/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             72497          116            0
+END_FILE
+FILE: ./pd-dpuf1/sub_domains
+END_FILE
+FILE: ./pd-dpuf1/current_state
+off-0
+END_FILE
+FILE: ./pd-g2d/devices
+/devices/platform/1a8a0000.s2mpu_s0_g2d
+/devices/platform/1a870000.sysmmu
+/devices/platform/dbgdev-pd-g2d
+/devices/platform/1a860000.smfc
+END_FILE
+FILE: ./pd-g2d/total_idle_time
+83265 ms
+END_FILE
+FILE: ./pd-g2d/active_time
+186 ms
+END_FILE
+FILE: ./pd-g2d/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             83324          5              0
+END_FILE
+FILE: ./pd-g2d/sub_domains
+END_FILE
+FILE: ./pd-g2d/current_state
+off-0
+END_FILE
+FILE: ./pd-gdc/devices
+/devices/platform/1d4f0000.s2mpu_s0_gdc
+/devices/platform/dbgdev-pd-gdc
+/devices/platform/1d4c0000.sysmmu
+END_FILE
+FILE: ./pd-gdc/total_idle_time
+83447 ms
+END_FILE
+FILE: ./pd-gdc/active_time
+188 ms
+END_FILE
+FILE: ./pd-gdc/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             83505          3              0
+END_FILE
+FILE: ./pd-gdc/sub_domains
+END_FILE
+FILE: ./pd-gdc/current_state
+off-0
+END_FILE
+FILE: ./pd-gse/devices
+/devices/platform/1d8a0000.s2mpu_s0_gse
+/devices/platform/dbgdev-pd-gse
+/devices/platform/1d870000.sysmmu
+END_FILE
+FILE: ./pd-gse/total_idle_time
+83621 ms
+END_FILE
+FILE: ./pd-gse/active_time
+186 ms
+END_FILE
+FILE: ./pd-gse/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             83686          3              0
+END_FILE
+FILE: ./pd-gse/sub_domains
+END_FILE
+FILE: ./pd-gse/current_state
+off-0
+END_FILE
+FILE: ./pd-mcsc/devices
+/devices/platform/1d0d0000.s2mpu_s0_mcsc
+/devices/platform/dbgdev-pd-mcsc
+/devices/platform/1d0a0000.sysmmu
+END_FILE
+FILE: ./pd-mcsc/total_idle_time
+83818 ms
+END_FILE
+FILE: ./pd-mcsc/active_time
+189 ms
+END_FILE
+FILE: ./pd-mcsc/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             83892          3              0
+END_FILE
+FILE: ./pd-mcsc/sub_domains
+END_FILE
+FILE: ./pd-mcsc/current_state
+off-0
+END_FILE
+FILE: ./pd-mfc/devices
+/devices/platform/1a4a0000.s2mpu_s0_mfc
+/devices/platform/dbgdev-pd-mfc
+/devices/platform/1a470000.sysmmu
+END_FILE
+FILE: ./pd-mfc/total_idle_time
+84005 ms
+END_FILE
+FILE: ./pd-mfc/active_time
+189 ms
+END_FILE
+FILE: ./pd-mfc/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             84062          3              0
+END_FILE
+FILE: ./pd-mfc/sub_domains
+END_FILE
+FILE: ./pd-mfc/current_state
+off-0
+END_FILE
+FILE: ./pd-rgbp/devices
+/devices/platform/1c4d0000.s2mpu_s0_rgbp
+/devices/platform/1c510000.s2mpu_s1_rgbp
+/devices/platform/dbgdev-pd-rgbp
+/devices/platform/1c4a0000.sysmmu
+/devices/platform/1c4e0000.sysmmu
+END_FILE
+FILE: ./pd-rgbp/total_idle_time
+84158 ms
+END_FILE
+FILE: ./pd-rgbp/active_time
+192 ms
+END_FILE
+FILE: ./pd-rgbp/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             84208          5              0
+END_FILE
+FILE: ./pd-rgbp/sub_domains
+END_FILE
+FILE: ./pd-rgbp/current_state
+off-0
+END_FILE
+FILE: ./pd-tnr/devices
+/devices/platform/1ccb0000.s2mpu_s0_tnr
+/devices/platform/1ccf0000.s2mpu_s1_tnr
+/devices/platform/1cd30000.s2mpu_s2_tnr
+/devices/platform/dbgdev-pd-tnr
+/devices/platform/1cc80000.sysmmu
+/devices/platform/1ccc0000.sysmmu
+/devices/platform/1cd00000.sysmmu
+END_FILE
+FILE: ./pd-tnr/total_idle_time
+84323 ms
+END_FILE
+FILE: ./pd-tnr/active_time
+194 ms
+END_FILE
+FILE: ./pd-tnr/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             84384          7              0
+END_FILE
+FILE: ./pd-tnr/sub_domains
+END_FILE
+FILE: ./pd-tnr/current_state
+off-0
+END_FILE
+FILE: ./pd-yuvp/devices
+/devices/platform/1c8a0000.s2mpu_s0_yuvp
+/devices/platform/dbgdev-pd-yuvp
+/devices/platform/1c870000.sysmmu
+END_FILE
+FILE: ./pd-yuvp/total_idle_time
+84495 ms
+END_FILE
+FILE: ./pd-yuvp/active_time
+192 ms
+END_FILE
+FILE: ./pd-yuvp/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             84554          3              0
+END_FILE
+FILE: ./pd-yuvp/sub_domains
+END_FILE
+FILE: ./pd-yuvp/current_state
+off-0
+END_FILE
+FILE: ./pd-aur/devices
+/devices/platform/20a80000.s2mpu_s0_aur
+/devices/platform/dbgdev-pd-aur
+/devices/platform/20a50000.sysmmu
+END_FILE
+FILE: ./pd-aur/total_idle_time
+83655 ms
+END_FILE
+FILE: ./pd-aur/active_time
+1209 ms
+END_FILE
+FILE: ./pd-aur/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             83715          7              0
+END_FILE
+FILE: ./pd-aur/sub_domains
+END_FILE
+FILE: ./pd-aur/current_state
+off-0
+END_FILE
+FILE: ./pd-bw/devices
+/devices/platform/1a670000.s2mpu_s0_bw
+/devices/platform/1a640000.sysmmu
+/devices/platform/dbgdev-pd-bw
+/devices/platform/1a700000.bigwave
+END_FILE
+FILE: ./pd-bw/total_idle_time
+84853 ms
+END_FILE
+FILE: ./pd-bw/active_time
+184 ms
+END_FILE
+FILE: ./pd-bw/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             84928          4              0
+END_FILE
+FILE: ./pd-bw/sub_domains
+END_FILE
+FILE: ./pd-bw/current_state
+off-0
+END_FILE
+FILE: ./pd-eh/devices
+/devices/platform/16c70000.s2mpu_s0_eh
+/devices/platform/dbgdev-pd-eh
+/devices/platform/16c40000.sysmmu
+/devices/platform/16d00000.eh
+END_FILE
+FILE: ./pd-eh/total_idle_time
+275 ms
+END_FILE
+FILE: ./pd-eh/active_time
+85020 ms
+END_FILE
+FILE: ./pd-eh/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             275            3              0
+END_FILE
+FILE: ./pd-eh/sub_domains
+END_FILE
+FILE: ./pd-eh/current_state
+on
+END_FILE
+FILE: ./pd-ispfe/devices
+/devices/platform/1c140000.s2mpu_s0_ispfe
+/devices/platform/1c180000.s2mpu_s1_ispfe
+/devices/platform/1c1c0000.s2mpu_s2_ispfe
+/devices/platform/dbgdev-pd-ispfe
+/devices/platform/1c110000.sysmmu
+/devices/platform/1c150000.sysmmu
+/devices/platform/1c190000.sysmmu
+END_FILE
+FILE: ./pd-ispfe/total_idle_time
+85249 ms
+END_FILE
+FILE: ./pd-ispfe/active_time
+191 ms
+END_FILE
+FILE: ./pd-ispfe/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             85313          7              0
+END_FILE
+FILE: ./pd-ispfe/sub_domains
+END_FILE
+FILE: ./pd-ispfe/current_state
+off-0
+END_FILE
+FILE: ./pd-tpu/devices
+/devices/platform/1a370000.s2mpu_s0_tpu
+/devices/platform/dbgdev-pd-tpu
+/devices/platform/1a340000.sysmmu
+END_FILE
+FILE: ./pd-tpu/total_idle_time
+83327 ms
+END_FILE
+FILE: ./pd-tpu/active_time
+2364 ms
+END_FILE
+FILE: ./pd-tpu/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             83389          7              0
+END_FILE
+FILE: ./pd-tpu/sub_domains
+END_FILE
+FILE: ./pd-tpu/current_state
+off-0
+END_FILE
+FILE: ./pd-hsi0/devices
+/devices/platform/dbgdev-pd-hsi0
+/devices/platform/111c0000.spi
+/devices/platform/111d0000.spi
+/devices/platform/111e0000.spi
+/devices/platform/11040000.sysmmu
+/devices/platform/110f0000.drmdp
+/devices/platform/sub-pd-hsi0
+/devices/platform/11100000.phy
+/devices/platform/11210000.usb
+END_FILE
+FILE: ./pd-hsi0/total_idle_time
+2162 ms
+END_FILE
+FILE: ./pd-hsi0/active_time
+83766 ms
+END_FILE
+FILE: ./pd-hsi0/idle_states
+State          Time Spent(ms) Usage          Rejected
+S0             2162           45             0
+END_FILE
+FILE: ./pd-hsi0/sub_domains
+END_FILE
+FILE: ./pd-hsi0/current_state
+on
+END_FILE
+FILE: ./pm_genpd_summary
+domain                          status          children                           performance
+    /device                                             runtime status
+----------------------------------------------------------------------------------------------
+pd-hsi0                         on                                                 0
+    /devices/platform/dbgdev-pd-hsi0                    suspended                  0
+    /devices/platform/111c0000.spi                      suspended                  0
+    /devices/platform/111d0000.spi                      suspended                  0
+    /devices/platform/111e0000.spi                      suspended                  0
+    /devices/platform/11040000.sysmmu                   active                     0
+    /devices/platform/110f0000.drmdp                    suspended                  0
+    /devices/platform/sub-pd-hsi0                       suspended                  0
+    /devices/platform/11100000.phy                      suspended                  0
+    /devices/platform/11210000.usb                      active                     0
+pd-tpu                          off-0                                              0
+    /devices/platform/1a370000.s2mpu_s0_tpu             suspended                  0
+    /devices/platform/dbgdev-pd-tpu                     suspended                  0
+    /devices/platform/1a340000.sysmmu                   suspended                  0
+pd-ispfe                        off-0                                              0
+    /devices/platform/1c140000.s2mpu_s0_ispfe           suspended                  0
+    /devices/platform/1c180000.s2mpu_s1_ispfe           suspended                  0
+    /devices/platform/1c1c0000.s2mpu_s2_ispfe           suspended                  0
+    /devices/platform/dbgdev-pd-ispfe                   suspended                  0
+    /devices/platform/1c110000.sysmmu                   suspended                  0
+    /devices/platform/1c150000.sysmmu                   suspended                  0
+    /devices/platform/1c190000.sysmmu                   suspended                  0
+pd-eh                           on                                                 0
+    /devices/platform/16c70000.s2mpu_s0_eh              active                     0
+    /devices/platform/dbgdev-pd-eh                      suspended                  0
+    /devices/platform/16c40000.sysmmu                   suspended                  0
+    /devices/platform/16d00000.eh                       active                     0
+pd-bw                           off-0                                              0
+    /devices/platform/1a670000.s2mpu_s0_bw              suspended                  0
+    /devices/platform/1a640000.sysmmu                   suspended                  0
+    /devices/platform/dbgdev-pd-bw                      suspended                  0
+    /devices/platform/1a700000.bigwave                  suspended                  0
+pd-aur                          off-0                                              0
+    /devices/platform/20a80000.s2mpu_s0_aur             suspended                  0
+    /devices/platform/dbgdev-pd-aur                     suspended                  0
+    /devices/platform/20a50000.sysmmu                   suspended                  0
+pd-yuvp                         off-0                                              0
+    /devices/platform/1c8a0000.s2mpu_s0_yuvp            suspended                  0
+    /devices/platform/dbgdev-pd-yuvp                    suspended                  0
+    /devices/platform/1c870000.sysmmu                   suspended                  0
+pd-tnr                          off-0                                              0
+    /devices/platform/1ccb0000.s2mpu_s0_tnr             suspended                  0
+    /devices/platform/1ccf0000.s2mpu_s1_tnr             suspended                  0
+    /devices/platform/1cd30000.s2mpu_s2_tnr             suspended                  0
+    /devices/platform/dbgdev-pd-tnr                     suspended                  0
+    /devices/platform/1cc80000.sysmmu                   suspended                  0
+    /devices/platform/1ccc0000.sysmmu                   suspended                  0
+    /devices/platform/1cd00000.sysmmu                   suspended                  0
+pd-rgbp                         off-0                                              0
+    /devices/platform/1c4d0000.s2mpu_s0_rgbp            suspended                  0
+    /devices/platform/1c510000.s2mpu_s1_rgbp            suspended                  0
+    /devices/platform/dbgdev-pd-rgbp                    suspended                  0
+    /devices/platform/1c4a0000.sysmmu                   suspended                  0
+    /devices/platform/1c4e0000.sysmmu                   suspended                  0
+pd-mfc                          off-0                                              0
+    /devices/platform/1a4a0000.s2mpu_s0_mfc             suspended                  0
+    /devices/platform/dbgdev-pd-mfc                     suspended                  0
+    /devices/platform/1a470000.sysmmu                   suspended                  0
+pd-mcsc                         off-0                                              0
+    /devices/platform/1d0d0000.s2mpu_s0_mcsc            suspended                  0
+    /devices/platform/dbgdev-pd-mcsc                    suspended                  0
+    /devices/platform/1d0a0000.sysmmu                   suspended                  0
+pd-gse                          off-0                                              0
+    /devices/platform/1d8a0000.s2mpu_s0_gse             suspended                  0
+    /devices/platform/dbgdev-pd-gse                     suspended                  0
+    /devices/platform/1d870000.sysmmu                   suspended                  0
+pd-gdc                          off-0                                              0
+    /devices/platform/1d4f0000.s2mpu_s0_gdc             suspended                  0
+    /devices/platform/dbgdev-pd-gdc                     suspended                  0
+    /devices/platform/1d4c0000.sysmmu                   suspended                  0
+pd-g2d                          off-0                                              0
+    /devices/platform/1a8a0000.s2mpu_s0_g2d             suspended                  0
+    /devices/platform/1a870000.sysmmu                   suspended                  0
+    /devices/platform/dbgdev-pd-g2d                     suspended                  0
+    /devices/platform/1a860000.smfc                     suspended                  0
+pd-dpuf1                        off-0                                              0
+    /devices/platform/19c70000.s2mpu_s0_dpuf1           suspended                  0
+    /devices/platform/dbgdev-pd-dpuf1                   suspended                  0
+    /devices/platform/19c40000.sysmmu                   suspended                  0
+pd-dpuf0                        off-0                                              0
+    /devices/platform/19870000.s2mpu_s0_dpuf0           suspended                  0
+    /devices/platform/dbgdev-pd-dpuf0                   suspended                  0
+    /devices/platform/19840000.sysmmu                   suspended                  0
+pd-dpub                         off-0                                              0
+                                                pd-dpuf0, pd-dpuf1
+    /devices/platform/15461d80.pd-dpuf0                 suspended                  0
+    /devices/platform/15461e00.pd-dpuf1                 suspended                  0
+    /devices/platform/dbgdev-pd-dpub                    suspended                  0
+pd-embedded_g3d                 off-0                                              0
+    /devices/platform/dbgdev-pd-embedded_g3d            suspended                  0
+    /devices/genpd:1:1f000000.mali                      suspended                  0
+pd-g3d                          off-0                                              0
+                                                pd-embedded_g3d
+    /devices/platform/15461c80.pd-embedded_g3d          suspended                  0
+    /devices/platform/1ee70000.s2mpu_s0_g3d             suspended                  0
+    /devices/platform/dbgdev-pd-g3d                     suspended                  0
+    /devices/genpd:0:1f000000.mali                      suspended                  0
+END_FILE

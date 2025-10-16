@@ -1,0 +1,16 @@
+FILE: ./devfreq_summary
+dev                            parent_dev                     governor        timer      polling_ms  cur_freq_Hz  min_freq_Hz  max_freq_Hz
+------------------------------ ------------------------------ --------------- ---------- ---------- ------------ ------------ ------------
+17000010.devfreq_mif           null                           interactive     null                0       421000       421000      3744000
+17000020.devfreq_int           null                           interactive     null                0       178000       178000      1066000
+17000030.devfreq_intcam        null                           interactive     null                0       111000       111000       664000
+17000040.devfreq_disp          null                           interactive     null                0       143000       143000       664000
+17000050.devfreq_cam           null                           interactive     null                0       111000       111000       711000
+17000060.devfreq_tnr           null                           interactive     null                0       111000       111000       664000
+17000070.devfreq_mfc           null                           interactive     null                0       100000       100000       711000
+17000080.devfreq_bw            null                           interactive     null                0       100000       100000       711000
+17000090.devfreq_dsu           null                           interactive     null                0       970000       324000      1800000
+170000a0.devfreq_bci           null                           interactive     null                0      1050000       315000      1401000
+1a000000.rio                   null                           powersave       null                0    226000000    226000000   1119000000
+20c00000.callisto              null                           powersave       null                0    178000000    178000000   1065000000
+END_FILE

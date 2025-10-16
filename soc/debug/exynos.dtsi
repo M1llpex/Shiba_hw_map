@@ -1,0 +1,822 @@
+FILE: exynos-pm/wake_lock
+0
+END_FILE
+FILE: exynos-pm/test_early_wakeup
+0
+END_FILE
+FILE: exynos-pm/test_pcieon_suspend
+0
+END_FILE
+FILE: exynos-pd/dbgdev-pd-hsi0
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-tpu
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-ispfe
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-eh
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-bw
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-aur
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-yuvp
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-tnr
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-rgbp
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-mfc
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-mcsc
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-gse
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-gdc
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-g2d
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-dpuf1
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-dpuf0
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-dpub
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-embedded_g3d
+2
+END_FILE
+FILE: exynos-pd/dbgdev-pd-g3d
+2
+END_FILE
+FILE: exynos_pm_qos/tpu_freq_max
+1: 2147483647: Default(google_bcl_setup_qos:197)
+2: 2147483647: Default(google_bcl_setup_qos:197)
+3: 2147483647: Default(google_bcl_setup_qos:197)
+4: 2147483647: Default(google_bcl_setup_qos:197)
+Type=Minimum, Value=2147483647, Requests: active=0 / total=4
+END_FILE
+FILE: exynos_pm_qos/tpu_freq_min
+Empty!
+END_FILE
+FILE: exynos_pm_qos/gpu_freq_max
+1: 2147483647: Default(google_bcl_setup_qos:199)
+2: 2147483647: Default(google_bcl_setup_qos:199)
+3: 2147483647: Default(google_bcl_setup_qos:199)
+4: 2147483647: Default(google_bcl_setup_qos:199)
+Type=Minimum, Value=2147483647, Requests: active=0 / total=4
+END_FILE
+FILE: exynos_pm_qos/gpu_freq_min
+Empty!
+END_FILE
+FILE: exynos_pm_qos/bci_throughput_max
+1: 1401000: Active(exynos_devfreq_probe:2495)
+2: 1401000: Active(exynos_devfreq_probe:2497)
+3: 1401000: Active(exynos_devfreq_probe:2499)
+4: 1401000: Active(exynos_devfreq_probe:2502)
+5: 2147483647: Default(__exynos_cpu_cooling_register:1237)
+Type=Minimum, Value=1401000, Requests: active=4 / total=5
+END_FILE
+FILE: exynos_pm_qos/bci_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 315000: Active(exynos_devfreq_probe:2491)
+3: 315000: Active(exynos_devfreq_probe:2493)
+4: 315000: Active(exynos_devfreq_probe:2504)
+5: 315000: Active(gs_dsulat_governor_vote_parse:338)
+Type=Maximum, Value=315000, Requests: active=4 / total=5
+END_FILE
+FILE: exynos_pm_qos/dsu_throughput_max
+1: 1800000: Active(exynos_devfreq_probe:2495)
+2: 1800000: Active(exynos_devfreq_probe:2497)
+3: 1800000: Active(exynos_devfreq_probe:2499)
+4: 1800000: Active(exynos_devfreq_probe:2502)
+5: 2147483647: Default(__exynos_cpu_cooling_register:1235)
+Type=Minimum, Value=1800000, Requests: active=4 / total=5
+END_FILE
+FILE: exynos_pm_qos/dsu_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 0: Default(gs_dsulat_governor_vote_parse:338)
+3: 324000: Active(exynos_devfreq_probe:2491)
+4: 324000: Active(exynos_devfreq_probe:2493)
+5: 324000: Active(exynos_devfreq_probe:2504)
+Type=Maximum, Value=324000, Requests: active=3 / total=5
+END_FILE
+FILE: exynos_pm_qos/bw_throughput_max
+1: 711000: Active(exynos_devfreq_probe:2495)
+2: 711000: Active(exynos_devfreq_probe:2497)
+3: 711000: Active(exynos_devfreq_probe:2499)
+4: 711000: Active(exynos_devfreq_probe:2502)
+Type=Minimum, Value=711000, Requests: active=4 / total=4
+END_FILE
+FILE: exynos_pm_qos/bw_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 100000: Active(exynos_devfreq_probe:2491)
+3: 100000: Active(exynos_devfreq_probe:2493)
+4: 100000: Active(exynos_devfreq_probe:2504)
+Type=Maximum, Value=100000, Requests: active=3 / total=4
+END_FILE
+FILE: exynos_pm_qos/tnr_throughput_max
+1: 664000: Active(exynos_devfreq_probe:2495)
+2: 664000: Active(exynos_devfreq_probe:2497)
+3: 664000: Active(exynos_devfreq_probe:2499)
+4: 664000: Active(exynos_devfreq_probe:2502)
+Type=Minimum, Value=664000, Requests: active=4 / total=4
+END_FILE
+FILE: exynos_pm_qos/tnr_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 67000: Active(exynos_devfreq_probe:2504)
+3: 111000: Active(exynos_devfreq_probe:2491)
+4: 111000: Active(exynos_devfreq_probe:2493)
+Type=Maximum, Value=111000, Requests: active=3 / total=4
+END_FILE
+FILE: exynos_pm_qos/mfc_throughput_max
+1: 711000: Active(exynos_devfreq_probe:2495)
+2: 711000: Active(exynos_devfreq_probe:2497)
+3: 711000: Active(exynos_devfreq_probe:2499)
+4: 711000: Active(exynos_devfreq_probe:2502)
+Type=Minimum, Value=711000, Requests: active=4 / total=4
+END_FILE
+FILE: exynos_pm_qos/mfc_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 100000: Active(exynos_devfreq_probe:2491)
+3: 100000: Active(exynos_devfreq_probe:2493)
+4: 100000: Active(exynos_devfreq_probe:2504)
+Type=Maximum, Value=100000, Requests: active=3 / total=4
+END_FILE
+FILE: exynos_pm_qos/cam_throughput_max
+1: 711000: Active(exynos_devfreq_probe:2495)
+2: 711000: Active(exynos_devfreq_probe:2497)
+3: 711000: Active(exynos_devfreq_probe:2499)
+4: 711000: Active(exynos_devfreq_probe:2502)
+Type=Minimum, Value=711000, Requests: active=4 / total=4
+END_FILE
+FILE: exynos_pm_qos/cam_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 67000: Active(exynos_devfreq_probe:2504)
+3: 111000: Active(exynos_devfreq_probe:2491)
+4: 111000: Active(exynos_devfreq_probe:2493)
+Type=Maximum, Value=111000, Requests: active=3 / total=4
+END_FILE
+FILE: exynos_pm_qos/display_throughput_max
+1: 664000: Active(exynos_devfreq_probe:2495)
+2: 664000: Active(exynos_devfreq_probe:2497)
+3: 664000: Active(exynos_devfreq_probe:2499)
+4: 664000: Active(exynos_devfreq_probe:2502)
+Type=Minimum, Value=664000, Requests: active=4 / total=4
+END_FILE
+FILE: exynos_pm_qos/display_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 0: Default(dpu_bts_init:1103)
+3: 0: Default(dpu_bts_init:1103)
+4: 143000: Active(exynos_devfreq_probe:2491)
+5: 143000: Active(exynos_devfreq_probe:2493)
+6: 143000: Active(exynos_devfreq_probe:2504)
+Type=Maximum, Value=143000, Requests: active=3 / total=6
+END_FILE
+FILE: exynos_pm_qos/bus_throughput_max
+1: 3744000: Active(exynos_devfreq_probe:2495)
+2: 3744000: Active(exynos_devfreq_probe:2497)
+3: 3744000: Active(exynos_devfreq_probe:2499)
+4: 3744000: Active(exynos_devfreq_probe:2502)
+5: 2147483647: Default(tpmon_create:1688)
+Type=Minimum, Value=3744000, Requests: active=4 / total=5
+END_FILE
+FILE: exynos_pm_qos/bus_throughput
+1: 0: Default(exynos_smfc_probe:1081)
+2: 0: Default(tpmon_create:1685)
+3: 0: Default(dpu_bts_init:1099)
+4: 0: Default(dpu_bts_init:1099)
+5: 0: Default(bts_probe:2104)
+6: 0: Default(gs_memlat_governor_initialize_vote:284)
+7: 421000: Active(exynos_devfreq_probe:2491)
+8: 421000: Active(exynos_devfreq_probe:2493)
+9: 421000: Active(exynos_devfreq_probe:2504)
+10: 3744000: Active(exynos_devfreq_probe:2506)
+Type=Maximum, Value=3744000, Requests: active=4 / total=10
+END_FILE
+FILE: exynos_pm_qos/intcam_throughput_max
+1: 664000: Active(exynos_devfreq_probe:2495)
+2: 664000: Active(exynos_devfreq_probe:2497)
+3: 664000: Active(exynos_devfreq_probe:2499)
+4: 664000: Active(exynos_devfreq_probe:2502)
+Type=Minimum, Value=664000, Requests: active=4 / total=4
+END_FILE
+FILE: exynos_pm_qos/device_throughput_max
+1: 1066000: Active(exynos_devfreq_probe:2495)
+2: 1066000: Active(exynos_devfreq_probe:2497)
+3: 1066000: Active(exynos_devfreq_probe:2499)
+4: 1066000: Active(exynos_devfreq_probe:2502)
+5: 2147483647: Default(tpmon_create:1693)
+Type=Minimum, Value=1066000, Requests: active=4 / total=5
+END_FILE
+FILE: exynos_pm_qos/intcam_throughput
+1: 0: Default(exynos_devfreq_probe:2506)
+2: 67000: Active(exynos_devfreq_probe:2504)
+3: 111000: Active(exynos_devfreq_probe:2491)
+4: 111000: Active(exynos_devfreq_probe:2493)
+Type=Maximum, Value=111000, Requests: active=3 / total=4
+END_FILE
+FILE: exynos_pm_qos/device_throughput
+1: 0: Default(exynos_devfreq_probe:2541)
+2: 0: Default(exynos_devfreq_probe:2506)
+3: 0: Default(exynos_pcie_rc_parse_dt:2286)
+4: 0: Default(exynos_devfreq_probe:2541)
+5: 0: Default(exynos_devfreq_probe:2541)
+6: 0: Default(exynos_pcie_rc_parse_dt:2286)
+7: 0: Default(exynos_devfreq_probe:2541)
+8: 0: Default(exynos_devfreq_probe:2541)
+9: 0: Default(exynos_devfreq_probe:2541)
+10: 0: Default(exynos_devfreq_probe:2541)
+11: 0: Default(exynos_devfreq_probe:2541)
+12: 0: Default(exynos_devfreq_probe:2541)
+13: 0: Default(exynos_smfc_probe:1080)
+14: 0: Default(tpmon_create:1690)
+15: 0: Default(dpu_bts_init:1101)
+16: 0: Default(dpu_bts_init:1101)
+17: 0: Default(exynos_ufs_probe:1706)
+18: 178000: Active(exynos_devfreq_probe:2491)
+19: 178000: Active(exynos_devfreq_probe:2493)
+20: 178000: Active(exynos_devfreq_probe:2504)
+21: 178000: Active(bts_probe:2105)
+22: 356000: Active(exynos_devfreq_probe:2541)
+Type=Maximum, Value=356000, Requests: active=5 / total=22
+END_FILE
+FILE: exynos_pm_qos/cluster2_freq_max
+Empty!
+END_FILE
+FILE: exynos_pm_qos/cluster2_freq_min
+Empty!
+END_FILE
+FILE: exynos_pm_qos/cluster1_freq_max
+Empty!
+END_FILE
+FILE: exynos_pm_qos/cluster1_freq_min
+Empty!
+END_FILE
+FILE: exynos_pm_qos/cluster0_freq_max
+Empty!
+END_FILE
+FILE: exynos_pm_qos/cluster0_freq_min
+Empty!
+END_FILE
+FILE: energy_model/cpu8/ps:2914000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2914000/cost
+2851716
+END_FILE
+FILE: energy_model/cpu8/ps:2914000/power
+2851716
+END_FILE
+FILE: energy_model/cpu8/ps:2914000/frequency
+2914000
+END_FILE
+FILE: energy_model/cpu8/ps:2850000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2850000/cost
+2577725
+END_FILE
+FILE: energy_model/cpu8/ps:2850000/power
+2521111
+END_FILE
+FILE: energy_model/cpu8/ps:2850000/frequency
+2850000
+END_FILE
+FILE: energy_model/cpu8/ps:2687000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2687000/cost
+2205898
+END_FILE
+FILE: energy_model/cpu8/ps:2687000/power
+2034059
+END_FILE
+FILE: energy_model/cpu8/ps:2687000/frequency
+2687000
+END_FILE
+FILE: energy_model/cpu8/ps:2556000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2556000/cost
+1936709
+END_FILE
+FILE: energy_model/cpu8/ps:2556000/power
+1698775
+END_FILE
+FILE: energy_model/cpu8/ps:2556000/frequency
+2556000
+END_FILE
+FILE: energy_model/cpu8/ps:2363000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2363000/cost
+1661976
+END_FILE
+FILE: energy_model/cpu8/ps:2363000/power
+1347718
+END_FILE
+FILE: energy_model/cpu8/ps:2363000/frequency
+2363000
+END_FILE
+FILE: energy_model/cpu8/ps:2294000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2294000/cost
+1593761
+END_FILE
+FILE: energy_model/cpu8/ps:2294000/power
+1254663
+END_FILE
+FILE: energy_model/cpu8/ps:2294000/frequency
+2294000
+END_FILE
+FILE: energy_model/cpu8/ps:2147000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2147000/cost
+1454444
+END_FILE
+FILE: energy_model/cpu8/ps:2147000/power
+1071617
+END_FILE
+FILE: energy_model/cpu8/ps:2147000/frequency
+2147000
+END_FILE
+FILE: energy_model/cpu8/ps:2049000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:2049000/cost
+1366263
+END_FILE
+FILE: energy_model/cpu8/ps:2049000/power
+960698
+END_FILE
+FILE: energy_model/cpu8/ps:2049000/frequency
+2049000
+END_FILE
+FILE: energy_model/cpu8/ps:1885000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:1885000/cost
+1240816
+END_FILE
+FILE: energy_model/cpu8/ps:1885000/power
+802656
+END_FILE
+FILE: energy_model/cpu8/ps:1885000/frequency
+1885000
+END_FILE
+FILE: energy_model/cpu8/ps:1745000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:1745000/cost
+1099498
+END_FILE
+FILE: energy_model/cpu8/ps:1745000/power
+658416
+END_FILE
+FILE: energy_model/cpu8/ps:1745000/frequency
+1745000
+END_FILE
+FILE: energy_model/cpu8/ps:1557000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:1557000/cost
+984323
+END_FILE
+FILE: energy_model/cpu8/ps:1557000/power
+525941
+END_FILE
+FILE: energy_model/cpu8/ps:1557000/frequency
+1557000
+END_FILE
+FILE: energy_model/cpu8/ps:1298000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:1298000/cost
+842484
+END_FILE
+FILE: energy_model/cpu8/ps:1298000/power
+375273
+END_FILE
+FILE: energy_model/cpu8/ps:1298000/frequency
+1298000
+END_FILE
+FILE: energy_model/cpu8/ps:1164000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:1164000/cost
+810084
+END_FILE
+FILE: energy_model/cpu8/ps:1164000/power
+323589
+END_FILE
+FILE: energy_model/cpu8/ps:1164000/frequency
+1164000
+END_FILE
+FILE: energy_model/cpu8/ps:880000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:880000/cost
+696717
+END_FILE
+FILE: energy_model/cpu8/ps:880000/power
+210402
+END_FILE
+FILE: energy_model/cpu8/ps:880000/frequency
+880000
+END_FILE
+FILE: energy_model/cpu8/ps:500000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu8/ps:500000/cost
+578259
+END_FILE
+FILE: energy_model/cpu8/ps:500000/power
+99221
+END_FILE
+FILE: energy_model/cpu8/ps:500000/frequency
+500000
+END_FILE
+FILE: energy_model/cpu8/flags
+0x1
+END_FILE
+FILE: energy_model/cpu8/cpus
+8
+END_FILE
+FILE: energy_model/cpu4/ps:2367000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:2367000/cost
+1553248
+END_FILE
+FILE: energy_model/cpu4/ps:2367000/power
+1553248
+END_FILE
+FILE: energy_model/cpu4/ps:2367000/frequency
+2367000
+END_FILE
+FILE: energy_model/cpu4/ps:2245000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:2245000/cost
+1354076
+END_FILE
+FILE: energy_model/cpu4/ps:2245000/power
+1284285
+END_FILE
+FILE: energy_model/cpu4/ps:2245000/frequency
+2245000
+END_FILE
+FILE: energy_model/cpu4/ps:2130000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:2130000/cost
+1182904
+END_FILE
+FILE: energy_model/cpu4/ps:2130000/power
+1064464
+END_FILE
+FILE: energy_model/cpu4/ps:2130000/frequency
+2130000
+END_FILE
+FILE: energy_model/cpu4/ps:1945000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:1945000/cost
+1009961
+END_FILE
+FILE: energy_model/cpu4/ps:1945000/power
+829901
+END_FILE
+FILE: energy_model/cpu4/ps:1945000/frequency
+1945000
+END_FILE
+FILE: energy_model/cpu4/ps:1836000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:1836000/cost
+902256
+END_FILE
+FILE: energy_model/cpu4/ps:1836000/power
+699849
+END_FILE
+FILE: energy_model/cpu4/ps:1836000/frequency
+1836000
+END_FILE
+FILE: energy_model/cpu4/ps:1572000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:1572000/cost
+740657
+END_FILE
+FILE: energy_model/cpu4/ps:1572000/power
+491894
+END_FILE
+FILE: energy_model/cpu4/ps:1572000/frequency
+1572000
+END_FILE
+FILE: energy_model/cpu4/ps:1418000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:1418000/cost
+638250
+END_FILE
+FILE: energy_model/cpu4/ps:1418000/power
+382357
+END_FILE
+FILE: energy_model/cpu4/ps:1418000/frequency
+1418000
+END_FILE
+FILE: energy_model/cpu4/ps:1328000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:1328000/cost
+605235
+END_FILE
+FILE: energy_model/cpu4/ps:1328000/power
+339566
+END_FILE
+FILE: energy_model/cpu4/ps:1328000/frequency
+1328000
+END_FILE
+FILE: energy_model/cpu4/ps:1221000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:1221000/cost
+553251
+END_FILE
+FILE: energy_model/cpu4/ps:1221000/power
+285391
+END_FILE
+FILE: energy_model/cpu4/ps:1221000/frequency
+1221000
+END_FILE
+FILE: energy_model/cpu4/ps:1065000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:1065000/cost
+502037
+END_FILE
+FILE: energy_model/cpu4/ps:1065000/power
+225885
+END_FILE
+FILE: energy_model/cpu4/ps:1065000/frequency
+1065000
+END_FILE
+FILE: energy_model/cpu4/ps:910000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:910000/cost
+454796
+END_FILE
+FILE: energy_model/cpu4/ps:910000/power
+174848
+END_FILE
+FILE: energy_model/cpu4/ps:910000/frequency
+910000
+END_FILE
+FILE: energy_model/cpu4/ps:712000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:712000/cost
+401465
+END_FILE
+FILE: energy_model/cpu4/ps:712000/power
+120762
+END_FILE
+FILE: energy_model/cpu4/ps:712000/frequency
+712000
+END_FILE
+FILE: energy_model/cpu4/ps:697000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:697000/cost
+391750
+END_FILE
+FILE: energy_model/cpu4/ps:697000/power
+115357
+END_FILE
+FILE: energy_model/cpu4/ps:697000/frequency
+697000
+END_FILE
+FILE: energy_model/cpu4/ps:578000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:578000/cost
+383519
+END_FILE
+FILE: energy_model/cpu4/ps:578000/power
+93652
+END_FILE
+FILE: energy_model/cpu4/ps:578000/frequency
+578000
+END_FILE
+FILE: energy_model/cpu4/ps:402000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu4/ps:402000/cost
+367314
+END_FILE
+FILE: energy_model/cpu4/ps:402000/power
+62383
+END_FILE
+FILE: energy_model/cpu4/ps:402000/frequency
+402000
+END_FILE
+FILE: energy_model/cpu4/flags
+0x1
+END_FILE
+FILE: energy_model/cpu4/cpus
+4-7
+END_FILE
+FILE: energy_model/cpu0/ps:1704000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:1704000/cost
+95119
+END_FILE
+FILE: energy_model/cpu0/ps:1704000/power
+95119
+END_FILE
+FILE: energy_model/cpu0/ps:1704000/frequency
+1704000
+END_FILE
+FILE: energy_model/cpu0/ps:1548000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:1548000/cost
+84765
+END_FILE
+FILE: energy_model/cpu0/ps:1548000/power
+77005
+END_FILE
+FILE: energy_model/cpu0/ps:1548000/frequency
+1548000
+END_FILE
+FILE: energy_model/cpu0/ps:1425000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:1425000/cost
+77488
+END_FILE
+FILE: energy_model/cpu0/ps:1425000/power
+64801
+END_FILE
+FILE: energy_model/cpu0/ps:1425000/frequency
+1425000
+END_FILE
+FILE: energy_model/cpu0/ps:1328000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:1328000/cost
+71642
+END_FILE
+FILE: energy_model/cpu0/ps:1328000/power
+55834
+END_FILE
+FILE: energy_model/cpu0/ps:1328000/frequency
+1328000
+END_FILE
+FILE: energy_model/cpu0/ps:1197000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:1197000/cost
+64789
+END_FILE
+FILE: energy_model/cpu0/ps:1197000/power
+45512
+END_FILE
+FILE: energy_model/cpu0/ps:1197000/frequency
+1197000
+END_FILE
+FILE: energy_model/cpu0/ps:1098000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:1098000/cost
+61491
+END_FILE
+FILE: energy_model/cpu0/ps:1098000/power
+39623
+END_FILE
+FILE: energy_model/cpu0/ps:1098000/frequency
+1098000
+END_FILE
+FILE: energy_model/cpu0/ps:955000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:955000/cost
+55316
+END_FILE
+FILE: energy_model/cpu0/ps:955000/power
+31002
+END_FILE
+FILE: energy_model/cpu0/ps:955000/frequency
+955000
+END_FILE
+FILE: energy_model/cpu0/ps:820000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:820000/cost
+50394
+END_FILE
+FILE: energy_model/cpu0/ps:820000/power
+24251
+END_FILE
+FILE: energy_model/cpu0/ps:820000/frequency
+820000
+END_FILE
+FILE: energy_model/cpu0/ps:610000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:610000/cost
+43801
+END_FILE
+FILE: energy_model/cpu0/ps:610000/power
+15680
+END_FILE
+FILE: energy_model/cpu0/ps:610000/frequency
+610000
+END_FILE
+FILE: energy_model/cpu0/ps:324000/inefficient
+0
+END_FILE
+FILE: energy_model/cpu0/ps:324000/cost
+41095
+END_FILE
+FILE: energy_model/cpu0/ps:324000/power
+7814
+END_FILE
+FILE: energy_model/cpu0/ps:324000/frequency
+324000
+END_FILE
+FILE: energy_model/cpu0/flags
+0x1
+END_FILE
+FILE: energy_model/cpu0/cpus
+0-3
+END_FILE
+FILE: flexpmu-dbg/log_stop
+log stopped : 0
+END_FILE
+FILE: flexpmu-dbg/lpm_count
+[SLEEP] Early wakeup : 0
+[SLEEP] SOC seq down : 0
+[SLEEP] MIF seq down : 0
+[SICD] Early wakeup : 0
+[SICD] SOC seq down : 0
+[SICD] MIF seq down : 0
+END_FILE
+FILE: flexpmu-dbg/mif_always_on
+MIF always on : 1
+END_FILE
+FILE: flexpmu-dbg/seq_count
+Early Wakeup : 0
+SOC sequence : 0
+MIF sequence : 0
+END_FILE
+FILE: flexpmu-dbg/sw_flag
+Hotplug out flag : 0xfe
+Reset-Release flag : 0x1
+CHUB ref_count : 0
+MIF req_Master : 0x1
+MIF req_count : 1
+END_FILE
+FILE: flexpmu-dbg/cur_sequence
+UP Sequence : 0
+DOWN Sequence : 0
+Access Type : 0
+Seq Index : 558124613
+END_FILE
+FILE: flexpmu-dbg/seq_status
+SOC seq : 1
+MIF seq : 0
+nonCPU CL0 : 0
+nonCPU CL1 : 0
+END_FILE
+FILE: flexpmu-dbg/cpu_status
+CL0_CPU0 : 1
+CL0_CPU1 : 1
+CL0_CPU2 : 1
+CL0_CPU3 : 1
+CL1_CPU0 : 1
+CL1_CPU1 : 1
+CL2_CPU0 : 1
+CL2_CPU1 : 1
+END_FILE

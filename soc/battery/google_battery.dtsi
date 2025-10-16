@@ -1,0 +1,208 @@
+FILE: ./restrict_level_critical
+0
+END_FILE
+FILE: ./boot_to_os_attempts
+0
+END_FILE
+FILE: ./temp_filter_resume_delay_interval
+0
+END_FILE
+FILE: ./temp_filter_fast_interval
+0
+END_FILE
+FILE: ./temp_filter_default_interval
+0
+END_FILE
+FILE: ./ravg
+END_FILE
+FILE: ./ravg_soc_high
+75
+END_FILE
+FILE: ./ravg_soc_low
+5
+END_FILE
+FILE: ./ravg_temp_high
+390
+END_FILE
+FILE: ./ravg_temp_low
+350
+END_FILE
+FILE: ./reset_first_usage_date
+END_FILE
+FILE: ./bhi_debug_cycle_grace
+END_FILE
+FILE: ./bhi_debug_status
+2, 0 [0/100 0/0 0/0]
+END_FILE
+FILE: ./bhi_debug_health_status
+0
+END_FILE
+FILE: ./bhi_debug_health_idx
+0
+END_FILE
+FILE: ./bhi_debug_sd_idx
+0
+END_FILE
+FILE: ./bhi_debug_imp_idx
+0
+END_FILE
+FILE: ./bhi_debug_cap_idx
+0
+END_FILE
+FILE: ./bhi_debug_cycle_count
+0
+END_FILE
+FILE: ./act_impedance
+55297
+END_FILE
+FILE: ./bhi_w_sd
+0
+END_FILE
+FILE: ./bhi_w_pi
+0
+END_FILE
+FILE: ./bhi_w_ci
+100
+END_FILE
+FILE: ./power_metrics
+ 0:  4431562/ 3824000 -    33
+ 1:        0/       0 -     0
+ 2:        0/       0 -     0
+ 3:        0/       0 -     0
+ 4:        0/       0 -     0
+ 5:        0/       0 -     0
+ 6:        0/       0 -     0
+ 7:        0/       0 -     0
+ 8:        0/       0 -     0
+ 9:        0/       0 -     0
+10:        0/       0 -     0
+11:        0/       0 -     0
+12:        0/       0 -     0
+13:        0/       0 -     0
+14:        0/       0 -     0
+15:        0/       0 -     0
+16:        0/       0 -     0
+17:        0/       0 -     0
+18:        0/       0 -     0
+19:        0/       0 -     0
+20:        0/       0 -     0
+21:        0/       0 -     0
+22:        0/       0 -     0
+23:        0/       0 -     0
+24:        0/       0 -     0
+25:        0/       0 -     0
+26:        0/       0 -     0
+27:        0/       0 -     0
+28:        0/       0 -     0
+29:        0/       0 -     0
+30:        0/       0 -     0
+31:        0/       0 -     0
+32:        0/       0 -     0
+33:        0/       0 -     0
+34:        0/       0 -     0
+35:        0/       0 -     0
+36:        0/       0 -     0
+37:        0/       0 -     0
+38:        0/       0 -     0
+39:        0/       0 -     0
+40:        0/       0 -     0
+41:        0/       0 -     0
+42:        0/       0 -     0
+43:        0/       0 -     0
+44:        0/       0 -     0
+45:        0/       0 -     0
+46:        0/       0 -     0
+47:        0/       0 -     0
+48:        0/       0 -     0
+49:        0/       0 -     0
+END_FILE
+FILE: ./batt_vs_w
+88
+END_FILE
+FILE: ./chg_raw_profile
+Profile constant charge limits:
+|T \ V  4200  4300  4350  4480
+| 0:10  2240  1350     0     0
+|10:20  3140  1350  1350  1350
+|20:42  5380  5380  5380  2240
+|42:46  4490  4490  4490  2240
+|46:48  2240  2240     0     0
+|48:55  1350     0     0     0
+END_FILE
+FILE: ./chg_health_stage
+END_FILE
+FILE: ./chg_health_rest_rate_before_trigger
+80
+END_FILE
+FILE: ./chg_health_rest_rate
+15
+END_FILE
+FILE: ./chg_health_thr_soc
+80
+END_FILE
+FILE: ./fake_aact_cc
+0
+END_FILE
+FILE: ./fake_aafv_cc
+0
+END_FILE
+FILE: ./fake_aacr_cc
+0
+END_FILE
+FILE: ./fake_capacity
+4294967274
+END_FILE
+FILE: ./blf_collect_now
+0
+END_FILE
+FILE: ./blf_state
+2
+END_FILE
+FILE: ./battery_present
+4294967295
+END_FILE
+FILE: ./temp
+0
+END_FILE
+FILE: ./pairing_state
+END_FILE
+FILE: ./force_psy_update
+END_FILE
+FILE: ./ssoc_uicurve
+[15.00 15.00][96.51 96.51][100.00 100.00]END_FILE
+FILE: ./hda_tz_limit
+0
+END_FILE
+FILE: ./mp_max_ratio_limit
+70
+END_FILE
+FILE: ./mp_therm_limit
+0
+END_FILE
+FILE: ./mp_soc_limit_high
+80
+END_FILE
+FILE: ./mp_soc_limit_low
+50
+END_FILE
+FILE: ./mp_tz
+0
+END_FILE
+FILE: ./fv_dc_ratio
+20
+END_FILE
+FILE: ./ssoc_rls
+0
+END_FILE
+FILE: ./ssoc_uic
+1617887232
+END_FILE
+FILE: ./ssoc_gdf
+1617887232
+END_FILE
+FILE: ./cycle_count_sync
+0
+END_FILE
+FILE: ./debug_level
+6
+END_FILE

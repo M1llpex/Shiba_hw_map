@@ -1,0 +1,24 @@
+FILE: ./fault_injection
+unknown
+none
+END_FILE
+FILE: ./cooling/enable
+1
+END_FILE
+FILE: ./log_eventfd
+END_FILE
+FILE: ./log
+3235823838
+END_FILE
+FILE: ./firmware_run
+0
+END_FILE
+FILE: ./coredump
+END_FILE
+FILE: ./mailbox
+END_FILE
+FILE: ./blk_powerstate
+END_FILE
+FILE: ./wakelock
+END_FILE
+FILE: ./cmumux2
