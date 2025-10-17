@@ -1,0 +1,13 @@
+/*
+ * PCIe Root Complexes
+ * Source: /proc/iomem
+ */
+pcie0: pcie@12100000 {
+    compatible = "google,g-pcie";
+    reg = <0x0 0x12100000 0x0 0x100000>; // Base and size for PCIe 0
+};
+
+pcie1: pcie@13120000 {
+    compatible = "google,g-pcie";
+    reg = <0x0 0x13120000 0x0 0x100000>; // Base and size for PCIe 1
+};

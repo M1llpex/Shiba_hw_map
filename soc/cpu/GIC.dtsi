@@ -1,0 +1,14 @@
+/*
+ * ARM Generic Interrupt Controller v3
+ * Source: /proc/iomem
+ */
+gic: interrupt-controller@10400000 {
+    compatible = "arm,gic-v3";
+    reg = <0x0 0x10400000 0x0 0x10000>,     // GIC Distributor (GICD)
+          <0x0 0x10480000 0x0 0x200000>;   // GIC Redistributors (GICR)
+    interrupt-controller;
+    #interrupt-cells = <3>;
+};
+// This is not a device tree node, but a confirmed value.
+// Add this comment to your timer documentation or platform definitions.
+// KERNEL_TIMER_IRQ: 30 (ARM Architected Generic Timer)

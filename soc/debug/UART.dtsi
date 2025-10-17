@@ -1,0 +1,8 @@
+/*
+ * Exynos UART for Serial Console (ttySAC0)
+ * Source: /proc/iomem, dmesg
+ */
+serial@10870000 {
+    compatible = "samsung,exynos4210-uart";
+    reg = <0x0 0x10870000 0x0 0x100>; // Base address and size
+};

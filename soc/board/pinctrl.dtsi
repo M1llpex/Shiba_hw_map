@@ -1,0 +1,9 @@
+/*
+ * Primary Pin Controller
+ * Source: /proc/iomem, /proc/interrupts
+ */
+pinctrl@10840000 {
+    compatible = "samsung,exynos-pinctrl";
+    reg = <0x0 0x10840000 0x0 0x1000>; // Base address and size
+    interrupts = <0 666 4>; // GIC_SPI, IRQ 666, Type LEVEL_HIGH
+};
