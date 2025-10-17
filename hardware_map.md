@@ -1,3 +1,24 @@
+Peripheral/Region         Physical Address Range                           Size 
+------------------------ ------------------------------------------------- --------
+pkvm_guest_firmware      $0x000000008b000000$..$0x000000008b0bffff$        768 KiB
+gxp_mcu_fw               $0x0000000092000000$..$0x00000000923fffff$        4096 KiB
+tpu_fw                   $0x0000000093000000$..$0x0000000093ffffff$        16384 KiB
+aoc                      $0x0000000094000000$..$0x0000000096ffffff$        49152 KiB
+sec_dram                 $0x00000000b6200000$..$0x00000000bfffffff$        161792 KiB
+sec_pt                   $0x00000000e0000000$..$0x00000000e37fffff$        57344 KiB
+abl                      $0x00000000f8800000$..$0x00000000f97fffff$        16384 KiB
+ramoops_mem              $0x00000000fd3ff000$..$0x00000000fd7fefff$        4096 KiB
+mfc_fw                   $0x00000000ffdf0000$..$0x00000000ffffffff$        2112 KiB
+gcma_camera              $0x00000009c9000000$..$0x00000009cf3fffff$        102400 KiB
+vframe                   $0x00000009dac00000$..$0x00000009fabfffff$        524288 KiB
+
+A 72 MiB CMA pool was created at address $0x00000009fac00000$ for the vstream component.
+A 512 MiB CMA pool was created at address $0x00000009dac00000$ for the vframe` component.
+An additional 16 MiB CMA pool was reserved at address $0x00000000fc000000$
+
+the main usable DRAM is located within a single memory node (node 0) and spans the physical address range from $0x0000000080000000$ to $0x00000009ffffffff$.
+
+
 Absolute Symbols (Type A)
 
 Address            Symbol
@@ -94,8 +115,8 @@ BSS (Uninitialized Data) Symbols (Types b, B)
 
 Address               Symbol                                      Type
 --------------------- ------------------------------------------- ------
-ffffffffc00a303d28    devlink_resource_size_get.__key           b
-ffffffffc00a303d29    devlink_resource_occ_get.__key            b
+ffffffffc00a303d28    devlink_resource_size_get.__key             b
+ffffffffc00a303d29    devlink_resource_occ_get.__key              b
 ffffffffc00a303d30    __devlink_trap_group_register.__key         b
 ffffffffc00a303d40    devl_rate_nodes_destroy.devlink_rate        b
 ffffffffc00a303d48    devl_rate_nodes_destroy.tmp                 b
@@ -105,7 +126,7 @@ ffffffffc00a303d52    devlink_port_region_create.__key            b
 ffffffffc00a303d53    __devlink_health_reporter_create.__key      b
 ffffffffc00a303d58    devlink_rate_node_get_by_name.devlink_rate  b
 ffffffffc00a303d60    init_completion.__key                       b
-ffffffffc00a303d64    wireless_seq_printf_stats.nullstats       b
+ffffffffc00a303d64    wireless_seq_printf_stats.nullstats         b
 ffffffffc00a303d88    net_sysctl_init.empty                       b
 ffffffffc00a303dc8    net_header                                  b
 ffffffffc00a305d48    transport_dgram                             b
@@ -117,4 +138,3 @@ ffffffffc00a304d90    vsock_connected_table                       B
 ffffffffc00a305d40    vsock_table_lock                            B
 ffffffffc00a306000    x86_level4_pgt                              B
 ffffffffc00a307000    empty_zero_page                             B
-
