@@ -1,0 +1,815 @@
+/dts-v1/;
+
+/ {
+    compatible = "google,zuma";
+    interrupt-parent = <&gic>;
+    #address-cells = <2>;
+    #size-cells = <1>;
+
+    aliases {
+        i2c7 = &acpm_mfd_bus0;
+        i2c8 = &acpm_mfd_bus1;
+        pinctrl0 = &pinctrl_0;
+        pinctrl1 = &pinctrl_1;
+        pinctrl2 = &pinctrl_2;
+        pinctrl3 = &pinctrl_3;
+        pinctrl4 = &pinctrl_4;
+        pinctrl5 = &pinctrl_5;
+        pinctrl6 = &pinctrl_6;
+        pinctrl7 = &pinctrl_7;
+        pinctrl8 = &pinctrl_8;
+        pinctrl9 = &pinctrl_9;
+        pinctrl10 = &pinctrl_10;
+        pinctrl11 = &pinctrl_11;
+        pinctrl12 = &pinctrl_12;
+        uart0 = &serial_0;
+    };
+
+    memory@80000000 {
+        device_type = "memory";
+        reg = <0x0 0x80000000 0x80000000>;
+    };
+
+    /*
+     * =======================================
+     * CPU Configuration
+     * From: soc/cpu/*
+     * =======================================
+     */
+    cpus {
+        #address-cells = <2>;
+        #size-cells = <0>;
+
+        cpu-map {
+            cluster0 {
+                core0 { cpu = <&cpu0>; };
+                core1 { cpu = <&cpu1>; };
+                core2 { cpu = <&cpu2>; };
+                core3 { cpu = <&cpu3>; };
+                core4 { cpu = <&cpu4>; };
+                core5 { cpu = <&cpu5>; };
+                core6 { cpu = <&cpu6>; };
+                core7 { cpu = <&cpu7>; };
+                core8 { cpu = <&cpu8>; };
+            };
+        };
+
+        cpu0: cpu@0 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0000>;
+            enable-method = "psci";
+            cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+            capacity-dmips-mhz = <193>;
+            dynamic-power-coefficient = <70>;
+            cluster-id = <0>;
+            core-type = "klein";
+        };
+
+        cpu1: cpu@100 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0100>;
+            enable-method = "psci";
+            cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+            capacity-dmips-mhz = <193>;
+            dynamic-power-coefficient = <70>;
+            cluster-id = <0>;
+            core-type = "klein";
+        };
+
+        cpu2: cpu@200 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0200>;
+            enable-method = "psci";
+            cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+            capacity-dmips-mhz = <193>;
+            dynamic-power-coefficient = <70>;
+            cluster-id = <0>;
+            core-type = "klein";
+        };
+
+        cpu3: cpu@300 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0300>;
+            enable-method = "psci";
+            cpu-idle-states = <&KLEIN_CPU_SLEEP>;
+            capacity-dmips-mhz = <193>;
+            dynamic-power-coefficient = <70>;
+            cluster-id = <0>;
+            core-type = "klein";
+        };
+
+        cpu4: cpu@400 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0400>;
+            enable-method = "psci";
+            cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+            capacity-dmips-mhz = <927>;
+            dynamic-power-coefficient = <513>;
+            cluster-id = <1>;
+            core-type = "makalu";
+        };
+
+        cpu5: cpu@500 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0500>;
+            enable-method = "psci";
+            cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+            capacity-dmips-mhz = <927>;
+            dynamic-power-coefficient = <513>;
+            cluster-id = <1>;
+            core-type = "makalu";
+        };
+
+        cpu6: cpu@600 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0600>;
+            enable-method = "psci";
+            cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+            capacity-dmips-mhz = <927>;
+            dynamic-power-coefficient = <513>;
+            cluster-id = <1>;
+            core-type = "makalu";
+        };
+
+        cpu7: cpu@700 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0700>;
+            enable-method = "psci";
+            cpu-idle-states = <&MAKALU_CPU_SLEEP>;
+            capacity-dmips-mhz = <927>;
+            dynamic-power-coefficient = <513>;
+            cluster-id = <1>;
+            core-type = "makalu";
+        };
+
+        cpu8: cpu@800 {
+            device_type = "cpu";
+            compatible = "arm,armv9";
+            reg = <0x0 0x0800>;
+            enable-method = "psci";
+            cpu-idle-states = <&MAKALUELP_CPU_SLEEP>;
+            capacity-dmips-mhz = <1024>;
+            dynamic-power-coefficient = <757>;
+            cluster-id = <2>;
+            core-type = "makaluelp";
+        };
+
+        idle-states {
+            entry-method = "arm,psci";
+
+            KLEIN_CPU_SLEEP: klein-cpu-sleep {
+                compatible = "arm,idle-state";
+                idle-state-name = "c2";
+                arm,psci-suspend-param = <0x0010000>;
+                local-timer-stop;
+                entry-latency-us = <70>;
+                exit-latency-us = <160>;
+                min-residency-us = <2000>;
+                status = "okay";
+            };
+
+            MAKALU_CPU_SLEEP: makalu-cpu-sleep {
+                compatible = "arm,idle-state";
+                idle-state-name = "c2";
+                arm,psci-suspend-param = <0x0010000>;
+                local-timer-stop;
+                entry-latency-us = <150>;
+                exit-latency-us = <190>;
+                min-residency-us = <2500>;
+                status = "okay";
+            };
+
+            MAKALUELP_CPU_SLEEP: makaluelp-cpu-sleep {
+                compatible = "arm,idle-state";
+                idle-state-name = "c2";
+                arm,psci-suspend-param = <0x0010000>;
+                local-timer-stop;
+                entry-latency-us = <235>;
+                exit-latency-us = <220>;
+                min-residency-us = <3500>;
+                status = "okay";
+            };
+        };
+    };
+
+    /*
+     * =======================================
+     * Interrupt Controller
+     * From: soc/cpu/GIC.dtsi
+     * =======================================
+     */
+    gic: interrupt-controller@10400000 {
+        compatible = "arm,gic-v3";
+        #interrupt-cells = <4>;
+        interrupt-controller;
+        reg = <0x0 0x10400000 0x10000>,     // GICD
+              <0x0 0x10440000 0x200000>;    // GICR
+        interrupts = <GIC_PPI 9 IRQ_TYPE_LEVEL_HIGH 0>;
+    };
+
+    timer {
+        compatible = "arm,armv8-timer";
+        interrupts = <GIC_PPI 13 (GIC_CPU_MASK_SIMPLE(9) | IRQ_TYPE_LEVEL_LOW) 0>,
+                     <GIC_PPI 14 (GIC_CPU_MASK_SIMPLE(9) | IRQ_TYPE_LEVEL_LOW) 0>,
+                     <GIC_PPI 11 (GIC_CPU_MASK_SIMPLE(9) | IRQ_TYPE_LEVEL_LOW) 0>,
+                     <GIC_PPI 10 (GIC_CPU_MASK_SIMPLE(9) | IRQ_TYPE_LEVEL_LOW) 0>;
+        clock-frequency = <24576000>;
+    };
+
+    /*
+     * =======================================
+     * Mali GPU Configuration
+     * From: soc/gpu/*
+     * =======================================
+     */
+    mali: mali@1F000000 {
+        compatible = "arm,malit6xx";
+        reg = <0x0 0x1F000000 0x480000>;
+        interrupts = <GIC_SPI 139 IRQ_TYPE_LEVEL_HIGH 0>,
+                     <GIC_SPI 140 IRQ_TYPE_LEVEL_HIGH 0>,
+                     <GIC_SPI 141 IRQ_TYPE_LEVEL_HIGH 0>;
+        interrupt-names = "JOB", "MMU", "GPU";
+
+        l2-hash-values = <0x0036DB6D 0x005B6DB6 0x0>;
+        gpu_features_mask = <0 4>;
+        firmware_idle_hysteresis_time_ms = <60>;
+        firmware_idle_hysteresis_gpu_sleep_scaler = <60>;
+        cores_suspend_hysteresis_time_ms = <60>;
+        top_suspend_hysteresis_time_ms = <0>;
+
+        power-domains = <&pd_g3d>, <&pd_embedded_g3d>;
+        power-domain-names = "top", "cores";
+        g3d_genpd_name = "pd-embedded_g3d";
+        gpu_pmu_status_reg_offset = <0x1C84>;
+        gpu_pmu_status_local_pwr_mask = <0x1>;
+        power_policy = "adaptive";
+        gpu0_cmu_cal_id = <ACPM_DVFS_G3DL2>;
+        gpu1_cmu_cal_id = <ACPM_DVFS_G3D>;
+
+        gpu_dvfs_governor = "quickstep_use_mcu";
+        gpu_dvfs_clockdown_hysteresis = <50>;
+        gpu_dvfs_step_up_val = <3>;
+        gpu_dvfs_max_freq = <890000>;
+
+        gpu_dvfs_table_size_v1 = <12 12>;
+        gpu_dvfs_table_v1 = <
+            900000 890000 85 100 1 0 3172000 0 0 0 40 100
+            900000 807000 81 97 1 0 1716000 0 0 0 40 60
+            900000 723000 76 94 1 0 1352000 0 0 0 30 60
+            749000 649000 85 96 2 0 1352000 0 0 0 30 40
+            749000 580000 83 97 3 0 1352000 0 0 0 25 40
+            659000 521000 78 95 3 0 845000 0 0 0 25 30
+            659000 467000 80 96 3 0 845000 0 0 0 20 30
+            531000 419000 76 95 3 0 0 0 0 0 20 25
+            531000 376000 72 94 3 0 0 0 0 0 15 25
+            430000 337000 67 94 2 0 0 0 0 0 15 20
+            386000 302000 50 92 1 0 0 0 0 0 8 20
+            160000 150000 0 90 1 0 0 0 0 0 0 20
+        >;
+
+        gpu_dvfs_table_size_v2 = <14 12>;
+        gpu_dvfs_table_v2 = <
+            950000 940000 85 100 1 0 3172000 0 0 0 40 100
+            900000 890000 85 97 1 0 3172000 0 0 0 40 60
+            900000 850000 76 94 1 0 1716000 0 0 0 40 60
+            900000 807000 85 96 2 0 1716000 0 0 0 30 60
+            900000 723000 83 97 3 0 1352000 0 0 0 25 50
+            749000 649000 78 95 3 0 1352000 0 0 0 25 40
+            749000 580000 80 96 3 0 1352000 0 0 0 20 40
+            659000 521000 76 95 3 0 845000 0 0 0 20 35
+            659000 467000 72 95 3 0 845000 0 0 0 20 30
+            531000 419000 67 94 2 0 0 0 0 0 15 30
+            531000 376000 65 94 1 0 0 0 0 0 15 25
+            430000 337000 60 94 1 0 0 0 0 0 12 20
+            386000 302000 50 92 1 0 0 0 0 0 8 20
+            160000 150000 0 90 1 0 0 0 0 0 0 20
+        >;
+
+        #cooling-cells = <2>;
+        gpu_power_coeff = <625>;
+        ect-coeff-index = <3>;
+
+        physical-memory-group-manager = <&mali_mgm>;
+        protected-memory-allocator = <&mali_pma>;
+        s2mpus = <&s2mpu_s0_g3d>;
+
+        gpu_dvfs_qos_bts_scenario = "g3d_performance";
+        gpu_dvfs_qos_bts_threshold = <400000>;
+        mcu_protm_scale = <3 10>;
+        mcu_down_util_scale = <5 4>;
+    };
+
+    mali_mgm: physical-memory-group-manager {
+        compatible = "arm,physical-memory-group-manager";
+        pt_id = "gpu_write_alloc";
+    };
+
+    mali_pma: protected-memory-allocator {
+        compatible = "arm,protected-memory-allocator";
+    };
+
+    /*
+     * =======================================
+     * NPU (TPU/GXP) Configuration
+     * From: soc/npu/*
+     * =======================================
+     */
+    edgetpu: rio@1A000000 {
+        compatible = "google,edgetpu-zuma";
+        status = "okay";
+        reg = <0x0 0x1A000000 0x300000>,
+              <0x0 0x1A300000 0x10000>,
+              <0x0 0x1A3E0000 0x10000>,
+              <0x0 0x1A3F0000 0x10000>;
+        reg-names = "tpu", "cmu", "ssmt_d0", "ssmt_d1";
+        memory-region = <&tpu_fw_reserved>;
+        #dma-address-cells = <1>;
+        #dma-size-cells = <2>;
+        pasid-num-bits = <3>;
+        dma-window = <0x18000000 0xF 0xE7FFF000>;
+        gcip-dma-window = <0x18000000 0xF 0xE7FFF000>;
+        iommus = <&sysmmu_tpu>;
+        samsung,iommu-group = <&iommu_group_tpu>;
+        interrupts = <0 488 4 0>, <0 489 4 0>, <0 490 4 0>, <0 491 4 0>,
+                     <0 492 4 0>, <0 493 4 0>, <0 494 4 0>, <0 495 4 0>,
+                     <0 496 4 0>, <0 497 4 0>, <0 498 4 0>, <0 499 4 0>,
+                     <0 500 4 0>, <0 501 4 0>, <0 502 4 0>, <0 503 4 0>;
+        initial-freq-khz = <1119000>;
+        gcip-dvfs-table-size = <8 2>;
+        gcip-dvfs-table = <
+            1119000 6725
+            1119000 6725
+            1066000 6329
+            845000  3404
+            712000  2900
+            627000  2018
+            455000  1492
+            226000  562
+        >;
+        edgetpu,shareability = <0x1A320000>;
+        pmu-status-base = <0x15462504>;
+        gsa-device = <&gsa>;
+        use-kernel-vii;
+        cooling-enabled = <1>;
+    };
+
+    tpu_cooling: tpu-cooling {
+        #cooling-cells = <2>;
+    };
+
+    gxp: callisto@20C00000 {
+        compatible = "google,gxp-zuma";
+        status = "ok";
+        reg = <0x0 0x20C00000 0x01400000>,
+              <0x0 0x15320000 0x1000>,
+              <0x0 0x15340000 0x1000>,
+              <0x0 0x15360000 0x1000>,
+              <0x0 0x15280000 0x1000>,
+              <0x0 0x152A0000 0x1000>,
+              <0x0 0x20A00000 0x1000>,
+              <0x0 0x20AD0000 0x10000>,
+              <0x0 0x20AE0000 0x10000>;
+        reg-names = "aur", "mailbox0", "mailbox1", "mailbox2", "mailbox3", "mailbox4",
+                    "cmu", "ssmt_idma", "ssmt_inst_data";
+        interrupts = <0 519 4 0>, <0 520 4 0>, <0 521 4 0>, <0 522 4 0>,
+                     <0 523 4 0>, <0 518 4 0>;
+        #dma-address-cells = <1>;
+        #dma-size-cells = <2>;
+        pasid-num-bits = <3>;
+        dma-window = <0x00001000 0xF 0xFFFFF000>;
+        samsung,iommu-reserved-map = <0x0 0x80000000 0x1000>;
+        gcip-dma-window = <0x30000000 0x0 0xC0000000>;
+        gcip-reserved-map = <0x80000000 0x0 0x1000>;
+        gxp,shareability = <0x20a40700>;
+        pmu-aur-status = <0x15462304>;
+        gxp-memory-per-core = <0 512>;
+        gsa-device = <&gsa>;
+        tpu-device = <&edgetpu>;
+        gxp-tpu-mbx-offset = <0x0 0x50000>;
+        gcip-dvfs-table-size = <7 2>;
+        gcip-dvfs-table = <
+            1065000 78
+            861000  58
+            713000  40
+            560000  27
+            355000  20
+            256000  16
+            178000  13
+        >;
+    };
+
+    gxp_cooling: gxp-cooling {
+        #cooling-cells = <2>;
+    };
+
+    /*
+     * =======================================
+     * Battery and Charging
+     * From: soc/battery/*
+     * =======================================
+     */
+    chargers {
+        description = "Parameters for various charger ICs and the Google Charge Power Manager";
+        charger_pca9468: pca9468 {
+            compatible = "nxp,pca9468-charger";
+            ftm-mode = <0>;
+            pps-index = <0>;
+            adc-chan = <4315000>;
+            ta-vol-max = <10500000>;
+            iin-cc-comp-offset = <25000>;
+            debug-level = <6>;
+        };
+
+        p9221_charger: p9221 {
+            compatible = "renesas,p9221-charger";
+            de-ocp-ua = <1600000>;
+            de-rtx-api-limit-ma = <1350>;
+            needs-align-check = "Y";
+            de-rtx-hw-ocp = "Y";
+            no-fod = "N";
+            trigger-dd = <400>;
+        };
+
+        max77759_chg: max77759 {
+            compatible = "maxim,max77759-charger";
+            inlim-step = <50000>;
+            inlim-headroom = <40000>;
+            inlim-period = <5000>;
+            insel-clear = "N";
+            insel-cnt = <2>;
+        };
+
+        google_cpm: gcpm {
+            compatible = "google,cpm";
+            dc-cc-lim = <1000000>;
+            wlc-cc-lim = <2750000>;
+            taper-step-interval = <120>;
+            taper-step-grace = <1>;
+            dc-limit-soc-high = <100>;
+            dc-limit-demand = <560000>;
+            google,wlc-dc-fcc-ua = <4037000>;
+            google,mdis-thermal-mitigation = <3402000 3260000 3128000 3064000 3000000 2941000 2883000 2825000 2768000 2710000 2653000 2490000 2360000 2220000 2108000 1995000 1990000 1794000 1705000 1606000 1534000 1472000 1411000 1360000 1333000 1305000>;
+            google,mdis-out-sel-online = <1 2>;
+            google,mdis-out0-limits = <4000000 3860000 3720000 3580000 3440000 3300000 3160000 3020000 2880000 2740000 2600000 2460000 2320000 2180000 2040000 1900000 1760000 1620000 1480000 1340000 1200000 1060000 920000 780000 640000 500000 1100000 1100000 1100000 1100000 1100000 1100000 1100000 1100000 1100000 1100000 1100000 1100000 1050000 1000000 950000 900000 850000 800000 750000 700000 650000 600000 550000 500000 450000 400000>;
+            google,mdis-out1-limits = <5400000 5224000 5048000 4872000 4696000 4520000 4344000 4168000 3992000 3816000 3640000 3464000 3288000 3112000 2936000 2760000 2584000 2408000 2232000 2056000 1880000 1704000 1528000 1352000 1176000 1000000 4000000 3800000 3600000 3500000 3400000 3300000 3200000 3100000 3000000 2900000 2800000 2600000 2400000 2200000 2000000 1800000 1600000 1400000 1200000 1000000 900000 800000 700000 600000 500000 400000>;
+        };
+    };
+
+    gbms_storage {
+        compatible = "google,gbms-storage";
+        description = "Google Battery Management System (GBMS) providers";
+        providers = "0 bms-pack-eeprom:BGPN MINF DINF HIST BRID SNUM GMSR BCNT CNHS SELC CELC LOTR STRD ACIM GCFE RAVG RFCN THAS AYMD MYMD FGST FCRU",
+                    "1 maxfg:BLHI",
+                    "2 max77759_maxq:?",
+                    "3 battery:HCNT";
+    };
+
+    google_battery {
+        compatible = "google,battery";
+        description = "Battery-specific parameters";
+        restrict-level-critical = <0>;
+        ravg-soc-high = <75>;
+        ravg-soc-low = <5>;
+        ravg-temp-high = <390>;
+        ravg-temp-low = <350>;
+        act-impedance = <55297>;
+        bhi-w-ci = <100>;
+        chg-health-rest-rate-before-trigger = <80>;
+        chg-health-rest-rate = <15>;
+        chg-health-thr-soc = <80>;
+        mp-max-ratio-limit = <70>;
+        mp-soc-limit-high = <80>;
+        mp-soc-limit-low = <50>;
+        fv-dc-ratio = <20>;
+        ssoc-uic = <1617887232>;
+        ssoc-uicurve = "[15.00 15.00][96.51 96.51][100.00 100.00]";
+        charge-profile = <0 10 2240 1350 0 0>,
+                         <10 20 3140 1350 1350 1350>,
+                         <20 42 5380 5380 5380 2240>,
+                         <42 46 4490 4490 4490 2240>,
+                         <46 48 2240 2240 0 0>,
+                         <48 55 1350 0 0 0>;
+        google,chg-battery-capacity = <4485>;
+        google,chg-cc-limits = < 50 30 0 0 70 30 30 30 120 120 120 50 100 100 100 50 50 50 0 0 30 0 0 0 >;
+        google,aact-cv-limits = <4200000 4300000 4350000 4480000>;
+        google,aact-temp-limits = <0 100 200 420 460 480 550>;
+        google,chg-aact-ecc = <0 300 1000>;
+        google,aact-cc-limits = < 50 30 0 0 70 30 30 30 120 120 120 50 100 100 100 50 50 50 0 0 30 0 0 0 50 30 0 0 70 30 30 30 110 110 110 50 100 100 100 50 50 50 0 0 30 0 0 0 50 30 0 0 70 30 30 30 100 100 100 50 100 100 100 50 50 50 0 0 30 0 0 0 >;
+        google,aacr-algo = <3>;
+        google,aacr-cliff-capacity-rate = <80>;
+        google,aacr-cycle-max = <1000>;
+        google,batt-id-1-atl {
+            google,batt-id = <1>;
+            google,aacr-ref-cycles = <599 600 1000>;
+            google,aacr-ref-fade10 = <0 100 100>;
+            google,aafv-ref-cycles = <200 400 600 800 1000 1001>;
+            google,aafv-ref-offset = <0 20 40 60 80 100>;
+        };
+        google,batt-id-2-cos {
+            google,batt-id = <2>;
+            google,aacr-ref-cycles = <599 600 1000>;
+            google,aacr-ref-fade10 = <0 100 100>;
+            google,aafv-ref-cycles = <200 400 600 800 1000 1001>;
+            google,aafv-ref-offset = <0 20 40 60 80 100>;
+        };
+    };
+
+    google_charger {
+        compatible = "google,charger";
+        description = "Core charging behaviors and parameters";
+        bd-enabled = <1>;
+        bd-triggered = <0>;
+        pps-cc-tolerance = <5>;
+        usb-skip-probe = "N";
+        update-interval = <0>;
+        chg-suspend = <0>;
+        input-suspend = <0>;
+        chg-mode = <0>;
+        google,thermal-stats-lvl-map = <0 8 16 25>;
+    };
+
+    gvotables {
+        description = "Current elected values from the GVotables system";
+        fan-level { value = <3>; };
+        tx-icl { value = <1350000>; };
+        wlc-disable { value = <1>; };
+        dc-avail { value = <1>; };
+        dc-fcc { value = <-1>; };
+        gcpm-fcc { value = <-1>; };
+        charging-policy { value = <1>; };
+        msc-interval { value = <30000>; };
+        msc-fcc { value = <5380000>; };
+        msc-fv { value = <4350000>; };
+        usb-icl { value = <1500000>; };
+        usb-icl-proto { value = <1500000>; };
+        dc-icl { value = <700000>; };
+        charger-mode { value = <5>; };
+        hda-tz { value = <53>; };
+        csi-type { value = <5>; };
+        csi-status { value = <31>; };
+    };
+
+    maxfg {
+        compatible = "maxim,fuel-gauge";
+        description = "Configuration for the Maxim Fuel Gauge component";
+        disable-dynamic-filtercfg = "N";
+        bhi-fcn-count = <3>;
+        bhi-recalibration-algo = <0>;
+        bhi-target-capacity = <0>;
+        model-version = <7>;
+        model-ok = "Y";
+        registers {
+            reg@d0 = <0x2c71>;
+            reg@dc = <0x0004>;
+            reg@dd = <0xffff>;
+            reg@de = <0x609b>;
+            reg@df = <0x0778>;
+            reg@eb = <0x0000>;
+            reg@fb = <0xda3e>;
+            reg@ff = <0x5fd4>;
+        };
+        model_registers {
+            reg@d0 = <0x08f0>;
+            reg@d1 = <0x02f0>;
+            reg@d2 = <0x02f0>;
+        };
+        fg_model {
+            reg@d0 = <0x08f0>;
+            reg@d1 = <0x02f0>;
+            reg@d2 = <0x02f0>;
+        };
+    };
+
+    /*
+     * =======================================
+     * Board and Display
+     * From: soc/board/*, zuma-shiba-display.dtsi
+     * =======================================
+     */
+    aoc {
+        aoc-board-cfg = "SB3";
+        aoc-board-id = <0x40302>;
+        aoc-board-rev = <0x10000>;
+        prevent-fw-load = <0x0>;
+    };
+
+    drmdsim0 {
+        google_bigsurf: panel@0 {
+            compatible = "google,bigsurf";
+            label = "google-bigsurf";
+            touch = <&spitouch>;
+            vddd-normal-microvolt = <1150000>;
+            vddd-lp-microvolt     = <1062500>;
+            post-vddd-lp;
+        };
+        google_shoreline: panel@2 {
+            compatible = "google,shoreline";
+            label = "google-shoreline";
+            channel = <0>;
+            touch = <&spitouch>;
+            reset-gpios = <&gpa6 0 1>;
+            vci-supply = <&m_ldo14_reg>;
+            vddi-supply = <&s_bucka_reg>;
+            vddd-supply = <&m_ldo22_reg>;
+            vddd-normal-microvolt = <1150000>;
+            vddd-lp-microvolt     = <1062500>;
+            post-vddd-lp;
+        };
+    };
+
+    drmdsim1 {
+        status = "disabled";
+    };
+
+    drmdp {
+        status = "okay";
+    };
+
+    drmdecon1 {
+        status = "okay";
+        connector = <0x10>;
+    };
+
+    spitouch: spitouch {
+        status = "ok";
+        compatible = "goodix,brl-d";
+        spi-max-frequency = <10000000>;
+        goodix,irq-gpio = <&gpn0 0 0>;
+        goodix,reset-gpio = <&gpp21 2 0>;
+        goodix,avdd-name = "avdd";
+        goodix,iovdd-name = "vdd";
+        goodix,irq-flags = <2>;
+        goodix,panel-max-x = <1079>;
+        goodix,panel-max-y = <2399>;
+        goodix,panel-max-w = <255>;
+        goodix,panel-max-p = <255>;
+        goodix,panel-height-mm = <143>;
+        goodix,udfps-x = <540>;
+        goodix,udfps-y = <1717>;
+        goodix,sleep-enable;
+        goodix,use-one-binary;
+        goog,panel_map = <&google_bigsurf 0>, <&google_shoreline 1>;
+        goog,firmware_names = "goodix_firmware_bigsurf.bin", "goodix_firmware_shoreline.bin";
+        goog,test_limits_names = "goodix_test_limits_bigsurf.csv", "goodix_test_limits_shoreline.csv";
+        goog,offload-enabled;
+        goog,v4l2-enabled;
+        goog,offload-caps-scan-types = /bits/ 16 <0xC0>;
+        goog,offload-caps-context-channel-types = /bits/ 16 <0x0100>;
+        goog,touch_offload_ids = /bits/ 8 <'s' 'b' '3' '0' 's' 'b' '3' '1'>;
+        goog,display-resolution = /bits/ 16 <1080 2400>;
+        goog,channel-num = /bits/ 16 <16 36>;
+        goog,tbn-enabled;
+        goog,offload-caps-coord-filter;
+        goog,coord-filter-enabled;
+        controller-data {
+            samsung,spi-feedback-delay = <0>;
+            samsung,spi-chip-select-mode = <0>;
+        };
+    };
+    
+    /*
+     * =======================================
+     * Wireless Charger
+     * From: zuma-shiba-wcharger.dtsi
+     * =======================================
+     */
+     &hsi2c_9 {
+	    p9412@3c {
+		    fod = [B7 25 80 43 8D 1A 95 04 94 00 99 F0 00 00 01 48];
+		    fod_epp = [AC 51 85 7A 83 5B 86 4A 84 53 8C 1D 00 00 01 48];
+		    google,hpp_fod_vol = /bits/ 32 <16500000 17500000 18500000 19500000>;
+		    fod_hpp_0 = [B5 62 94 7F 85 7D 92 10 92 EE 8A 39 00 00 01 48];
+		    fod_hpp_1 = [B0 7F 9B 7E 8B 7C 9E D0 87 7B 8C 34 00 00 01 48];
+		    fod_hpp_2 = [D0 7F A9 7D 93 7F 8F 7A 8B 7D 8C 6A 00 00 01 48];
+		    fod_hpp_3 = [DB 7F AF 7D 96 7F 91 7D 8D 7F 8C 7C 00 00 01 48];
+		    google,q_value = <41>;
+
+		    google,alignment_scalar_low_current = <350>;
+		    google,alignment_scalar_high_current = <83>;
+		    google,alignment_offset_low_current = <128000>;
+		    google,alignment_offset_high_current = <144000>;
+		    google,alignment_current_threshold = <500>;
+	    };
+    };
+
+    /*
+     * =======================================
+     * Performance & Power
+     * From: soc/performance/*, soc/power/*
+     * =======================================
+     */
+    exynos-acme {
+        cpufreq_domain0: domain@0 {
+            sibling-cpus = "0-3";
+            cal-id = <0xB1300000>;
+            dm-type = <0>;
+            min-freq = <324000>;
+            max-freq = <1704000>;
+            #cooling-cells = <2>;
+            ect-coeff-index = <2>;
+            tz-cooling-name = "LITTLE";
+            skip-boot-pmqos;
+            use-em-coeff;
+            dsu-bci-constraint-table = < 2147000 2120000 1790000 2098000 2120000 1790000 2024000 2120000 1790000 1950000 2120000 1790000 1785000 1800000 1401000 1704000 1800000 1401000 1548000 1800000 1401000 1425000 1800000 1401000 1328000 1328000 1205000 1197000 1328000 1205000 1098000 1328000 1205000 955000 1328000 1205000 820000 1328000 1205000 610000 1328000 1205000 324000 970000 1050000 >;
+        };
+        cpufreq_domain1: domain@1 {
+            sibling-cpus = "4-7";
+            cal-id = <0xB1300001>;
+            dm-type = <1>;
+            min-freq = <402000>;
+            max-freq = <2367000>;
+            #cooling-cells = <2>;
+            ect-coeff-index = <1>;
+            tz-cooling-name = "MID";
+            skip-boot-pmqos;
+            use-em-coeff;
+            need-awake;
+        };
+        cpufreq_domain2: domain@2 {
+            sibling-cpus = "8";
+            cal-id = <0xB1300002>;
+            dm-type = <2>;
+            min-freq = <500000>;
+            max-freq = <2914000>;
+            #cooling-cells = <2>;
+            ect-coeff-index = <0>;
+            tz-cooling-name = "BIG";
+            skip-boot-pmqos;
+            use-em-coeff;
+            need-awake;
+        };
+    };
+
+    cpupm {
+        compatible = "samsung,exynos-cpupm";
+        status = "okay";
+
+        cpd_cl0 {
+            device_type = "cpupm";
+            target-residency = <10000>;
+            type = <0>;
+            cal-id = <0>;
+            siblings = "0-3";
+        };
+        cpd_cl1 {
+            device_type = "cpupm";
+            target-residency = <10000>;
+            type = <0>;
+            cal-id = <1>;
+            siblings = "4-7";
+            entry-allowed = "4-7";
+        };
+        cpd_cl2 {
+            device_type = "cpupm";
+            target-residency = <10000>;
+            type = <0>;
+            cal-id = <2>;
+            siblings = "8";
+            entry-allowed = "8";
+        };
+
+        wakeup-mask {
+            wakeup-masks {
+                wakeup-mask {
+                    mask-reg-offset = <0x3944>;
+                    stat-reg-offset = <0x3950>;
+                    mask = <0x0ff00000>;
+                };
+                wakeup-mask2 {
+                    mask-reg-offset = <0x3964>;
+                    stat-reg-offset = <0x3970>;
+                    mask = <0x00>;
+                };
+            };
+            eint-wakeup-masks {
+                eint-wakeup-mask {
+                    mask-reg-offset = <0x3a80>;
+                };
+                eint-wakeup-mask2 {
+                    mask-reg-offset = <0x3a84>;
+                };
+                eint-wakeup-mask3 {
+                    mask-reg-offset = <0x3a88>;
+                };
+            };
+        };
+    };
+
+    pcie0: pcie@12100000 {
+        compatible = "google,g-pcie";
+        reg = <0x0 0x12100000 0x100000>;
+    };
+    pcie1: pcie@13120000 {
+        compatible = "google,g-pcie";
+        reg = <0x0 0x13120000 0x100000>;
+    };
+
+}; //End of root node
