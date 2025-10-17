@@ -1,26 +1,15 @@
-FILE: ./bd_enabled
-1
-END_FILE
-FILE: ./bd_triggered
-0
-END_FILE
-FILE: ./pps_cc_tolerance
-5
-END_FILE
-FILE: ./usb_skip_probe
-N
-END_FILE
-FILE: ./force_reschedule
-END_FILE
-FILE: ./update_interval
-0
-END_FILE
-FILE: ./chg_suspend
-0
-END_FILE
-FILE: ./input_suspend
-0
-END_FILE
-FILE: ./chg_mode
-0
-END_FILE
+/ {
+	google_charger {
+        compatible = "google,charger";
+        description = "Core charging behaviors and parameters";
+
+        [cite_start]bd-enabled = <1>; [cite: 30]
+        [cite_start]bd-triggered = <0>; [cite: 30]
+        [cite_start]pps-cc-tolerance = <5>; [cite: 30]
+        [cite_start]usb-skip-probe = "N"; [cite: 30]
+        [cite_start]update-interval = <0>; [cite: 30]
+        [cite_start]chg-suspend = <0>; [cite: 30]
+        [cite_start]input-suspend = <0>; [cite: 30]
+        [cite_start]chg-mode = <0>; [cite: 30]
+        };
+}

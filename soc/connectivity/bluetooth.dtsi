@@ -1,9 +1,0 @@
-FILE: ./rfcomm_dlc
-END_FILE
-FILE: ./rfcomm
-END_FILE
-FILE: ./sco
-END_FILE
-FILE: ./l2cap
-00:00:00:00:00:00 (0) 00:00:00:00:00:00 (0) 4 3 0x0000 0x0000 0 0 0 0
-END_FILE

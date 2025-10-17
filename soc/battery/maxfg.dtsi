@@ -1,309 +1,36 @@
-FILE: ./disable_dynamic_filtercfg
-N
-END_FILE
-FILE: ./bhi_fcn_count
-3
-END_FILE
-FILE: ./bhi_recalibration_algo
-0
-END_FILE
-FILE: ./bhi_target_capacity
-0
-END_FILE
-FILE: ./current_offset
-END_FILE
-FILE: ./gmsr_reset
-END_FILE
-FILE: ./cnhs_reset
-END_FILE
-FILE: ./registers
-00: 2000
-01: ff00
-02: 0780
-03: ff00
-04: 1900
-05: 077c
-06: 60a4
-07: 5703
-08: 21d2
-09: ddcc
-0a: 0f12
-0b: 0bb7
-0c: 0004
-0d: 5fd0
-0e: 60a7
-0f: 077c
-10: 06ae
-11: ffff
-12: 2080
-13: 5500
-14: 0233
-15: 0148
-16: 21bb
-17: de5d
-18: 08e3
-19: db1d
-1a: 3015
-1b: dea8
-1c: 20c9
-1d: 4217
-1e: 059b
-1f: 0779
-20: 00d3
-21: 6200
-22: 0e80
-23: 07bd
-24: 1400
-25: 2305
-26: 21bb
-27: 6734
-28: 207e
-29: 0613
-2a: 1439
-2b: 3070
-2c: ed51
-2d: 1eba
-2e: 0400
-2f: 0000
-30: 35f1
-31: 621a
-32: 0580
-33: ffff
-34: 21d2
-35: 07bf
-36: f448
-37: 05e0
-38: 05ac
-39: 1402
-3a: a561
-3b: 0bb7
-3c: 2d00
-3d: 1008
-3e: 7e12
-3f: e000
-40: 07fc
-41: b57f
-42: 0400
-43: 0326
-44: dab5
-45: 0237
-46: 393e
-47: fffc
-48: 5366
-49: 2241
-4a: 077c
-4b: 02ce
-4c: 0480
-4d: 0565
-4e: 8548
-4f: 06b2
-60: 0000
-62: 0000
-63: 0000
-80: ffff
-81: ffff
-82: ffff
-83: ffff
-84: ffff
-85: ffff
-86: ffff
-87: ffff
-88: ffff
-89: ffff
-8a: ffff
-8b: ffff
-8c: ffff
-8d: ffff
-8e: ffff
-8f: ffff
-90: ffff
-91: ffff
-92: ffff
-93: ffff
-94: ffff
-95: ffff
-96: ffff
-97: ffff
-98: ffff
-99: ffff
-9a: ffff
-9b: ffff
-9c: ffff
-9d: ffff
-9e: ffff
-9f: ffff
-a0: ffff
-a1: ffff
-a2: ffff
-a3: ffff
-a4: ffff
-a5: ffff
-a6: ffff
-a7: ffff
-a8: ffff
-a9: ffff
-aa: ffff
-ab: ffff
-ac: ffff
-ad: ffff
-ae: ffff
-af: ffff
-b0: 0000
-b1: 6fb9
-b2: 7f80
-b3: 2b81
-b4: 7f80
-b5: 0005
-b6: 0045
-b7: 0600
-b8: 0000
-b9: 0014
-ba: 090c
-bb: 0090
-bc: 080d
-bd: 0204
-be: 0009
-bf: 0000
-d0: 2c71
-dc: 0004
-dd: ffff
-de: 609b
-df: 0778
-eb: 0000
-fb: da3e
-ff: 5fd4
-END_FILE
-FILE: ./data
-2000
-END_FILE
-FILE: ./address
-0
-END_FILE
-FILE: ./algo_ver
-4294967295
-END_FILE
-FILE: ./model_version
-7
-END_FILE
-FILE: ./sync_model
-END_FILE
-FILE: ./model_ok
-Y
-END_FILE
-FILE: ./model_registers
-80: 9d30
-81: b760
-82: b960
-83: bb70
-84: bd10
-85: bea0
-86: bff0
-87: c290
-88: c4a0
-89: c710
-8a: cb30
-8b: cd60
-8c: d300
-8d: d650
-8e: d970
-8f: df40
-90: 0100
-91: 0f00
-92: 0e00
-93: 1300
-94: 1600
-95: 16b0
-96: 0a30
-97: 0be0
-98: 05f0
-99: 07d0
-9a: 08f0
-9b: 05e0
-9c: 06d0
-9d: 08f0
-9e: 02f0
-9f: 02f0
-a0: 0080
-a1: 0080
-a2: 0080
-a3: 0080
-a4: 0080
-a5: 0080
-a6: 0080
-a7: 0080
-a8: 0080
-a9: 0080
-aa: 0080
-ab: 0080
-ac: 0080
-ad: 0080
-ae: 0080
-af: 0080
-END_FILE
-FILE: ./fg_model
-80: 9d30
-81: b760
-82: b960
-83: bb70
-84: bd10
-85: bea0
-86: bff0
-87: c290
-88: c4a0
-89: c710
-8a: cb30
-8b: cd60
-8c: d300
-8d: d650
-8e: d970
-8f: df40
-90: 0100
-91: 0f00
-92: 0e00
-93: 1300
-94: 1600
-95: 16b0
-96: 0a30
-97: 0be0
-98: 05f0
-99: 07d0
-9a: 08f0
-9b: 05e0
-9c: 06d0
-9d: 08f0
-9e: 02f0
-9f: 02f0
-a0: 0200
-a1: 0200
-a2: 0200
-a3: 0200
-a4: 0200
-a5: 0200
-a6: 0200
-a7: 0200
-a8: 0200
-a9: 0200
-aa: 0200
-ab: 0200
-ac: 0200
-ad: 0200
-ae: 0200
-af: 0200
-END_FILE
-FILE: ./log_learn
-END_FILE
-FILE: ./force_psy_update
-END_FILE
-FILE: ./batt_id
-END_FILE
-FILE: ./fake_battery
-END_FILE
-FILE: ./ce_start
-END_FILE
-FILE: ./fg_reset
-END_FILE
-FILE: ./nvram_por
-END_FILE
-FILE: ./irq_none_cnt
-0
-END_FILE
+/{
+	maxfg {
+        compatible = "maxim,fuel-gauge";
+        description = "Configuration for the Maxim Fuel Gauge component";
+
+        [cite_start]disable-dynamic-filtercfg = "N"; [cite: 1]
+        [cite_start]bhi-fcn-count = <3>; [cite: 1]
+        [cite_start]bhi-recalibration-algo = <0>; [cite: 1]
+        [cite_start]bhi-target-capacity = <0>; [cite: 1]
+        [cite_start]model-version = <7>; [cite: 1]
+        [cite_start]model-ok = "Y"; [cite: 1]
+
+        registers {
+            [cite_start]reg@d0 = <0x2c71>; [cite: 2]
+            [cite_start]reg@dc = <0x0004>; [cite: 2]
+            [cite_start]reg@dd = <0xffff>; [cite: 2]
+            [cite_start]reg@de = <0x609b>; [cite: 2]
+            [cite_start]reg@df = <0x0778>; [cite: 2]
+            [cite_start]reg@eb = <0x0000>; [cite: 2]
+            [cite_start]reg@fb = <0xda3e>; [cite: 2]
+            [cite_start]reg@ff = <0x5fd4>; [cite: 2]
+        };
+
+        model_registers {
+            [cite_start]reg@9d = <0x08f0>; [cite: 3]
+            [cite_start]reg@9e = <0x02f0>; [cite: 3]
+            [cite_start]reg@9f = <0x02f0>; [cite: 3]
+        };
+
+        fg_model {
+            [cite_start]reg@9d = <0x08f0>; [cite: 3]
+            [cite_start]reg@9e = <0x02f0>; [cite: 3]
+            [cite_start]reg@9f = <0x02f0>; [cite: 3]
+        };
+    };
+};

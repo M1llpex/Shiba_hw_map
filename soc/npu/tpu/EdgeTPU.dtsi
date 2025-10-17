@@ -1,0 +1,96 @@
+/ {
+    /*
+     * This file consolidates all hardware configuration for the
+     * Google EdgeTPU (Rio) System-on-Chip.
+     */
+
+    edgetpu: rio@1A000000 {
+        [cite_start]compatible = "google,edgetpu-zuma"; [cite: 49]
+        [cite_start]status = "okay"; [cite: 49]
+
+        /* =====================================
+         * Core Register & Memory Configuration
+         * ===================================== */
+        [cite_start]// Defines base addresses for TPU components [cite: 50, 51]
+        [cite_start]reg = <0x0 0x1A000000 0x300000>,  // TPU Core [cite: 50]
+              [cite_start]<0x0 0x1A300000 0x10000>,   // CMU [cite: 50]
+              [cite_start]<0x0 0x1A3E0000 0x10000>,   // SSMT Data0 [cite: 50]
+              <0x0 0x1A3F0000 0x10000>;   [cite_start]// SSMT Data1 [cite: 50, 51]
+        [cite_start]reg-names = "tpu", "cmu", "ssmt_d0", "ssmt_d1"; [cite: 51]
+
+        [cite_start]// Reserved memory region for the TPU firmware [cite: 15]
+        [cite_start]memory-region = <&tpu_fw_reserved>; [cite: 15]
+
+
+        /* =====================================
+         * DMA & IOMMU Configuration
+         * ===================================== */
+        [cite_start]#dma-address-cells = <1>; [cite: 51]
+        [cite_start]#dma-size-cells = <2>; [cite: 51]
+        [cite_start]pasid-num-bits = <3>; [cite: 52]
+        [cite_start]dma-window = <0x18000000 0xF 0xE7FFF000>; [cite: 52]
+        [cite_start]gcip-dma-window = <0x18000000 0xF 0xE7FFF000>; [cite: 52]
+
+        [cite_start]// IOMMU configuration [cite: 15]
+        [cite_start]iommus = <&sysmmu_tpu>; [cite: 15]
+        [cite_start]samsung,iommu-group = <&iommu_group_tpu>; [cite: 15]
+
+
+        /* =====================================
+         * Interrupt Configuration
+         * ===================================== */
+        [cite_start]// 16 Mailbox interrupts for TPU-to-AP communication [cite: 19]
+        interrupts =
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_0_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_1_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_2_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_3_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_4_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_5_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_6_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_7_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_8_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_9_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_10_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_11_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_12_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_13_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            <0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_14_TPU IRQ_TYPE_LEVEL_HIGH 0>,
+            [cite_start]<0x00 IRQ_MAILBOX_TPU2AP_NS_TPU_15_TPU IRQ_TYPE_LEVEL_HIGH 0>; [cite: 19]
+
+
+        /* =====================================
+         * Power & Cooling Configuration
+         * ===================================== */
+        [cite_start]// Initial power policy set to 1119000 KHz [cite: 1, 33]
+        [cite_start]initial-freq-khz = <1119000>; [cite: 1, 33]
+
+        [cite_start]// DVFS table with 8 operating points [cite: 16]
+        [cite_start]gcip-dvfs-table-size = <8 2>; [cite: 16]
+        gcip-dvfs-table = <
+            /* Freq(KHz)  Power(mW) */
+            1119000      6725
+            1119000      6725
+            1066000      6329
+            845000       3404
+            712000       2900
+            627000       2018
+            455000       1492
+            226000       562
+        >[cite_start]; [cite: 17]
+
+
+        /* =====================================
+         * System Integration & Miscellaneous
+         * ===================================== */
+        [cite_start]edgetpu,shareability = <0x1A320000>; [cite: 52]
+        [cite_start]pmu-status-base = <0x15462504>; [cite: 53]
+        [cite_start]gsa-device = <&gsa>; [cite: 53]
+        [cite_start]use-kernel-vii; [cite: 53]
+        [cite_start]cooling-enabled = <1>; [cite: 1, 33]
+    };
+
+    tpu_cooling: tpu-cooling {
+        [cite_start]#cooling-cells = <2>; [cite: 18]
+    };
+};

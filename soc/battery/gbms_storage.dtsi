@@ -1,28 +1,11 @@
-FILE: ./export
-END_FILE
-FILE: ./offline
-END_FILE
-FILE: ./providers
-0 bms-pack-eeprom:BGPN MINF DINF HIST BRID SNUM GMSR BCNT CNHS SELC CELC LOTR STRD ACIM GCFE RAVG RFCN THAS AYMD MYMD FGST FCRU 
-1 maxfg:BLHI 
-2 max77759_maxq:?
-3 battery:HCNT 
-END_FILE
-FILE: ./cache
- bms-pack-eeprom: FCRU
- bms-pack-eeprom: STRD
- battery: HCNT
- bms-pack-eeprom: MYMD
- bms-pack-eeprom: RAVG
- maxfg: BLHI
- bms-pack-eeprom: MINF
- bms-pack-eeprom: BRID
- max77759_maxq: SUFG
- bms-pack-eeprom: CNHS
- bms-pack-eeprom: THAS
- bms-pack-eeprom: BCNT
- bms-pack-eeprom: RFCN
- max77759_maxq: RSOC
- bms-pack-eeprom: ACIM
- bms-pack-eeprom: AYMD
-END_FILE
+/{
+	gbms_storage {
+        compatible = "google,gbms-storage";
+        description = "Google Battery Management System (GBMS) providers";
+
+        [cite_start]providers = "0 bms-pack-eeprom:BGPN MINF DINF HIST BRID SNUM GMSR BCNT CNHS SELC CELC LOTR STRD ACIM GCFE RAVG RFCN THAS AYMD MYMD FGST FCRU", [cite: 28]
+                    [cite_start]"1 maxfg:BLHI", [cite: 28]
+                    [cite_start]"2 max77759_maxq:?", [cite: 28]
+                    [cite_start]"3 battery:HCNT"; [cite: 29]
+    };
+};

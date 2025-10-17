@@ -1,0 +1,23 @@
+/{
+	gvotables {
+        description = "Current elected values from the GVotables system";
+
+        fan-level { value = <3>; [cite_start]}; [cite: 38]
+        tx-icl { value = <1350000>; [cite_start]}; [cite: 38]
+        wlc-disable { value = <1>; [cite_start]}; [cite: 38]
+        dc-avail { value = <1>; [cite_start]}; [cite: 38]
+        dc-fcc { value = <-1>; [cite_start]}; [cite: 38]
+        gcpm-fcc { value = <-1>; [cite_start]}; [cite: 38]
+        charging-policy { value = <1>; [cite_start]}; [cite: 38]
+        msc-interval { value = <30000>; [cite_start]}; [cite: 38]
+        msc-fcc { value = <5380000>; [cite_start]}; [cite: 38]
+        msc-fv { value = <4350000>; [cite_start]}; [cite: 38]
+        usb-icl { value = <1500000>; [cite_start]}; [cite: 38]
+        usb-icl-proto { value = <1500000>; [cite_start]}; [cite: 38]
+        dc-icl { value = <700000>; [cite_start]}; [cite: 38]
+        charger-mode { value = <5>; [cite_start]}; [cite: 38]
+        hda-tz { value = <53>; [cite_start]}; [cite: 38]
+        csi-type { value = <5>; [cite_start]}; [cite: 38]
+        csi-status { value = <31>; [cite_start]}; [cite: 38]
+    };
+};
